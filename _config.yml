@@ -109,13 +109,13 @@ author:
   bio              : "I am somebody,<br>I was somebody when I came, I will be the better somebody when I leave.<br>I am powerful, and I am strong.<br>I deserve the education that I get here.<br>I have things to do, people to impress, and places to go.<br>Rita Pierson"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-envelope-open-text"
       url: "mailto:2joonh2@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/2joonh2"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fab fa-github-square"
       url: "https://github.com/2joonh2"
 
 
