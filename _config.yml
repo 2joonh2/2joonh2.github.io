@@ -25,10 +25,10 @@ description              : "Hey TARS, CASE, and KIPP"
 url                      : "https://2joonh2.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io" github
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "2joonh2/2joonh2.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png" 홈페이지 기본 티져이미지
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png" 파비콘
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/character.jpg" # 파비콘
 masthead_title           : "Endurance" # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true # true, false (default) _data/ui-text.yml에 다국어 지원 가능합니다.
+breadcrumbs              : true # true, false (default) _data/ui-text.yml
 words_per_minute         : 200
 
 comments:
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Joonhee Lee"
   avatar           : "/assets/images/character.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "I am somebody,<br>I was somebody when I came, I will be the better somebody when I leave.<br>I am powerful, and I am strong.<br>I deserve the education that I get here.<br>I have things to do, people to impress, and places to go.<br>Rita Pierson"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
