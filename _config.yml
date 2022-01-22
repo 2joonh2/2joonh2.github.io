@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Joonhee Lee"
   avatar           : "/assets/images/character.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am somebody,<br>I was somebody when I came, I will be the better somebody when I leave.<br>I am powerful, and I am strong.<br>I deserve the education that I get here.<br>I have things to do, people to impress, and places to go.<br>Rita Pierson"
+  bio              : "<br>I have things to do, people to impress, and places to go.<br>Rita Pierson"
   links:
     - label: "Email"
       icon: "fas fa-envelope-open-text"
