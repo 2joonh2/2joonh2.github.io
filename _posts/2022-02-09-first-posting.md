@@ -8,8 +8,8 @@ toc: true
 
 # First Posting
 
-Hello World!
+Hello World
 
 
 
-![lenovo-laptop-thinkpad-t14s-amd-subseries-gallery-1](../assets/images/2022-02-09-first-posting/lenovo-laptop-thinkpad-t14s-amd-subseries-gallery-1.jpg)
+![63](../assets/images/2022-02-09-first-posting/63.jpg)
