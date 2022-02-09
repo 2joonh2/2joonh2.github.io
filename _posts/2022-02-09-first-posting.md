@@ -12,7 +12,7 @@ Hello World!
 
 
 
-![ThinkPad_T14s](./images/2022-02-09-first-posting/lenovo-laptop-thinkpad-t14s-amd-subseries-gallery-1.jpg)
+![ThinkPad_T14s](../images/2022-02-09-first-posting/lenovo-laptop-thinkpad-t14s-amd-subseries-gallery-1.jpg)
 
 
 
@@ -22,4 +22,4 @@ Hello World!
 
 
 
-![image](./images/2022-02-09-first-posting/image.png)
+![image](../images/2022-02-09-first-posting/image.png)
