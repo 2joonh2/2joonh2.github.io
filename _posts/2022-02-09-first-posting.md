@@ -11,4 +11,4 @@ Hello World!
 
 사진 test 실패!
 
-![63](C:\Users\2joon\2joonh2.github.io\images\2022-02-09-first-posting\sixty.jpg)
+![sixty](C:\Users\2joon\2joonh2.github.io\images\2022-02-09-first-posting\sixty.jpg)
