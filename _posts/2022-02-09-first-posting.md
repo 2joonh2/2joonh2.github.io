@@ -13,13 +13,3 @@ Hello World!
 
 
 <img src="../images/2022-02-09-first-posting/lenovo-laptop-thinkpad-t14s-amd-subseries-gallery-1.jpg" alt="ThinkPad_T14s" style="zoom:67%;" />
-
-
-
-
-
-?
-
-
-
-<img src="../images/2022-02-09-first-posting/image.png" alt="image" style="zoom:67%;" />
