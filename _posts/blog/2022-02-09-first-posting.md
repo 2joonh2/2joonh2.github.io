@@ -12,4 +12,4 @@ Hello World
 
 
 
-![63](../assets/images/2022-02-09-first-posting/63.jpg)
+![63](../../assets/images/2022-02-09-first-posting/63.jpg)
