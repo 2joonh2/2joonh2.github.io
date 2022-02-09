@@ -2,7 +2,6 @@
 layout: single
 title: "첫번째 포스팅"
 categories: blog
-tag: [blog, jekyll]
 toc: true
 ---
 
