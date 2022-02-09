@@ -10,4 +10,6 @@ toc: true
 
 Hello World!
 
-![63](../images/2022-02-09-first-posting/63.jpg)
+
+
+![ThinkPad T14s](../images/2022-02-09-first-posting/lenovo-laptop-thinkpad-t14s-amd-subseries-gallery-1.jpg)
