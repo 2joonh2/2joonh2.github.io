@@ -13,3 +13,13 @@ Hello World!
 
 
 ![ThinkPad T14s](../images/2022-02-09-first-posting/lenovo-laptop-thinkpad-t14s-amd-subseries-gallery-1.jpg)
+
+
+
+
+
+?
+
+
+
+![image](../images/2022-02-09-first-posting/image.png)
