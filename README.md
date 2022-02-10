@@ -4,9 +4,7 @@
 
 1. 테디노트 TeddyNote 님의 유튜브 Playlist
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLIMb_GuNnFwfQBZQwD-vCZENL5YLDZekr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+[깃헙(Github) 블로그 만들기 - 시즌1 - YouTube](https://www.youtube.com/playlist?list=PLIMb_GuNnFwfQBZQwD-vCZENL5YLDZekr)
 
 2. 파비콘 추가
 
