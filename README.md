@@ -8,4 +8,4 @@
 
 2. 파비콘 추가
 
-[[Github Blog\] 파비콘(Favicon) 세팅하기 (velog.io)](https://velog.io/@eona1301/Github-Blog-파비콘Favicon-세팅하기)
+[\[Github Blog\] 파비콘(Favicon) 세팅하기 (velog.io)](https://velog.io/@eona1301/Github-Blog-파비콘Favicon-세팅하기)
