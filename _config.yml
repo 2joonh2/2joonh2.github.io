@@ -26,7 +26,7 @@ url                      : "https://2joonh2.github.io" # the base hostname & pro
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "2joonh2/2joonh2.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/astronaut.gif" # 포스팅 티져 이미지
-logo                     : # "/assets/images/favicon.ico"
+logo                     : 
 masthead_title           : "Withstand" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default) _data/ui-text.yml
 words_per_minute         : 200
