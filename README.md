@@ -10,5 +10,5 @@
 
 [\[Github Blog\] 파비콘(Favicon) 세팅하기 (velog.io)](https://velog.io/@eona1301/Github-Blog-파비콘Favicon-세팅하기)
 
-3.
+3. 레이아웃(포스팅 영역 폭) 
 [\[Github Blog\] minimal mistakes - 본문 영역 및 글자 크기](https://eona1301.github.io/github_blog/GithubBlog-Content-Width/)
