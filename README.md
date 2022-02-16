@@ -1,4 +1,4 @@
-# Github 블로그 구축기 w/ Jekyll - Minimal Mistakes Template
+# Github 블로그 구축기 w/ Jekyll (Minimal Mistakes)
 
 
 
