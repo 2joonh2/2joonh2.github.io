@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Folium을 이용한 df(위도,경도 데이터) 지도 시각화"
+title: "[Python] Folium 라이브러리를 이용한 df(위도,경도 데이터) 지도 시각화"
 categories: learn
 toc: true
 ---
@@ -31,7 +31,7 @@ df[['개방시설명','위도','경도']]
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }

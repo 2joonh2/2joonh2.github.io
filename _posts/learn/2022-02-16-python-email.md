@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "이메일 송신 구현 Python codes"
+title: "[Python] 이메일 송신"
 categories: learn
 toc: true
 ---
