@@ -9,3 +9,6 @@
 2. 파비콘 추가
 
 [\[Github Blog\] 파비콘(Favicon) 세팅하기 (velog.io)](https://velog.io/@eona1301/Github-Blog-파비콘Favicon-세팅하기)
+
+3.
+[\[Github Blog\] minimal mistakes - 본문 영역 및 글자 크기](https://eona1301.github.io/github_blog/GithubBlog-Content-Width/)
