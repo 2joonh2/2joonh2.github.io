@@ -4,7 +4,7 @@ title: "[Python] Folium 라이브러리를 이용한 df(위도,경도 데이터)
 categories: learn
 toc: true
 ---
-Reference: WGS84 위경도 좌표 기반 데이터 집계 및 시각화하기 (https://wooiljeong.github.io/python/count_by_wgs84/)
+Reference: ***Wooil***님의 [**WGS84 위경도 좌표 기반 데이터 집계 및 시각화하기**](https://wooiljeong.github.io/python/count_by_wgs84/)
 
 
 ```python
