@@ -11,24 +11,9 @@ Reference: ***열코***님의 [**파이썬으로 이메일 보내기(SMTP)**](ht
 ```python
 import smtplib
 from email.mime.text import MIMEText
-```
-
-
-```python
 # 세션 생성
 s = smtplib.SMTP('smtp.gmail.com', 587)# TLS 보안 시작
 s.starttls()
-```
-
-
-
-
-    (220, b'2.0.0 Ready to start TLS')
-
-
-
-
-```python
 account_mail_address="2joonh2@gmail.com"
 
 f = open("C:\\Users\\2joon\\OneDrive\\문서\\Gmail-app_pw.txt", 'r')
@@ -37,40 +22,31 @@ f.close()
 
 # 로그인 인증
 s.login(account_mail_address, pw)
-```
 
-
-
-
-    (235, b'2.7.0 Accepted')
-
-
-
-
-```python
-# 보낼 메시지 설정 - 1) try codes complete
+# 보낼 메시지 설정 - for 'try' successfuly being completed
 msg_t= MIMEText('The jupyter notebook has been completed.')
 msg_t['Subject'] = 'Execution Completed'
 ```
 
-
-```python
-# 보낼 메시지 설정 - 2) except codes; errors occur
-msg_f= MIMEText('An error has occured, the notebook send the message for alert.')
-msg_f['Subject'] = 'Execution Failed'
-```
+- 위 Cell의 세팅은 Reference 참조
+- python으로 email를 보내는 기능을 구현하여, 소요시간이 오래걸리는 notebook에 try-exception과 결합하여 Execution 성공시 이메일을 보낼 수 있도록 함
 
 
 ```python
-#메일 보내기
-s.sendmail(account_mail_address, "2joonh2@kaist.ac.kr", msg_t.as_string())
-
-# 세션 종료
-s.quit()
+try:
+    '''
+    codes
+    '''
+    #메일 보내기
+    s.sendmail(account_mail_address, "2joonh2@gmail.com", msg_t.as_string())
+    # 세션 종료
+    s.quit()
+except Exception as ex:
+    error_specific=str(ex)
+    msg_f= MIMEText('Error has occured, as below reason\n\n'+error_specific)
+    msg_f['Subject'] = 'Execution Failed'
+    #메일 보내기
+    s.sendmail(account_mail_address, "2joonh2@gmail.com", msg_f.as_string())
+    # 세션 종료
+    s.quit()
 ```
-
-
-
-
-    (221, b'2.0.0 closing connection k11sm2209552pfu.150 - gsmtp')
-
