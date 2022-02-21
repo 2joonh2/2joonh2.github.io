@@ -1,6 +1,7 @@
 # Github 블로그 구축기 w/ Jekyll (Minimal Mistakes)
 
-
+0.
+[깃헙(GitHub) 블로그 10분안에 완성하기](https://www.youtube.com/watch?v=ACzFIAOsfpM)
 
 1. 테디노트 TeddyNote 님의 유튜브 Playlist
 
