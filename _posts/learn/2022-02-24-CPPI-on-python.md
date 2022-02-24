@@ -485,8 +485,12 @@ df.to_excel('CPPI_calculated.xlsx')
 
 ## FAQ
 
-전체 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
+본 포스팅의 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
 
-Download the notebook: [toy-project/CPPI-on-python.ipynb at main · 2joonh2/toy-project (github.com)](https://github.com/2joonh2/toy-project/blob/main/python-finance-portfolio-CPPI/CPPI-on-python.ipynb)
+[Download the notebook](https://github.com/2joonh2/toy-project/blob/main/python-finance-portfolio-CPPI/CPPI-on-python.ipynb)
+
+변석준 교수님의 강의 엑셀파일 및 직전 기수 py 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
+
+[Need Update]
 
 코드에 대한 질문은 본 포스팅 아래 댓글로 남겨주시면 최대한 답변드릴 수 있도록 하겠습니다.
