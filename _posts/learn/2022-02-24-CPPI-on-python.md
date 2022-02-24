@@ -9,9 +9,13 @@ toc: true
 
 # CPPI 실습 on Python
 
-변석준 교수님의 강의 엑셀파일 및 직전 기수 py 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
 
-[Excel파일(결과포함)과 py 실습 코드 다운로드](https://www.dropbox.com/s/ze4qd9h74wyfix3/%EB%B3%80%EC%84%9D%EC%A4%80%20%EA%B5%90%EC%88%98%EB%8B%98%20%EA%B0%95%EC%9D%98%EC%8B%A4%EC%8A%B5%EC%9E%90%EB%A3%8C.zip?dl=0)
+
+**변석준 교수님의 강의 엑셀파일 및 직전 기수 py 코드는 아래 링크를 통해 다운 받으실 수 있습니다.**
+
+**ZIP 파일은 암호로 보호받고있으며, 암호는 카이스트 와이파이 비밀번호와 같습니다.**
+
+###### [Excel파일(결과포함)과 py 실습 코드 다운로드](https://www.dropbox.com/s/ze4qd9h74wyfix3/%EB%B3%80%EC%84%9D%EC%A4%80%20%EA%B5%90%EC%88%98%EB%8B%98%20%EA%B0%95%EC%9D%98%EC%8B%A4%EC%8A%B5%EC%9E%90%EB%A3%8C.zip?dl=0)
 
 본 포스팅의 python 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
 
