@@ -22,6 +22,10 @@ floor=initial_budget*protection_floor
 rate=0.02 # yearly
 ```
 
+변수들을 설정해주는 코드입니다.
+
+initial_budget은 초기 투자금액, rate는 CMA 연간 기준 금리입니다.
+
 ## 2. Stock Price 데이터 불러오기 (S&P500)
 
 
@@ -31,7 +35,9 @@ df=pd.read_excel('CPPI(data).xlsx', index_col=0)
 df
 ```
 
+교수님의 실습자료; CPPI(data).xlsx 파일을 불러오는 과정입니다.
 
+데이터를 df라는 변수로 지정하였고, df는 아래와 같습니다.
 
 
 <div>
@@ -132,7 +138,13 @@ df['stock_only_budget']=stock_only_budget
 df
 ```
 
+본 df에서는 S&P500의 월별 인덱스가 나와있고, 월별 수익률을 계산할 수 있습니다.
 
+[기준월 인덱스] / [전월 인덱스]를 구해 1(100%)를 빼주면 손익률(stock_profit)을 구할 수 있습니다.
+
+손익률 리스트를 기반으로 10K 달러에 대해 주식 100% 투자 시의 금액 변동을 확인할 수 있습니다(stock_only_budget).
+
+결과는 아래와 같습니다.
 
 
 <div>
@@ -255,6 +267,23 @@ for i in range(len(df)):
         budget.append(stock_invest*(1+df['stock_profit'][i+1]) + cma_invest*(1+rate/12))
 ```
 
+CPPI 전략을 통한 포트폴리오 budget 변화를 계산해보겠습니다.
+
+먼저, 리스트를 생성하여 월별 budget, cushion, stock, cma의 추이를 기록할 수 있게 세팅을 하였습니다.
+
+이후 for부터 시작하는 코드는 반복문입니다. 월별로 각 지표들을 계산하는 것인데, 과정은 아래와 같습니다.
+
+1. cushion은 현재의 budget에서 floor를 뺀 값입니다. floor는 초반 코드에서 초기금액(initial_budget)에 protection_floor를 곱한 값입니다.
+2. logs_cushion 리스트에 1에서 계산한 cushion 값을 추가(append)해 줍니다.
+3. 주식투자금액(stock_invest)은 현재의 budget과 m(multiplier)*cushion의 값 중 작은 값을 선택합니다.
+4. 2와 같은 방식으로 logs_stock라는 리스트에 주식투자금액(stock_invest)을 추가해줍니다.
+5. CMA 투자금액은 현재 budget에서 주식투자금액을 제외한 나머지 값입니다.
+6. 2나 4와 마찬가지로 logs_cma 리스트에 계산된 cma 값을 추가해줍니다.
+7. 지금까지 cushion, 주식투자금액, CMA투자금액을 계산하였습니다. 이를 통해 다음 달의 budget을 계산할 수 있습니다.
+   1. 남은 코드에 대해 부연설명을 드리자면, 당월 기준 다음월의 budget을 계산하는 것이기 때문에 마지막 행에 대해서는 다음월 계산을 하지 않도록 조건문을 붙여 반복문을 끝내도록 하였습니다.
+
+
+
 
 ```python
 df['CPPI budget']=budget
@@ -265,6 +294,12 @@ df['cma_invest']=logs_cma
 df['stock_prop']=df['stock_invest']/df['CPPI budget']
 ```
 
+반복문 상에서 기록된 logs 리스트들을 표(df)에 저장해줍니다.
+
+추가로 저장된 stock_invest와 CPPI budget 열을 연산시켜 주식투자비중(stock_prop)을 계산하여 저장하겠습니다. (마지막 줄)
+
+
+
 ## 5. 결과 시각화 및 파일 저장
 
 
@@ -272,7 +307,7 @@ df['stock_prop']=df['stock_invest']/df['CPPI budget']
 df # show final calculated data table
 ```
 
-
+최종 결과 표(df)는 아래와 같습니다.
 
 
 <div>
@@ -442,7 +477,9 @@ df # show final calculated data table
 <p>264 rows × 9 columns</p>
 </div>
 
+시각화를 해보겠습니다.
 
+python에는 matplotlib라는 시각화를 위한 라이브러리(기능)을 제공합니다.
 
 
 ```python
@@ -463,6 +500,8 @@ plt.show()
 
 ​    ![output_15_0](../../assets/images/2022-02-24-CPPI-on-python/output_15_0.png)
 
+df.index는 표(df)의 세로축에 해당하는 월 간격을 지정하고, 각각 주식100%투자 금액추이(stock_only_budget), CPPI를 통한 금액추이(CPPI_budget), 그리고 floor를 그래프로 그려 위와 같이 시각화하였습니다.
+
 
 
 ```python
@@ -477,11 +516,19 @@ plt.show()
 
  ![output_16_0](../../assets/images/2022-02-24-CPPI-on-python/output_16_0.png)
 
+이번 그래프에서는 월별 주식투자비중(stock_prop)을 시각화하였습니다.
+
 
 
 ```python
 df.to_excel('CPPI_calculated.xlsx')
 ```
+
+마지막으로 최종 결과 표(df)를 CPPI_calculated.xlsx라는 이름의 파일로 저장합니다.
+
+이상으로 CPPI on Python 실습을 마치겠습니다.
+
+
 
 ## FAQ
 
@@ -491,6 +538,8 @@ df.to_excel('CPPI_calculated.xlsx')
 
 변석준 교수님의 강의 엑셀파일 및 직전 기수 py 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
 
-[Need Update]
+[Excel파일(결과포함) 다운로드]
+
+[과정 전 기수 py 실습 코드 다운로드]
 
 코드에 대한 질문은 본 포스팅 아래 댓글로 남겨주시면 최대한 답변드릴 수 있도록 하겠습니다.
