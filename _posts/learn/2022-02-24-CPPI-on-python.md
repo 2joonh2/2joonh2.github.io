@@ -9,7 +9,13 @@ toc: true
 
 # CPPI 실습 on Python
 
-신한-KAIST 자산관리전문가과정
+변석준 교수님의 강의 엑셀파일 및 직전 기수 py 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
+
+[Excel파일(결과포함)과 py 실습 코드 다운로드](https://www.dropbox.com/s/ze4qd9h74wyfix3/%EB%B3%80%EC%84%9D%EC%A4%80%20%EA%B5%90%EC%88%98%EB%8B%98%20%EA%B0%95%EC%9D%98%EC%8B%A4%EC%8A%B5%EC%9E%90%EB%A3%8C.zip?dl=0)
+
+본 포스팅의 python 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
+
+[Download the notebook](https://github.com/2joonh2/toy-project/blob/main/python-finance-portfolio-CPPI/CPPI-on-python.ipynb)
 
 ## 1. Parameter 설정
 
@@ -532,14 +538,4 @@ df.to_excel('CPPI_calculated.xlsx')
 
 ## FAQ
 
-본 포스팅의 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
-
-[Download the notebook](https://github.com/2joonh2/toy-project/blob/main/python-finance-portfolio-CPPI/CPPI-on-python.ipynb)
-
-변석준 교수님의 강의 엑셀파일 및 직전 기수 py 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
-
-[Excel파일(결과포함) 다운로드]
-
-[과정 전 기수 py 실습 코드 다운로드]
-
-코드에 대한 질문은 본 포스팅 아래 댓글로 남겨주시면 최대한 답변드릴 수 있도록 하겠습니다.
+본 포스팅의 코드에 대한 질문은 본 포스팅 아래 댓글로 남겨주시면 최대한 답변드릴 수 있도록 하겠습니다.
