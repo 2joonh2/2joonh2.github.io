@@ -11,11 +11,11 @@ toc: true
 
 
 
-**변석준 교수님의 강의 엑셀파일 및 직전 기수 py 코드는 아래 링크를 통해 다운 받으실 수 있습니다.**
+변석준 교수님의 강의 엑셀파일 및 직전 기수 py 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
 
 **ZIP 파일은 암호로 보호받고있으며, 암호는 카이스트 와이파이 비밀번호와 같습니다.**
 
-###### [Excel파일(결과포함)과 py 실습 코드 다운로드](https://www.dropbox.com/s/ze4qd9h74wyfix3/%EB%B3%80%EC%84%9D%EC%A4%80%20%EA%B5%90%EC%88%98%EB%8B%98%20%EA%B0%95%EC%9D%98%EC%8B%A4%EC%8A%B5%EC%9E%90%EB%A3%8C.zip?dl=0)
+[Excel파일(결과포함)과 py 실습 코드 다운로드](https://www.dropbox.com/s/ze4qd9h74wyfix3/%EB%B3%80%EC%84%9D%EC%A4%80%20%EA%B5%90%EC%88%98%EB%8B%98%20%EA%B0%95%EC%9D%98%EC%8B%A4%EC%8A%B5%EC%9E%90%EB%A3%8C.zip?dl=0)
 
 본 포스팅의 python 코드는 아래 링크를 통해 다운 받으실 수 있습니다.
 
@@ -534,7 +534,7 @@ plt.show()
 df.to_excel('CPPI_calculated.xlsx')
 ```
 
-마지막으로 최종 결과 표(df)를 CPPI_calculated.xlsx라는 이름의 파일로 저장합니다.
+마지막으로 최종 결과 표(df)를 CPPI_calculated.xlsx라는 이름의 파일로 저장하겠습니다.
 
 이상으로 CPPI on Python 실습을 마치겠습니다.
 
