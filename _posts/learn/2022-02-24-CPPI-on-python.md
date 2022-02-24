@@ -473,9 +473,9 @@ plt.plot(df.index, df['stock_prop'])
 plt.show()
 ```
 
-
  
-    ![output_16_0](../../assets/images/2022-02-24-CPPI-on-python/output_16_0.png)
+
+ ![output_16_0](../../assets/images/2022-02-24-CPPI-on-python/output_16_0.png)
 
 
 
