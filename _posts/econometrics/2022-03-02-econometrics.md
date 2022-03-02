@@ -1,9 +1,9 @@
 ---
 layout: single
 title: "Panel Data"
+use_math:true
 categories: econometrics
 toc: true
-use_math:true
 ---
 
 # 1. What is Panel Data?
