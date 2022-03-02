@@ -94,7 +94,7 @@ $$
 
 
 
-$e_it$에 대해서 **Error Component Structure**를 사용한다.
+$e_{it}$에 대해서 **Error Component Structure**를 사용한다.
 
 
 $$
@@ -291,6 +291,8 @@ $$
 
 
 Observations들의 평균인 **Individual Specific Mean**을 뺀 차이를 **Demeaned Values / Deviations from individual means**라고 부른다.
+
+
 $$
 \displaylines{\dot Y_i=Y_i-1_TY_i\newline
 =Y_i-1_T(1'_T1_T)^{-1}1'_TY_i\newline
