@@ -18,4 +18,4 @@
 
 4. 수학수식 임베드 관련
 
-[Jekyll Github 블로그에 MathJax로 수학식 표시하기](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages/)
+[블로그에 Mathjax 기능 추가](https://2joonh2.github.io/blog/mathjax/)
