@@ -15,15 +15,15 @@ toc_label: econometrics
 
 
 
-Time Series(시계열 데이터)란 단일 객체(one individual)에 대한 일정 기간 동안의 attributes를 
+Time Series(시계열 데이터)란 단일 객체(one individual)에 대한 일정 기간 동안의 관찰 데이터를 의미한다. 
 
-Panel Data는 동일 관찰을 통해 얻어지는 복수개의 객체에 대한 Time Series의 집합이라고 할 수 있을 것이다.
+**Panel Data**는 복수개의 객체에 대한 일정 기간 동안의 관찰 데이터로서, 같은 기간에 대한 Time Series들의 집합이라고 할 수 있을 것이다.
 
 
 
 ### Difference between Cross-Sectional Data
 
-distinguishing feature relative to cross-sectional (횡단면 데이터) is the presence of multiple observations for each invidual
+Distinguishing feature relative to **cross-sectional** (횡단면 데이터) is the presence of **multiple observations for each individual**
 
 
 
@@ -37,7 +37,8 @@ Pooled Regression에서도 **Strict Mean Independence**를 가정한다; 이는 
 
 
 
-**Derivation of Pooled Regression Estimator**
+### Derivation of Pooled Regression Estimator
+
 
 
 $$
@@ -154,7 +155,7 @@ Random Effect를 만족하는 Error Component Structure의 Regression을 **Rando
 
 
 
-**Derivation of $\beta_{GLS}$**
+#### Derivation of $\beta_{GLS}$
 
 ​	
 
@@ -171,7 +172,7 @@ $$
 
 Random Effect를 만족하는 상황에서 \beta_{GLS}는 unbiased를 만족한다.
 
-**Expectation of $\beta_{GLS}$ at Random Effect Assumption **
+#### Expectation of $\beta_{GLS}$ at Random Effect Assumption
 
 
 
@@ -185,7 +186,7 @@ $$
 
 Random Effect를 만족하는 상황에서 \beta_{GLS}의 분산은 Homoskedasticity를 통해 아래와 같이 유도된다.
 
-**Variance of  $\beta_{GLS}$ at Random Effect Assumption**
+#### Variance of  $\beta_{GLS}$ at Random Effect Assumption
 
 
 
@@ -198,7 +199,7 @@ $$
 
 
 
-**Comparison with a Pooled Estimator**
+#### Comparison with a Pooled Estimator
 
 
 
@@ -281,7 +282,7 @@ $\beta$가 u에 의존하지 않도록 구분시켜 예시와 같은 붉은선�
 
 
 
-**$\bar Y$  Individual Specific Mean**
+#### Individual Specific Mean & Demeaned Values
 
 $$
 \bar Y_i=(1'_T1_T)^{-1} 1'_TY_i=1/T*\Sigma Y_{it}
@@ -289,7 +290,7 @@ $$
 
 
 
-Individual Specific Mean을 뺀 차이를 **Demeaned Values / Deviations from individual means**라고 부른다.
+Observations들의 평균인 **Individual Specific Mean**을 뺀 차이를 **Demeaned Values / Deviations from individual means**라고 부른다.
 $$
 \displaylines{\dot Y_i=Y_i-1_TY_i\newline
 =Y_i-1_T(1'_T1_T)^{-1}1'_TY_i\newline
@@ -318,5 +319,4 @@ $$
 \dot Y=\dot X\beta+\dot\epsilon\newline
 Since \quad M_T1_T=0}
 $$
-
 
