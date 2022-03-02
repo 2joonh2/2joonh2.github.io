@@ -7,7 +7,7 @@ toc_sticky: true
 toc_label: econometrics
 ---
 
-# 1. What is Panel Data?
+## 1. What is Panel Data?
 
 
 
@@ -25,7 +25,7 @@ distinguishing feature relative to cross-sectional (횡단면 데이터) is the 
 
 
 
-# 2. Pooled Regression
+## 2. Pooled Regression
 
 The simplest model in panel regression
 
@@ -68,7 +68,7 @@ $$
 
 
 
-# 3. One-Way Error Component Model
+## 3. One-Way Error Component Model
 
 
 
