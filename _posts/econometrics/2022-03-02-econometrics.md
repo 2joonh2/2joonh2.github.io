@@ -7,7 +7,9 @@ toc: true
 
 # 1. What is Panel Data?
 
-![Difference Between Time Series and Panel Data | Compare the Difference  Between Similar Terms](../../assets/images/2022-03-02-econometrics/Difference-Between-Time-Series-and-Panel-Data-Tabular-Form.jpg)
+
+
+![Difference Between Time Series and Panel Data](../../assets/images/2022-03-02-econometrics/Difference-Between-Time-Series-and-Panel-Data-Tabular-Form.jpg)
 
 Time Series(시계열 데이터)란 단일 객체(one individual)에 대한 일정 기간 동안의 attributes를 
 
@@ -18,8 +20,6 @@ Panel Data는 동일 관찰을 통해 얻어지는 복수개의 객체에 대한
 ### Difference between Cross-Sectional Data
 
 distinguishing feature relative to cross-sectional (횡단면 데이터) is the presence of multiple observations for each invidual
-
-
 
 
 
