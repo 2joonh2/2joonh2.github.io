@@ -162,7 +162,7 @@ Random Effect를 만족하는 Error Component Structure의 Regression을 **Rando
 
 
 
-#### Derivation of $\beta_{GLS}$
+#### Derivation of $\hat\beta_{GLS}$
 
 ​	
 
@@ -177,9 +177,9 @@ $$
 
 
 
-Random Effect를 만족하는 상황에서 \beta_{GLS}는 unbiased를 만족한다.
+Random Effect를 만족하는 상황에서 $ \hat\beta_{GLS}$는 unbiased를 만족한다.
 
-#### Expectation of $\beta_{GLS}$ at Random Effect Assumption
+#### Expectation of $\hat\beta_{GLS}$ at Random Effect Assumption
 
 
 
@@ -191,9 +191,9 @@ $$
 
 
 
-Random Effect를 만족하는 상황에서 \beta_{GLS}의 분산은 Homoskedasticity를 통해 아래와 같이 유도된다.
+Random Effect를 만족하는 상황에서 $ \hat\beta_{GLS}$의 분산은 Homoskedasticity를 통해 아래와 같이 유도된다.
 
-#### Variance of  $\beta_{GLS}$ at Random Effect Assumption
+#### Variance of  $\hat\beta_{GLS}$ at Random Effect Assumption
 
 
 
