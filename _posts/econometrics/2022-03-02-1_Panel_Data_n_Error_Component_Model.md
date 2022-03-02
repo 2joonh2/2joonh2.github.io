@@ -9,7 +9,8 @@ toc_sticky: true
 # [1] Panel Data & Error Component Model
 
 응용계량경제학 필기노트
-(지도교수님의 지도학생 답지못한 형편없는 실력을 만회하고자 하는 것이었다)
+
+(차마 지도교수님의 지도학생이라 할수도 없는 형편없는 지식을 만회하고자 하는 것이었다)
 
 ## 1. What is Panel Data?
 
@@ -40,6 +41,7 @@ Pooled Regression에서도 **Strict Mean Independence**를 가정한다; 이는 
 (Strict Mean Independence는 Pairwise Mean Independence보다 강한 가정이다.)
 
 
+
 $$
 \displaylines{Strict\, Mean\, Independence)\quad E(e_{it}|X_{it})=0\newline
 Pairwise\, Mean \,Independence) \quad E[X_{it}e_{it}]=0
@@ -66,6 +68,7 @@ Estimator는 Strict Mean Independence를 통해 unbiased 하며 증명은 아래
 
 
 
+
 $$
 \displaylines{\hat\beta_{pool}=( \Sigma X'X)^{-1} (\Sigma X'X)\beta + ( \Sigma X'X)^{-1} (\Sigma X'e)\newline
 E(\hat\beta_{pool}|X) =\beta + (\Sigma X'X)^{-1} (\Sigma X' E(e_i|X_i)) = \beta\;  ;\;unbiased}
@@ -73,7 +76,10 @@ $$
 
 
 
+
+
 Estimator의 Variance는 위와 같이 구할 수 있는데, 아래와 같이 Variance의 Homoskedasticity를 가정한다면, $\sigma^2(\Sigma X'X)^{-1}\$라는 간단한 공식을 유도할 수 있다.
+
 
 
 
@@ -87,7 +93,12 @@ $$
 
 
 
+
+
 하지만 실제 준실험이나, 현장에서는 robust 하지 않을 가능성이 다수이기 때문에, Cluster-robust covariance estimator를 사용한다.
+
+
+
 
 
 $$
@@ -109,6 +120,7 @@ $$
 $e_{it}$에 대해서 **Error Component Structure**를 사용한다.
 
 
+
 $$
 \displaylines{y_{it}=X_{it}'\beta+e_{it}\newline
 e_{it}=u_i+\epsilon_{it}}
@@ -116,7 +128,10 @@ $$
 
 
 
+
+
 where $u$ is individual-specific effect, and $\epsilon$ is idiosyncratic (i.i.d.) errors
+
 
 
 
@@ -127,7 +142,10 @@ $$
 
 
 
+
+
 각 notation 별로 아래와 같은 수식들을 생각해볼 수 있다.
+
 
 
 
@@ -144,9 +162,10 @@ $$
 Random Effect는 앞선 u와 $\epsilon$이 conditionally mean zero, uncorrelated, and homoskedastic 이라 가정하는 것이다.
 
 
+
 $$
 \displaylines{
-<Random\; Effects\; Specification>\newline
+<Random\; Effects\; Specification>\newline\newline
 E[\epsilon|X]=0\newline
 E[\epsilon^2|X]=\sigma_\epsilon^2\newline
 E[\epsilon_{it}\epsilon_{ij}|X]=0\newline
@@ -155,6 +174,7 @@ E[u^2|X]=\sigma_u^2\newline
 E[u\epsilon|X]=0\newline
 }
 $$
+
 
 
 Random Effect를 만족하는 Error Component Structure의 Regression을 **Random Effects Regression Model** 이라고 한다.
