@@ -1,10 +1,15 @@
 ---
 layout: single
-title: "Panel Data & Error Component Model"
+title: "1. Panel Data & Error Component Model"
 categories: Econometrics
 toc: true
 toc_sticky: true
 ---
+
+# 1. Panel Data & Error Component Model
+
+응용계량경제학 필기노트
+(지도교수님의 지도학생 답지못한 형편없는 실력을 만회하고자 하는 것이었다)
 
 ## 1. What is Panel Data?
 
