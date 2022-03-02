@@ -15,3 +15,7 @@
 3. 레이아웃(포스팅 영역 폭) 조절
 
 [\[Github Blog\] minimal mistakes - 본문 영역 및 글자 크기](https://eona1301.github.io/github_blog/GithubBlog-Content-Width/)
+
+4. 수학수식 임베드 관련
+
+[Jekyll Github 블로그에 MathJax로 수학식 표시하기](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages/)
