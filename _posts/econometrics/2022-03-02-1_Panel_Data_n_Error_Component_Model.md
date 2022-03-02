@@ -86,7 +86,7 @@ Estimator의 Variance는 위와 같이 구할 수 있는데, 아래와 같이 Va
 
 
 $$
-\displaylines{Var(\hat\beta_{pool} | X)=Var(\Sigma (X'X)^{{-1}}(\Sigma X'e)|X) = (\Sigma X'X)^{-1}[\Sigma X'Var(e|X)X](\Sigma X'X)^{{-1}}\newline
+\displaylines{Var(\hat\beta_{pool} | X)=Var(\Sigma (X'X)^{-1}(\Sigma X'e)|X) = (\Sigma X'X)^{-1}[\Sigma X'Var(e|X)X](\Sigma X'X)^{-1}\newline
 (since\quad Var(Ae)=A*Var(e)*A')\newline\newline
 if\quad Var(e|X)=\sigma^2_e*I_T\;;\quad homoskedastic\newline
 Var(\hat\beta_{pool}|X)=(\Sigma X'X)^{-1}(\Sigma X' I_T X)\sigma^2(\Sigma X'X)^{-1}\newline
