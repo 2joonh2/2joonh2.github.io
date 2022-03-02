@@ -41,7 +41,7 @@ $$
 
 then
 $$
-\beta =( \Sigma X'X)^-1 (\Sigma X'X)\beta + ( \Sigma X'X)^-1 (\Sigma X'e)
+\beta_{pool}=( \Sigma X'X)^-1 (\Sigma X'X)\beta + ( \Sigma X'X)^-1 (\Sigma X'e)
 $$
 
 $$
@@ -73,7 +73,7 @@ $$
 
 
 
-# One-Way Error Component Model
+# 3. One-Way Error Component Model
 
 패널데이터를 pooled regression하는건 메시가 동네축구 하는것(?)
 
@@ -95,3 +95,33 @@ y_{it}=X_{it}'\beta+e_{it}\\
 Y_{it}=X_{it}'\beta+u_i+\epsilon_{it}\\
 Y_i=X_i\beta+1_Tu_i+\epsilon_i
 $$
+
+### Random Effect
+
+one-way component structure w/ random effect : random effects regression model
+
+
+
+### GLS
+
+given the error structure,
+
+the natural estimator of \beta is GLS
+$$
+\beta_{GLS}=(\Sigma X'\Omega X)^{-1}\\
+\Omega\, is\, consists\, of\,\;\sigma_u,\; \sigma_\epsilon
+$$
+feasible GLS estimator replace the unknown variance of u and epsilon
+
+When there is no indivudal specific effect (sigma_u=0)
+
+- V_gls=V_pool
+
+- when there is no clear direction; cluster robust variance
+
+```Stata
+xtreg depvar indepvars, option(re|fe|vce(robust))
+```
+
+
+
