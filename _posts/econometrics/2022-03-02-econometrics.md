@@ -99,8 +99,41 @@ $$
 ### Random Effect
 
 one-way component structure w/ random effect : random effects regression model
+$$
+Y_i=X_i\beta+e_i=X_i\beta+1_Tu_i+\epsilon_i\\
+E(e_i|X_i)=0,\;Var(e_i|X_i)=1_t1_t'\sigma_u^2+I_t^2\sigma^2_\epsilon=\Omega\\
+\beta_{GLS}=(\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}y)=(\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}(X\beta+e)))\\
+\beta+(\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}e)
+$$
+
+$$
+E(\beta_{GLS}|X)=\beta+E((\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}e)|X)\\
+=\beta+(\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}E(e|X))\\
+=\beta\; ; unbiased
+$$
+
+$$
+Var(\beta_{GLS}|X)=(\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}\Omega \Omega^{-1}X)(\Sigma X'\Omega^{-1}X)^{-1}\\
+=(\Sigma X'\Omega^{-1}X)^{-1}
+$$
+
+$$
+Var(\beta_{pool}|X)=(\Sigma X'X)^{-1}(\Sigma X'Var(e|X)X)(\Sigma X'X)^{-1}\\
+=(\Sigma X'X)^{-1}(\Sigma X'\Omega X)(\Sigma X'X)^{-1}
+$$
+
+$$
+V_{GLS}\leq V_{pool}
+$$
 
 
+
+
+$$
+if\quad \sigma_u^2=0,\,\quad \Omega=\sigma_\epsilon^2I_T\\
+then,\quad V_{GLS}=(\Sigma X'\Omega^{-1}X)^{-1}=\sigma^2_\epsilon(\Sigma X'X)^{-1}\\
+V_{pool}=(\Sigma X'X)^{-1}(\Sigma X'\Omega X)(\Sigma X'X)^{-1}=(\Sigma X'X)^{-1}\sigma^2
+$$
 
 ### GLS
 
@@ -120,8 +153,11 @@ When there is no indivudal specific effect (sigma_u=0)
 - when there is no clear direction; cluster robust variance
 
 ```Stata
-xtreg depvar indepvars, option(re|fe|vce(robust))
+xtreg depvar indepvars, option
+option can be re | fe | vce(robust)
 ```
+
+
 
 
 
