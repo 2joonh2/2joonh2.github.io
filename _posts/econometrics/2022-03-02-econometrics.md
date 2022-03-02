@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Panel Data"
-use_math:true
+use_math: true
 categories: econometrics
 toc: true
 ---
