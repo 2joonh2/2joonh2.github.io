@@ -12,6 +12,10 @@ toc_sticky: true
 
 (이것은 차마 교수님(Dr. Yoon)의 지도학생이라 할수도 없는 형편없는 지식을 만회하기 위한 하찮은 노력이었던 것이다)
 
+![image-20220302223536865](../../assets/images/2022-03-02-1_Panel_Data_n_Error_Component_Model/image-20220302223536865.png)
+
+
+
 
 
 ## 1. What is Panel Data?
@@ -19,6 +23,8 @@ toc_sticky: true
 
 
 ![Difference Between Time Series and Panel Data](../../assets/images/2022-03-02-econometrics/Difference-Between-Time-Series-and-Panel-Data-Tabular-Form.jpg)
+
+Image Reference: [Difference Between Time Series and Panel Data | Compare the Difference Between Similar Terms](https://www.differencebetween.com/difference-between-time-series-and-panel-data/)
 
 
 
@@ -115,7 +121,7 @@ $$
 
 > 패널데이터를 pooled regression하는건 메시가 동네축구 하는것(?)
 
-그렇다고 한다.
+그렇다고 한다. (난 메시도 아닌데)
 
 
 
@@ -289,6 +295,8 @@ Correlation between X and u는 pooled와 random effect estimators 모두 편향�
 아래 사진을 통해 예시와 함께 설명해보자.
 
 <img src="../../assets/images/2022-03-02-econometrics/image-20220302195304570.png" alt="heterogeneity bias" style="zoom:67%;" />
+
+Image Reference: [Introduction Describe what panel data is and the (slidetodoc.com)](https://slidetodoc.com/introduction-describe-what-panel-data-is-and-the/)
 
 
 
