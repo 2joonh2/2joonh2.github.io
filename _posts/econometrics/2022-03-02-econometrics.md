@@ -1,10 +1,9 @@
 ---
 layout: single
-title: "Panel Data"
-categories: econometrics
+title: "Panel Data & Error Component Model"
+categories: Econometrics
 toc: true
 toc_sticky: true
-toc_label: econometrics
 ---
 
 ## 1. What is Panel Data?
@@ -33,7 +32,13 @@ Distinguishing feature relative to **cross-sectional** (횡단면 데이터) is 
 
 Pooled Regression에서도 **Strict Mean Independence**를 가정한다; 이는 Estimator의 Unbiasedness를 만족시키기 위함이다.
 
-(Strict Mean Independence는 Pairwise Mean Independence($E[X_{it}e__{it}]=0$)보다 강한 가정이다.)
+(Strict Mean Independence는 Pairwise Mean Independence보다 강한 가정이다.)
+$$
+\displaylines{Strict\, Mean\, Independence)\quad E(e_{it}|X_{it})=0\newline
+Pairwise\, Mean \,Independence) \quad E[X_{it}e_{it}]=0
+}
+$$
+
 
 
 
