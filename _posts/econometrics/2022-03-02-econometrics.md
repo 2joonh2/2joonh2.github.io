@@ -141,7 +141,7 @@ given the error structure,
 
 the natural estimator of \beta is GLS
 $$
-\beta_{GLS}=(\Sigma X'\Omega X)^{-1}\\
+\hat \beta_{GLS}=(\Sigma X'\Omega X)^{-1}\\
 \Omega\, is\, consists\, of\,\;\sigma_u,\; \sigma_\epsilon
 $$
 feasible GLS estimator replace the unknown variance of u and epsilon
@@ -159,5 +159,52 @@ option can be re | fe | vce(robust)
 
 
 
+### Fixed Effect
+
+assume u_i as time-invariant unobserved missing variable
+
+u is possibly correlated with X_it
+
+ex. 학력과 능력 간의 상관관계 (능력이 높은 사람의 학력이 높은 경향)
+
+-> Endogeneity Problem
+
+let u and X allow to be correlated, u is called **fixed effect** (within estimator)
+
+Correlation between X and u will cause pooled and randome effect estimators to be **biased**. (4)
+$$
+E[X_{it}\epsilon_{it}]=0
+$$
+strict mean independence (5)
+$$
+E[\epsilon_{it}|X_{i}]=0
+$$
+(4)만해도 충분 (5)는 더 강한 가정
 
 
+
+beta가 u에 의존하지 않도록 구분시켜야 함
+
+eliminate u -> within-transformation
+
+**individual specific mean**
+$$
+Y_i=(1'_T1_T)^{-1} 1'_TY_i=1/T*\Sigma Y_{it}
+$$
+
+$$
+\dot Y_i=Y_i-1_TY_i\\
+=Y_i-1_T(1'_T1_T)^{-1}1'_TY_i\\
+=M_TY_i\\\\
+M_T\;is\, an\, idempotent\, matrix
+$$
+
+as same
+$$
+\dot X=M_TX_i
+$$
+then
+$$
+\dot Y=\dot X\beta+\dot\epsilon\\
+\bar u=0
+$$
