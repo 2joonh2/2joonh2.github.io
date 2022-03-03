@@ -217,7 +217,7 @@ Random Effect를 만족하는 상황에서 $ \hat\beta_{GLS}$는 unbiased를 만
 
 
 $$
-\displaylines{E(\beta_{GLS}|X)=\beta+E((\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}e)|X)\newline
+\displaylines{E(\hat\beta_{GLS}|X)=\beta+E((\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}e)|X)\newline
 =\beta+(\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}E(e|X))\newline
 =\beta\; ; unbiased}
 $$
