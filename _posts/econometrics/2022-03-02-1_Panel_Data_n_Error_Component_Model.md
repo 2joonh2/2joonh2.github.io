@@ -103,7 +103,7 @@ $$
 
 
 
-하지만 실제 준실험이나, 현장에서는 robust 하지 않을 가능성이 다수이기 때문에, Cluster-robust covariance estimator를 사용한다.
+하지만 실제 준실험이나, 현장에서는 robust 하지 않을 가능성이 다수일텐데, 이를 보완하기 위해 Cluster-robust covariance estimator를 사용한다.
 
 
 
