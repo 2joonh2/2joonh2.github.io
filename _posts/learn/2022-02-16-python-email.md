@@ -46,7 +46,9 @@ def sendmail(error=False):
 
 ```python
 try:
-    print(true)
+    '''
+    codes
+    '''
     sendmail()
 except Exception as ex:
     sendmail(str(ex))
