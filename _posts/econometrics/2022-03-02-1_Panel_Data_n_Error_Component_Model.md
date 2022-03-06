@@ -6,8 +6,6 @@ toc: true
 toc_sticky: true
 ---
 
-# [1] Panel Data & Error Component Model
-
 응용계량경제학 필기노트
 
 (이것은 차마 교수님(Dr. Yoon)의 지도학생이라 할수도 없는 형편없는 지식을 만회하기 위한 하찮은 노력이었던 것이다)
@@ -16,7 +14,7 @@ toc_sticky: true
 
 
 
-
+# [1] Panel Data & Error Component Model
 
 ## 1. What is Panel Data?
 
@@ -71,6 +69,12 @@ $$
 
 
 $\hat\beta_{pool}$은 일반 OLS estimator의 공식을 사용하여 유도한다.
+
+
+$$
+\displaylines{\hat\beta_{pool}=( \Sigma X'X)^{-1} (\Sigma X'Y)}
+$$
+
 
 Estimator는 Strict Mean Independence를 통해 unbiased 하며 증명은 아래와 같다.
 
