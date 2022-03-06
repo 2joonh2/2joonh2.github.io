@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[1] Panel Data & Error Component Model"
+title: "[Econometrics] 1. Panel Data & Error Component Model"
 categories: Econometrics
 toc: true
 toc_sticky: true
