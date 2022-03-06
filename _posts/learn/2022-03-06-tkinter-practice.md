@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Python] tkinter를 이용한 GUI program 구축 연습 및 filedialog 활용"
+title: "[Python] tkinter GUI 프로그램 구축 및 filedialog 활용"
 categories: learn
 toc: true
 ---
