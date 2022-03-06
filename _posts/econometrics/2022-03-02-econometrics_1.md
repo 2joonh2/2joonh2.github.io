@@ -14,7 +14,7 @@ toc_sticky: true
 
 
 
-# [1] Panel Data & Error Component Model
+# Panel Data & Error Component Model
 
 ## 1. What is Panel Data?
 
