@@ -16,7 +16,7 @@ toc_sticky: true
 
 # Fixed Effect
 
-*$u_i$는 as time-invariantunobserved missing variable*
+*$u_i$ as time-invariantunobserved missing variable*
 
 이전 포스트에서 우리는 **Error Component Model**을 통해 Pooled Regression 대신 각 개체의 속성을 구분지어 정확한 효과의 정도를 파악하기 위한 e as error term의 u와 $\epsilon$의 구분 작업을 진행하였다.
 
@@ -78,6 +78,8 @@ $$
 
 
 
+
+
 Observations들의 평균인 **Individual Specific Mean**와의 차이를 **Demeaned Values / Deviations from individual means**라고 부른다.
 
 
@@ -117,6 +119,8 @@ $$
 
 
 
+
+
 ### Derivation of Fixed Effect Estimator
 
 Within-Transformation을 통해 영점조절이 끝나면, 우리는 아래와 같은 식을 얻을 수 있고, 본 식에서 OLS를 돌리면 (Within-Transformation) Fixed Effect Estimator를 얻을 수 있는것이다. ~~참 멀리 돌아왔다.~~
@@ -132,7 +136,7 @@ $$
 
 
 
-### Expectation of $\hat\beta_{fe}
+### Expectation of $\hat\beta_{fe}$
 
 
 $$
@@ -142,7 +146,7 @@ $$
 
 
 
-### Variance of $\hat\beta_{fe}
+### Variance of $\hat\beta_{fe}$
 
 
 $$
