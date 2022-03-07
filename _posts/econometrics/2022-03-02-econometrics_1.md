@@ -385,11 +385,12 @@ after\;OLS,\quad \hat\beta_{fe}=(\Sigma \dot X'\dot X)^{-1}(\Sigma \dot X'\dot y
 $$
 
 $$
-\displaylines{E(\hat\beta_{fe}|X)=\beta+(\Sigma X'M_TX)^{-1}(\Sigma X'M_TE(\epsilon|X))=0\quad with\;assumption\;of\;strict\;mean\;indep.}
+\displaylines{E(\hat\beta_{fe}|X)=\beta+(\Sigma X'M_TX)^{-1}(\Sigma X'M_TE(\epsilon|X))=0\quad\newline
+with\;assumption\;of\;strict\;mean\;indep.}
 $$
 
 $$
-E(\epsilon_i'\epsilon_i|X_i)=\Sigma_i
+let\;E(\epsilon_i'\epsilon_i|X_i)=\Sigma_i
 $$
 
 $$
@@ -479,11 +480,12 @@ Random Effect의 조건(무려 6가지)에 비해 Fixed Effect의 조건은 1가
 
 
 $$
-H_0:\;RE \quad \hat\beta_{RE}~=\hat\beta_{FE}\newline
+\displaylines{H_0:\;RE \quad \hat\beta_{RE}~=\hat\beta_{FE}\newline
 H_1:\;FE \quad \hat\beta_{RE}!=\hat\beta_{FE}\newline
 \newline
-H=(\hat\beta_{FE}-\hat\beta_{RE})'(\hat V_{FE}-\hat V_{RE})(\hat\beta_{FE}-\hat\beta_{RE})
+H=(\hat\beta_{FE}-\hat\beta_{RE})'(\hat V_{FE}-\hat V_{RE})(\hat\beta_{FE}-\hat\beta_{RE})}
 $$
+
 
 
 Random Effect의 조건 중 강력한 가정은 $E[u|X]=0$이다.
@@ -502,6 +504,7 @@ Fixed Effect는 위 조건을 굳이 만족시키지 않아도 된다. 하지만
 $$
 Y_{it}=X_{it}'\beta+v_t+u_i+\epsilon_{it}
 $$
+
 
 
 v는 시간에 따른 모든 individual에게 영향을 미치는 (ex. 경기동향, 인플레이션, 금리 등) 요소이다.
