@@ -223,9 +223,15 @@ $$
 
 
 
-Random Effect의 조건 중 강력한 가정은 $E[u|X]=0$이다.
+Random Effect의 조건 중 강력한 가정은 Strict Mean Independence이다. ~~???:기억하라고~~
 
-Fixed Effect는 위 조건을 굳이 만족시키지 않아도 된다. 하지만 그 조건이 만족된다면 Random Effect가 효과적이면서도 robustness를 만족할 것이다.
+
+$$
+E[u|X]=0
+$$
+
+
+Fixed Effect는 위 조건을 굳이 만족시키지 않아도 된다. 하지만 그 조건이 만족된다면 Random Effect가 효과적이면서도 Robustness를 만족할 것이다.
 
 
 
