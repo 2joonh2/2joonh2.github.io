@@ -435,7 +435,7 @@ $$
 $$
 
 $$
-\displaylines{then\; by\; FLW\; theorem,\; 1)\; reg\; Y\; on\; D\; ->\; resdiual\; \dot Y\newline
+\displaylines{then\;also\; by\; FLW\; theorem,\; 1)\; reg\; Y\; on\; D\; ->\; resdiual\; \dot Y\newline
 2)\; reg\; X\; on\; D\; ->\; residual\; \dot X\newline
 3)\; reg\; residual\; y\; on\; residual\; X\; ->\; \beta}
 $$
@@ -457,11 +457,11 @@ $$
 
 
 $$
-\bar Y=\bar X'\beta+u+\epsilon\newline
+\displaylines{\bar Y=\bar X'\beta+u+\epsilon\newline
 \hat\beta_{be}=(\Sigma\bar X \bar X')^{-1}(\Sigma \bar X \bar Y)\newline
 V_{be}=Var(\hat\beta_{be}|X)=(\Sigma\bar X \bar X')^{-1}(\sigma^2_u+\sigma^2_\epsilon/T)
 \newline\newline
-for \;simple\;understand
+for \;simple\;understand}
 $$
 
 
