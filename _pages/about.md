@@ -9,4 +9,4 @@ permalink: /about/
 
 
 
-![image-20220306164130086](../assets/images/image-20220306164130086.png)
+![image-20220306164130086](../assets/images/8 digits.png)

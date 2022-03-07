@@ -125,9 +125,31 @@ $$
 
 > 패널데이터를 pooled regression하는건 메시가 동네축구 하는것(?)
 
-그렇다고 한다. (난 메시도 아닌데)
+~~그렇다고 한다. (난 메시도 아닌데)~~
+
+![Fixed Effects versus Pooled Estimator](../../assets/images/2022-03-02-econometrics_1/Fixed-Effects-versus-Pooled-Estimator.png)
+
+Image Reference: [Fixed Effects versus Pooled Estimator](https://www.researchgate.net/figure/Fixed-Effects-versus-Pooled-Estimator_fig1_4807439)
 
 
+
+Pooled Regression의 한계와 Error Component Model의 필요성을 보여주는 예시는 위 사진으로 설명해볼 수 있다.
+
+그림의 예시는 Plant 1&2의 두 종류의 객체(individual)들로 이루어진 Panel Data를 scatter plot 한 것이다. 단순하게 Plant 1과 2가 각각 ***아보카도***와 ***사과***라고 해보자.
+
+가로축은 두 Plant를 키우는데 지출되는 Environmental Expenditure, 그리고 세로축은 Total Production Cost임을 확인할 수 있다.
+
+아보카도와 사과에 대해 두 individual의 구분 없이 Pooled Regression을 진행하게 되면, 점선과 같은 추세선을 얻게 될 것이다. 예상할 수 있다시피 Env. Exp.가 커질수록 Total Expenditure도 함께 증가하는 갖는 양의 기울기를 보이고 있다.
+
+하지만 아보카도와 사과는 두 종류의 객체 속성이 다르기 때문에 (그 정확한 차이를 우리가 모두 밝혀낼수는 없으나) 두 원으로 표시된 것과 같이 scattered된 점들의 위치가 사뭇 다른 것을 확인할 수 있다.
+
+이런 상황 속에서 아보카도와 사과라는 두 종류의 객체 속성을 구분할 수 있도록 하고, 각각에 대해서 OLS 등을 통한 추세선을 그려보면 점선의 추세선과는 사뭇 다른 것을 확인할 수 있을 것이다.
+
+위의 비유처럼 Panel Data는 서로 다른 객체들의 속성을 고려하면서 분석이 되어야 진정한 효과의 정도(기울기)를 확인할 수 있는 매우 큰 잠재력을 숨기고 있는 데이터라고 할 수 있다.
+
+
+
+서론이 길었으나, Pooled Regression의 한계를 보완하기 위해 우리는 객체의 속성을 구분 짓기 위한 작업이 필요하다. 이것이 **Error Component Model** 이다.
 
 $e_{it}$에 대해서 **Error Component Structure**를 사용한다.
 
@@ -142,13 +164,15 @@ $$
 
 
 
-where $u$ is individual-specific effect, and $\epsilon$ is idiosyncratic (i.i.d.) errors
+*where $u$ is individual-specific effect, and $\epsilon$ is idiosyncratic (i.i.d.) errors*
+
+즉, u가 앞서 언급되었던 각 객체(individual)의 차이를 나타내는 항이 되고, 이를 제외한 진짜 에러들을 $\epsilon$의 항으로 나타내는 것이다.
 
 
 
 
 $$
-\displaylines{Vector\, Notation)\quad
+\displaylines{Vector\, Notation;\quad
 e_i=1_Tu_i+\epsilon_i}
 $$
 
@@ -157,6 +181,8 @@ $$
 
 
 각 notation 별로 아래와 같은 수식들을 생각해볼 수 있다.
+
+$1_T$는 1의 원소 T개로 이루어진 single cmatrix인데 
 
 
 
@@ -173,11 +199,14 @@ $$
 
 Random Effect는 앞선 u와 $\epsilon$이 conditionally mean zero, uncorrelated, and homoskedastic 이라 가정하는 것이다.
 
+(사실상 Panel Data 상의 모든 객체의 차이들을 완벽하게 파악해서, $\epsilon$ 항은 idiosyncratic(기이한) 에러 텀임을 뜻하는 것이다)
+
 
 
 $$
 \displaylines{
-<Random\; Effects\; Specification>\newline\newline
+Random\; Effects\; Specification
+\newline\newline
 E[\epsilon|X]=0\newline
 E[\epsilon^2|X]=\sigma_\epsilon^2\newline
 E[\epsilon_{it}\epsilon_{ij}|X]=0\newline
@@ -195,7 +224,9 @@ Random Effect를 만족하는 Error Component Structure의 Regression을 **Rando
 
 ### GLS
 
-본 Model에서 일반적인 Estimator는 GLS로부터 구해진 것이다. 아래에서 GLS를 통한 Estimator를 유도해보자.
+본 Error Component Model에서 일반적인 Estimator는 GLS로부터 구해진 것이다. 아래에서 GLS를 통한 Estimator를 유도해보자.
+
+GLS를 사용하는 이유는 다음 포스팅에서 서술되겠지만, u가 높은 가능성으로 X와 correlate 되어있기 때문에, u가 포함된 e가 결국 X와 상관관계를 갖고 있기 때문이다.
 
 
 
@@ -214,10 +245,9 @@ $$
 
 
 
-Random Effect를 만족하는 상황에서 $ \hat\beta_{GLS}$는 unbiased를 만족한다.
-
 #### Expectation of $\hat\beta_{GLS}$ at Random Effect Assumption
 
+Random Effect를 만족하는 상황에서는, $ \hat\beta_{GLS}$는 unbiased를 만족한다.
 
 
 $$
@@ -228,10 +258,11 @@ $$
 
 
 
-Random Effect를 만족하는 상황에서 $ \hat\beta_{GLS}$의 분산은 Homoskedasticity를 통해 아래와 같이 유도된다.
+
 
 #### Variance of  $\hat\beta_{GLS}$ at Random Effect Assumption
 
+Random Effect를 만족하는 상황에서는, $ \hat\beta_{GLS}$의 분산은 Homoskedasticity를 통해 아래와 같이 유도된다.
 
 
 $$
@@ -244,7 +275,6 @@ $$
 
 
 #### Comparison with a Pooled Estimator
-
 
 
 $$
@@ -261,10 +291,9 @@ $$
 
 
 
-위 부등식의 증명은 숙제란다.
+위 부등식의 증명은 숙제란다. 등식 성립 조건은 $Var(u)=0$이다.*
 
-Error Term에서 u의 분산이 0이고, 이로 인해 $\Omega$가 $\epsilon$으로만 이루어진다면, GLS와 Pooled Estimator의 분산은 동일하다.
-
+*만약 u의 분산이 0이고, 이로 인해 $\Omega$가 $\epsilon$으로만 이루어져있다면, GLS와 Pooled Estimator의 분산은 동일하다.
 
 $$
 \displaylines{if\quad \sigma_u^2=0,\,\quad \Omega=\sigma_\epsilon^2I_T\newline
@@ -276,4 +305,6 @@ $$
 
 
 
-하지만 Pooled Regression에서 언급한 바와 마찬가지로 실제 상황에선 u와 $\epsilon$에 대해 주어진 정보가 제한적일 가능성이 높기 때문에, **feasible GLS estimator**가 replacing the unknown variance of u and $\epsilon$. 이에 대해선 너무 복잡해 다루지 않음.
+하지만 Pooled Regression에서 언급한 바와 마찬가지로 실제 상황에선 u와 $\epsilon$에 대해 주어진 정보가 제한적일 가능성이 높기 때문에, **feasible GLS estimator**가 replacing the unknown variance of u and $\epsilon$. 
+
+이에 대해선 너무 복잡해 다루지 않는다. ~~다행이다~~
