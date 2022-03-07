@@ -16,7 +16,7 @@ toc_sticky: true
 
 # Fixed Effect
 
-*$u_i$ as time-invariantunobserved missing variable*
+*$u_i$ as time-invariant unobserved missing variable*
 
 이전 포스트에서 우리는 **Error Component Model**을 통해 Pooled Regression 대신 각 개체의 속성을 구분지어 정확한 효과의 정도를 파악하기 위한 e as error term의 u와 $\epsilon$의 구분 작업을 진행하였다.
 
