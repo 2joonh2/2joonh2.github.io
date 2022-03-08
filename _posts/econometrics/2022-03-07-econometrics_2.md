@@ -10,7 +10,9 @@ toc_sticky: true
 
 ![image-20220307170244209](../../assets/images/2022-03-07-econometrics_2/image-20220307170244209.png)
 
-웃으면 복이 와요.  ~~복이 와야 웃는거 아닌가요.~~
+웃으면 복이 와요.  ~~복이 와야 웃는거 아닌가요.~~ 
+
+~~Causal Inference~~
 
 
 
