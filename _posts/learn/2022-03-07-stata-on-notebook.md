@@ -80,7 +80,7 @@ summarize
 ```
 
 
-![scatter mpg price](../../assets/images/2022-03-07-stata-on-notebook/image-20220307195539677.png)
+<img src="../../assets/images/2022-03-07-stata-on-notebook/image-20220307195539677.png" alt="scatter mpg price" style="zoom:50%;" />
     
 
 ```python
