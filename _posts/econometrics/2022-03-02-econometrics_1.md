@@ -182,7 +182,7 @@ $$
 
 각 notation 별로 아래와 같은 수식들을 생각해볼 수 있다.
 
-$1_T$는 1의 원소 T개로 이루어진 single cmatrix인데 
+$1_T$는 1의 원소 T개로 이루어진 single column matrix인데 
 
 
 
