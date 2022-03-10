@@ -12,7 +12,7 @@ toc_sticky: true
 
 웃으면 복이 와요.  ~~복이 와야 웃는거 아닌가요.~~ 
 
-~~Causal Inference~~
+~~Reverse Causality~~
 
 
 
@@ -20,7 +20,7 @@ toc_sticky: true
 
 *$u_i$ as time-invariant unobserved missing variable*
 
-이전 포스트에서 우리는 **Error Component Model**을 통해 Pooled Regression 대신 각 개체의 속성을 구분지어 정확한 효과의 정도를 파악하기 위한 e as error term의 u와 $\epsilon$의 구분 작업을 진행하였다.
+이전 포스트에서 우리는 **(One-way) Error Component Model**을 통해 Pooled Regression 대신 각 개체의 속성을 구분지어 정확한 효과의 정도를 파악하기 위한 e as error term의 u와 $\epsilon$의 구분 작업을 진행하였다.
 
 $u$는 높은 확률로 $X_{it}$와 correlate 되어있을 가능성이 높은데, 예시를 들어보면 꽤나 직관적인 이해가 가능하다. 
 
@@ -311,7 +311,7 @@ $$
 
 
 
-*$u_i$ is an unobserved individual-specific effect, $v_t$ is an unobserved time-specific effect, and $\epsilon_{it}$ is an idiosyncratic error*
+***$u_i$ is an unobserved individual-specific effect, $v_t$ is an unobserved time-specific effect, and $\epsilon_{it}$ is an idiosyncratic error***
 
 v는 시간에 따른 모든 individual에게 영향을 미치는 (ex. 경기동향, 인플레이션, 금리 등) 요소 등이 포함된다. 
 
