@@ -8,7 +8,7 @@ toc_sticky: true
 
 응용계량경제학 필기노트
 
-<img src="../../assets/images/2022-03-07-econometrics_2S/99ADEF4F5DF23FDB0D.gif" alt="가끔 실수를 하는 펭귄, 펭수의 귀여운 동작 움짤" style="zoom:80%;" />
+<img src="../../assets/images/2022-03-07-econometrics_2S/99ADEF4F5DF23FDB0D.gif" alt="가끔 실수를 하는 펭귄, 펭수의 귀여운 동작 움짤" style="zoom: 50%;" />
 
 *"S stands for 실습  ~~실수~~"*
 
