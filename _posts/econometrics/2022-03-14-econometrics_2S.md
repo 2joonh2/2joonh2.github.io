@@ -14,13 +14,7 @@ toc_sticky: true
 
 
 
-
-
 # Practice Fixed Effect Models
-
-### https://youtu.be/VGRDR3J346M
-
-
 
 미국 주별 주세율에 따른 음주운전 사고률 및  사상자수를 분석해보자.
 
