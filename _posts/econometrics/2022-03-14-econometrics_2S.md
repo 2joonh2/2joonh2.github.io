@@ -631,7 +631,9 @@ global yeardum "y83 y84 y85 y86 y87 y88"
     
     . 
 
+## Col
 
+### Col(1)
 
 ```python
 %%stata
@@ -680,7 +682,7 @@ outreg2 using results/table10_1.xls, replace se label dec(3) excel
     
     . 
 
-
+### Col(2)
 
 ```python
 %%stata
@@ -749,6 +751,8 @@ dis "Adjusted Rsquared = "e(r2_a)
     . 
 
 
+
+### Col(3)
 
 ```python
 %%stata
@@ -823,6 +827,8 @@ dis "Adjusted Rsquared = "e(r2_a)
     . 
 
 
+
+### Col(4)
 
 ```python
 %%stata
@@ -926,6 +932,8 @@ dis "Adjusted Rsquared = "e(r2_a)
 
 
 
+### Col(5)
+
 ```python
 %%stata
 ***** col(5) *****
@@ -1015,6 +1023,8 @@ dis "Adjusted Rsquared = "e(r2_a)
 
 
 
+### Col(6)
+
 ```python
 %%stata
 ***** col(6) *****
@@ -1102,6 +1112,8 @@ dis "Adjusted Rsquared = "e(r2_a)
     . 
 
 
+
+### Col(7)
 
 ```python
 %%stata
