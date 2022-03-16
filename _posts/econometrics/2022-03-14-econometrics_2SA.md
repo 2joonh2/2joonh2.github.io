@@ -26,6 +26,8 @@ $v_t$: 모든 individual에 대해 영향을 미치는 요소; 차량 안전기�
 
 
 
+[Jupyter Notebook with Stata](https://youtu.be/VGRDR3J346M)
+
 
 ```python
 import stata_setup

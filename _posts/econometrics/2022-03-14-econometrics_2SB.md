@@ -12,7 +12,7 @@ toc_sticky: true
 
 # Cameron and Trivedi, "Microeconometrics Using Stata"
 
-### https://youtu.be/VGRDR3J346M
+[Jupyter Notebook with Stata](https://youtu.be/VGRDR3J346M)
 
 
 ```python
