@@ -77,7 +77,7 @@ $marginal effect = \beta$
 
 
 
-### Index Models
+### Index Model
 
 Linear 모델의 단점을 보완한 모델이다.
 
@@ -87,11 +87,19 @@ Linear 모델의 단점을 보완한 모델이다.
 
 
 
+### Probit Model
+
+Normal 분포의 CDF를 이용
+
+항상 0과 1사이의 값만을 갖는 점을 활용한 모델이다.
 
 
 
 
 
+### Logit Model
+
+예전에 비해 컴퓨터 파워가 근심거리가 아닌 요즘은 Logit과 Probit 모두 적절히 혼용되고 있다.
 
 
 
