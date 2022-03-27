@@ -23,8 +23,9 @@ toc_sticky: true
 
 이번 챕터에서는 종속변수 Y가 0 또는 1의 값만 갖는 binary variable임을 밝힌다.
 
-$P[Y=1|X] \;:\; Response\; Probability$
-
+$$
+P[Y=1\,|\,X] \;:\; Response\; Probability
+$$
 Response Probability의 X로의 Derivative를 **Marginal Effect**라고 부른다.
 
 
@@ -73,7 +74,7 @@ $Var(e|X)=P(X)(1-P(X))$ 이므로, e는 heteroskedastic하며, 즉 classical err
 
 장점: 돌리기 쉽고, 해석이 쉽다.
 
-$marginal effect = \beta$
+$marginal\; effect\; =\; \beta$
 
 
 
@@ -82,6 +83,10 @@ $marginal effect = \beta$
 Linear 모델의 단점을 보완한 모델이다.
 
 0과 1 사이의 값을 벗어나지 않도록 아래와 같은 transformation을 진행하는 것이다. 이를 **single index model**이라고도 불린다.
+
+
+
+
 
 
 
@@ -103,7 +108,7 @@ Normal 분포의 CDF를 이용
 
 
 
-
+![image-20220326213333520](../../assets/images/2022-03-26-econometrics_3/image-20220326213333520.png)
 
 
 
