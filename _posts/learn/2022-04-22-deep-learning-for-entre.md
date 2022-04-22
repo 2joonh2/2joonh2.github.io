@@ -136,7 +136,7 @@ toc: true
   - Training MLP using Back-propagation
   - History: PDP Group
     - Parallel Distributed Procesing
-    - **Paul Werbos' Backpropgation Algorithm**
+    - **Paul Werbos' Backpropgation Algorithm** (역전파)
     - it's all about **adjusting weights**
 - Signals Propagate Forward
   - input이 weight를 통해 hidden node를 거쳐 output으로 가는 forwarding
@@ -150,9 +150,30 @@ toc: true
   - partial derivative (편미분)
     - $w_{t+1} <- w_t -\gamma\Delta _wJ$
 - ![image-20220423011051058](../../assets/images/2022-04-22-deep-learning-for-entre/image-20220423011051058.png)
+  - layer 역순대로 미분 and so on
+- ![image-20220423011546114](../../assets/images/2022-04-22-deep-learning-for-entre/image-20220423011546114.png)
   - 
 
 
 
 ## 7주차
 
+- Maximize Performance
+  - ML Workflow
+    - Gathering Data
+    - preprocess
+    - research the model
+    - train
+    - evaluate and update the model
+    - predict with satisfied model, otherwise? train again and again
+  - train and test
+  - hyperparameters: 알아서 다해요
+    - control the learning process
+      - topology and size of a neural network
+      - algorithm hyperparameters: learning rate, dropout rate, batch size
+  - ![image-20220423023330121](../../assets/images/2022-04-22-deep-learning-for-entre/image-20220423023330121.png)
+  - Why ReLU?
+    - Sigmoid의 derivative 값이 작기 때문에 (대체로 .25 이하) 1보다 작은 값들을 계속 chain rule에 의해 곱하다보면 편미분값은 매우 작아지게 된다. 즉, vanishing
+    - asymptotic behavior
+    - ReLU는 derivative 값이 1 or 0뿐이므로 그 단점을 커버할 수 있음
+  - 
