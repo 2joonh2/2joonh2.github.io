@@ -23,9 +23,12 @@ toc_sticky: true
 
 이번 챕터에서는 종속변수 Y가 0 또는 1의 값만 갖는 binary variable임을 밝힌다.
 
+
 $$
 P[Y=1\,|\,X] \;:\; Response\; Probability
 $$
+
+
 Response Probability의 X로의 Derivative를 **Marginal Effect**라고 부른다.
 
 
@@ -37,8 +40,8 @@ $$
 p(x)=P[y=1|X=x]=E[Y|X=x]
 $$
 
-
 then, the **Marginal Effect** is
+
 
 
 $$
@@ -46,12 +49,15 @@ $$
 $$
 
 
+
 Marginal Effect는 곧, X가 1(단계) 증가할때, Y가 1일 확률이 얼마나 변화하는가. 라는 미시경제학의 marginal 개념과 같은 결이다.
+
 
 
 $$
 Y=P(X)+e
 $$
+
 
 
 $Var(e|X)=P(X)(1-P(X))$ 이므로, e는 heteroskedastic하며, 즉 classical error라고 할 수 없다.
