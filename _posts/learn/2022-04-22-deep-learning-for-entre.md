@@ -176,4 +176,71 @@ toc: true
     - Sigmoid의 derivative 값이 작기 때문에 (대체로 .25 이하) 1보다 작은 값들을 계속 chain rule에 의해 곱하다보면 편미분값은 매우 작아지게 된다. 즉, vanishing
     - asymptotic behavior
     - ReLU는 derivative 값이 1 or 0뿐이므로 그 단점을 커버할 수 있음
-  - 
+- Various Implementatoin of Cost Function Optimization
+  - Batch
+    - loss function -> cost function을 minimize
+    - gradient 계산량이 많고, 시간이 많이 걸림
+  - Stochastic
+    - each new gradient's loss function
+    - eventually approach to the optimal point
+  - Mini-Batch
+    - hybrid
+    - sample examples
+    - 두마리토끼, 계산량과 정확성
+  - Choosing
+    - small set<2000
+      - batch gradient
+    - large set
+      - mini batch of size 64~512
+- local minima
+  - 쉬운게 없다
+  - or plateau
+  - multiple global minima
+  - depends on cost function, the minima can be differed
+- Learning Rate
+  - parameters that control the learning process
+  - $\gamma$
+  - ![image-20220423024931212](../../assets/images/2022-04-22-deep-learning-for-entre/image-20220423024931212.png)
+- Momentum
+  - for finding global minima
+  - 방향성에 대한 변수를 추가해 local minima에서만 머무르지 않도록
+- Hyperparameter Tuning
+  - Monte-Carlo Search
+- Optimizers
+  - Adam이 짱임 (최근으로선)
+- Choice of Loss Function
+  - mean squared error
+    - regression or binary classification
+  - cross entropy
+    - multi class classification
+    - paired with the softmax actiavtion function
+- Under- and Over-fitting
+  - fix underfitting
+    - train longer
+    - increase the model complexity
+    - reducing regularizatoin
+    - adding features to trainig data
+    - different (appropriate) model or architecture
+  - fix overfitting
+    - adding more data
+    - data augmentation
+    - regularization
+    - decrease model complexity
+    - removing features from data
+    - early stopping
+      - balance between validatoin and error
+  - what is regularization?
+    - weight의 기울기를 급한 경사 안쪽으로
+  - Preprocessing
+    - normalization
+    - data augmentatoin (데이터 증강 ex. 1->7개)
+      - ![image-20220423031346082](../../assets/images/2022-04-22-deep-learning-for-entre/image-20220423031346082.png)
+    - feature engineering
+      - domain knowledge to extract features from raw data
+      - applied ML 
+    - dimensionality reduction
+      - Principal Component Analysis
+      - Independent Component Analysis
+      - Non-negative Matrix
+      - Factorization
+      - Uppropagation
