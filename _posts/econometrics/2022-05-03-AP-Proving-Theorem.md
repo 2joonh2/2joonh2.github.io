@@ -36,6 +36,10 @@ $$
 
 
 
+
+
+
+
 ### 3.1.2
 
 $$
@@ -55,6 +59,11 @@ $$
 =(Y-E[Y|X])^2+2(Y-E[Y|X])(E[Y|X]-m(X))+(E[Y|X]-m(X))^2\newline\newline
 The\;first\;and\;second\;term\;do\;not\;affect;\;while\;the\;last\;term\;be\;minimzed\;where\;Y\;equals\;m(X)}
 $$
+
+
+
+
+
 
 
 ### 3.1.3
@@ -79,6 +88,11 @@ Thus,\;V(Y)=V(E[Y|X])+E[V[Y|X]]}
 $$
 
 
+
+
+
+
+
 ### 3.1.4
 
 $$
@@ -99,6 +113,11 @@ Thus,\;\beta^*=E[XX']^{-1}E[XY],\;which\;refers\;\beta\;(the\;estimator\;for\;th
 $$
 
 
+
+
+
+
+
 ### 3.1.5
 
 $$
@@ -117,6 +136,11 @@ $$
 \beta=E[XX']^{-1}E[XY]\newline
 Derivation\; of\; the\; \hat\beta\; at\;the\; population\; regression\; would\; not\; be\; necessary.}
 $$
+
+
+
+
+
 
 
 ### 3.1.6
