@@ -3,6 +3,7 @@ layout: single
 title: "[Python] CPPI 실습 on Python"
 categories: learn
 toc: true
+toc_sticky: true
 ---
 
 

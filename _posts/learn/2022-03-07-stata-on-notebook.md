@@ -3,6 +3,7 @@ layout: single
 title: "[Python] Jupyter Notebook에서 Stata 사용하기"
 categories: learn
 toc: true
+toc_sticky: true
 ---
 
 Reference: ***StataCorp LLC*** [Jupyter Notebook with Stata](https://youtu.be/VGRDR3J346M)

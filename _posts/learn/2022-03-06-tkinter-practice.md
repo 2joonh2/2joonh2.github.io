@@ -3,6 +3,7 @@ layout: single
 title: "[Python] tkinter GUI 프로그램 구축 및 filedialog 활용"
 categories: learn
 toc: true
+toc_sticky: true
 ---
 
 

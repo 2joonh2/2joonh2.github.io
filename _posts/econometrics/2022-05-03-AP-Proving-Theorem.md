@@ -3,7 +3,7 @@ layout: single
 title: "[Mostly Harmless Econometrics] Theorem 3.1.1~6"
 categories: learn
 toc: true
-
+toc_sticky: true
 ---
 
 

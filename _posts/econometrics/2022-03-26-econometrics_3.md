@@ -4,7 +4,6 @@ title: "[Econometrics] 3. Binary Choice"
 categories: Econometrics
 toc: true
 toc_sticky: true
-
 ---
 
 응용계량경제학 필기노트

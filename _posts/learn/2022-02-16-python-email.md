@@ -3,6 +3,7 @@ layout: single
 title: "[Python] 이메일 송신"
 categories: learn
 toc: true
+toc_sticky: true
 ---
 
 Reference: ***열코***님의 [**파이썬으로 이메일 보내기(SMTP)**](https://yeolco.tistory.com/93)

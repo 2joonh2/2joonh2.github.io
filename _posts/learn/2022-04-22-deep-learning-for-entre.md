@@ -3,6 +3,7 @@ layout: single
 title: "[경영자를 위한 AI와 딥러닝] 중간고사 공부"
 categories: learn
 toc: true
+toc_sticky: true
 ---
 
 
