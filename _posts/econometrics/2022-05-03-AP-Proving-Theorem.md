@@ -24,6 +24,8 @@ $$
 
 
 pf.
+
+
 $$
 \displaylines{i)\quad For\quad Y=E[Y|X]+\epsilon \newline
 Note,\quad E[\epsilon|X]=0 \newline
@@ -46,6 +48,8 @@ $$
 
 
 pf.
+
+
 $$
 \displaylines{(Y-m(X))^2=((Y-E[Y|X])+(E[Y|X]-m(X)))^2\newline
 =(Y-E[Y|X])^2+2(Y-E[Y|X])(E[Y|X]-m(X))+(E[Y|X]-m(X))^2\newline\newline
@@ -63,6 +67,8 @@ $$
 
 
 pf.
+
+
 $$
 \displaylines{V(Y)=V(E[Y|X]+\epsilon)=V(E[Y|X])+V(\epsilon)\newline
 Note,\;E[Y|X]\;and\;\epsilon\;are\;not\;correlated.\newline\newline
@@ -83,6 +89,8 @@ $$
 
 
 pf.
+
+
 $$
 \displaylines{Suppose\; E[Y|X]=X'\beta^*;\newline
 Since,\; E[X(Y-E[Y|X])]=0\;by\;CEF-Decomposition\;property\;(3.1.1)\newline
@@ -101,6 +109,8 @@ $$
 
 
 pf.
+
+
 $$
 \displaylines{\beta\;is\;being\; defined \;for\; solving\newline
 \beta=arg\,\underset b min\,E[(Y-X'b)^2]\newline\newline
@@ -120,11 +130,17 @@ $$
 
 
 pf.
+
+
 $$
 \displaylines{(Y-X'b)^2=\{(Y-E[Y|X])+(E[Y|X]-X'b)\}^2\newline
-=(Y-E[Y|X])^2+(E[Y|X]-X'b)^2+2(Y-E[Y|X])(E[Y|X]-X'b)\newline\newline
-
-The\;firsm\; term\; does\; not\; involve\; b,\; and\; the\; last\; term\; has\; expectation\; zero\; by\; CEF-decomposition\; property \;(3.1.2).\newline
-Thus,\; only\; second\; term\; has\; left,\; and\; the\; solution\; is\; same\; as\; the\; population\; least\; squares\; problem,\;which\;is,\newline
-\beta=E[XX']^{-1}E[XY]\newline}
+=(Y-E[Y|X])^2+(E[Y|X]-X'b)^2+2(Y-E[Y|X])(E[Y|X]-X'b)\newline\newline}
 $$
+
+$$
+\displaylines{The\;first\; term\; does\; not\; involve\; b,\; and\; the\; last\; term\; has\; expectation\; zero\; by\; CEF-decomposition\; property \;(3.1.2).\newline
+Thus,\; only\; second\; term\; has\; left,\; and\; the\; solution\; is\; same\; as\; the\; population\; least\; squares\; problem,\;which\;is,\newline
+\beta=E[XX']^{-1}E[XY]\newline
+}
+$$
+
