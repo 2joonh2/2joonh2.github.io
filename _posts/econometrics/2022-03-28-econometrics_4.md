@@ -147,7 +147,7 @@ $$
 
 $$
 \displaylines{U_j^*=W'\beta_j'+X_j'\gamma+\epsilon_j \newline
-\epsilon_j \sim Type\; 1\; Extreme\; Value=exp(-exp(\epsilon))}
+\epsilon_j \sim Type\; 1\; Extreme\; Value=exp(-exp(-\epsilon))}
 $$
 
 
