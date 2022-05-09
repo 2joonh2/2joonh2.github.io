@@ -50,7 +50,7 @@ $$
 
 
 
-### Location of $\beta_j% cannot be identified
+### Location of $\beta_j$ cannot be identified
 
 앞서 multinomial choice의 alternative가 선택되는 것은 다른 alternatives와의 상대적인 비교를 통해 가장 높은 utility의 alter가 선택되는 것임을 알 수 있었다. 
 
@@ -84,7 +84,7 @@ alternatives가 두 개 뿐일때, 위의 식은 다시금 binary model의 logit
 
 
 
-#### Likelihood
+#### ㄴLikelihood
 
 곧바로 likelihood에 대해서도 derive를 해보자.
 
@@ -102,7 +102,7 @@ $$
 
 
 
-#### Marginal Effect
+#### ㄴMarginal Effect
 
 
 $$
@@ -110,8 +110,8 @@ marginal\; effect\; :\;\frac{\partial}{\partial x}P_j(x)=P_j(x)\,(\beta_j-\Sigma
 $$
 
 
-Derivation)
 
+Derivation)
 
 $$
 \displaylines{P_j(x)=\frac{exp(x'\beta_j)}{\Sigma \,exp(x'\beta_l)}=\frac{exp(x'\beta_j)}{A}\newline
@@ -119,6 +119,7 @@ $$
 =\beta_jP_j-P_j\Sigma P_l\beta_l\newline
 =P_j(\beta_j-\Sigma \beta_l P_l)}
 $$
+
 
 
 ### Conditional Logit
