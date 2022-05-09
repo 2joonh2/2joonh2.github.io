@@ -111,7 +111,7 @@ transformation을 통해 linear model의 한계였던 함수의 치역이 0과 1
 $$
 \displaylines{P(x)=G(x'\beta)\newline
 0\leq G(u)\leq 1\newline
-then, \;\frac{\partial}{\partial x}P(x)=\beta g(x'\beta)}
+then,\; marginal\; effect\; :\;\frac{\partial}{\partial x}P(x)=\beta g(x'\beta)}
 $$
 
 
@@ -197,6 +197,8 @@ $$
 $$
 
 
+### Log-likelihood function and MLE
+
 위의 식에 log를 취함으로서 곱셈을 덧셈식으로 간단히 나타낼 수 있다.
 
 
@@ -208,3 +210,68 @@ $$
 
 
 위의 식 하에서, MLE (Maximum Likelihood Estimation)란, the value which maximizes the log-likelihood function, 위의 식의 값을 최대화 시키는 $\beta$로 정의된다.
+
+
+
+## Marginal Effects
+
+
+
+### Average Marginal Effect
+
+우리는 앞서 Index Model의 marginal effect 식을 확인하였다.
+
+
+$$
+marginal\; effect\; :\;\frac{\partial}{\partial x}P(x)=\beta g(x'\beta)
+$$
+
+
+각 x에 대해 각기 다른 marginal effect 값이 존재하기 때문에, 하나의 대표값으로 **average marginal effect**를 활용한다.
+
+
+$$
+AME\;(average\; marginal\; effect)=E[\delta(x)]=\beta\, E[g(X'\beta)]
+$$
+
+
+평균값에서의 marginal effect와의 차이를 분명히 하자.
+
+
+
+### when X includes nonlinear transformations
+
+
+$$
+\displaylines{For\quad P[Y=1|X=x]=G(\beta_0+\beta_1x+...+\beta_px^p),\newline
+\delta(x)=(\beta_1+...+p\beta_px^{p-1})\,g(\beta_0+\beta_1x+...+\beta_px^p)}
+$$
+
+
+## Application to the Boston HMDA Data
+
+*Mortgages(모기지), 주택담보대출을 받을 때 인종에 따른 대출 제공에 차별이 있는가?*
+
+
+
+Dependent Variable은 곧, *is the mortgage denied or accepted?* 라는 binary variable 이 될 것이다.
+
+
+
+
+
+## Remaining Threats to Internal, External Validity
+
+#### Internal Validity
+
+1. OVB
+2. Wrong functional form
+3. Errors-in-variables bias
+4. Sample selection bias
+5. Simultaneous causality bias
+
+
+
+#### External Validity
+
+90-91년도의 데이터로부터 얻은 결과를 현재에도 적용할수 있을까? 등의 이슈가 있을 것이다.
