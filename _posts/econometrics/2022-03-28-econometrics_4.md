@@ -128,5 +128,71 @@ $$
 
 새로이 우리는 alternative-specific regressors를 적용시켜보며, 이를 Conditional Logit Model의 이름으로 발전되어왔다 (McFadden, 1970).
 
+Conditional logit에서는 앞서 언급한 alternative j 별로 다른 특징들을 X에 모두 반영하여 아래와 같은 식을 전개한다.
 
+
+$$
+U_j^*=X_j'\gamma+\epsilon_j
+$$
+
+
+기존의 Multinomial logit과 차이를 비교했을때, Multinomial logit에서는 alternative 별로 $\beta_j$가 달랐다면, Conditional logit에서는 개별 $X_j$가 다르며 $\gamma$는 alternative에 관계 없이 동일하게 유지되는 것을 알 수 있다.
+
+
+
+이를 혼용하면 일반적인 아래와 같은 logit 식을 얻을 수 있다.
+
+*allows some regressors X_j to vary across alternatives while other regressors W do not vary across j*
+
+
+$$
+U_j^*=W'\beta_j'+X_j'\gamma+\epsilon_j
+$$
+
+
+#### ㄴ Likelihood
+
+
+$$
+\displaylines{For \quad P_j(w,x)=\frac{exp(w'\beta_j+x_j'\gamma)}{\Sigma \,exp(w'\beta_l+x_l'\gamma)}\newline\newline
+let \quad \theta=(\beta_1,\beta_2,...,\beta_j,\gamma) \newline
+then,\quad l_n(\theta)=\Sigma\Sigma\, 1\{Y_i=j\}\,log\,P_j(W_i,X_i|\theta)\newline
+\hat\theta=arg\,max\,l_n(\theta)}
+$$
+
+
+본 $\theta$ estimator 또한 손으로 구할 수 없기 때문에, Stata 상에서는 numerical 한 방법으로 $\hat\theta$를 구해준다. 
+
+
+
+#### ㄴMarginal Effects
+
+
+$$
+\displaylines{
+\delta_{jj}(w,x)= \frac{\partial}{\partial x_j}P_j(w,x)=\gamma P_j(w,x)\,(1-P_j(w,x))\newline
+
+\delta_{jl}(w,x)= \frac{\partial}{\partial x_l}P_j(w,x)=-\gamma P_j(w,x)P_l(w,x)\newline
+\newline
+AME_{jl}=E[\delta_{jl}(W,X)]
+}
+$$
+
+
+Derivation)
+
+
+$$
+\displaylines{
+
+P_j(w,x)=\frac{exp(w'\beta_j+x_j'\gamma)}{\Sigma \,exp(w'\beta_l+x_l'\gamma)}=\frac{exp(w'\beta_j+x_j'\gamma)}{A}\newline\newline
+\delta_{jj}(x)=\frac{\partial P_j(w,x)}{\partial x_j}\newline
+=\gamma exp(w'\beta_j+x_j'\gamma)A^{-1}-exp(w'\beta_j+x_j'\gamma)A^{-2}exp(w'\beta_j+x_j'\gamma)\newline
+=\gamma P_j -P_j^2\gamma =\gamma P_j(1-P_j)\newline\newline
+
+\delta_{jl}(x)=\frac{\partial P_j(w,x)}{\partial x_l}\newline
+=-exp(w'\beta_j+x_j'\gamma)A^{-1}exp(w'\beta_l+x_l'\gamma)\gamma A^{-1} \newline
+=-\gamma P_jP_l
+}
+$$
 
