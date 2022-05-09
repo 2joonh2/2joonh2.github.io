@@ -275,3 +275,92 @@ Response Prob은 위와 같은데, 이는 곧 j개의 그룹 중 하나를 선�
 
 *Typically, there is not a unique obvious structure; consequently any proposed grouping is subject to mis-specification*
 
+
+
+
+
+## Mixed Logit
+
+*Generalization of the conditional logit which allows the coeff on the alternative varying regressors to be random across individuals*
+
+개별 소비자들이 각 alternative의 특성에 갖는 가중치, 인지하는 중요도 등이 다 다른 것을 반영하고자 하는 모델이다.
+
+예를 들어 어떤 소비자는 자동차라는 alternative를 볼때 연비를 중요하게 볼 수도 있고, 다른 소비자는 좌석수를 중요하게 볼 수도 있으며, 비행기라는 alternative에 대해 가격을 중요하게 볼 수도 있고, 보딩 서비스에 대해 중요하게 생각하는 소비자도 있을 것이다. 즉 $\gamma$가 일정하지 않고, random하다는 뜻이다.
+
+
+$$
+\displaylines{U_{j}^*=W'\beta_{j}'+X_{j}'\eta+\epsilon_{j},\quad \eta\sim N(\gamma, \Sigma)\newline
+=W'\beta_{j}'+X_{j}'\gamma+X'_j(\eta-\gamma)+\epsilon_{j}\newline
+=W'\beta_{j}'+X_{j}'\gamma+v_j}
+$$
+
+
+Mixed Logit의 기본 수식은 기존의 conditional logit과 다르지 않다. 하지만 $\eta$를 평균값의 $\gamma$ 항과 그렇지 않은 error-term 항으로 분리하여 새로운 error term $v_j$를 만들었는데, 이 $v_j$의 기댓값을 유도해보자.
+
+
+
+
+$$
+\displaylines{E[v_jv_l|X_j,X_l]=E[X_j'(\eta-\gamma)(\eta-\gamma)'X_l|X_j,X_l]\newline
+=X'_j\,Var(\eta)\,X_l}
+$$
+
+
+
+
+방금 위의 non-zero correlation은 곧 IIA 문제에 발생하지 않는 것을 뜻하고, 이는 곧 mixed logit이 conditional logit보다 소비자들의 선택 양식을 설명하는데 있어 더 유연성(flexibility)을 갖음을 뜻한다고 할 수 있다.
+
+
+
+## Probit model
+
+logit 분포와 달리, $\epsilon$이 정규분포를 따르는 차이 말고 다른 큰 차이는 없다. IIA property 마저 동일하지 않지만 거의 유사하게 발생한다고 한다.
+
+하지만 logit에 비해 computational power에 많은 의존성을 띄기 때문에, 무조건적으로 선호되거나 많이 사용되지는 않는 지금이라고 한다.
+
+
+
+## Ordered Response
+
+Y가 ordinal (ordered) interpretation의 종속변수일 때는 어떠할까?
+
+예를 들어 교수님의 강의평가를 할때 5점척도 중 한가지 점수 (1,2,3,4 or 5)를 골라야한다면; 이는 기존의 multinomial response와는 결이 다른 선택양식일 것이다.
+
+
+
+![image-20220509192212572](../../assets/images/2022-03-28-econometrics_4/image-20220509192212572.png)
+
+위와 같이 각 $\alpha$ 값들 사이사이 범위에 따라 받는 점수가 순서대로 정해져있는 특징을 최대한 살리는것이 현실 반영을 많이 할 수 있는 좋은 모델이라 할 수 있을 것이다.
+
+
+
+
+$$
+\displaylines{U^*=X'\beta+\epsilon\newline
+\epsilon \sim G}
+$$
+
+
+
+
+​	Ordered Response의 특징은 $U^*$라는 latent continuous response에 대해, 각 범위에 따라 discrete한 점수로 모여진다는 것이다 (discretized version).
+
+
+
+
+
+### Response Prob. and Marginal Effect
+
+
+$$
+\displaylines{P_j(x)=P[\alpha_{j-1}<U^*\leq \alpha_j|X=x]\newline
+=G(\alpha_j-X'\beta)-G(\alpha_{j-1}-X'\beta)\newline
+\newline
+Thus,\quad P[Y\leq j|X=x]=G(\alpha_j-X'\beta)}
+$$
+
+
+
+$$
+marginal\; effects\;:\frac{\partial}{\partial x}P_j(x)=\beta(g(\alpha_j-X'\beta)-g(\alpha_{j-1}-X'\beta))
+$$
