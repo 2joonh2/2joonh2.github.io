@@ -146,7 +146,8 @@ $$
 
 
 $$
-U_j^*=W'\beta_j'+X_j'\gamma+\epsilon_j
+\displaylines{U_j^*=W'\beta_j'+X_j'\gamma+\epsilon_j \newline
+\epsilon_j \sim Type\; 1\; Extreme\; Value=exp(-exp(\epsilon))}
 $$
 
 
@@ -195,4 +196,82 @@ P_j(w,x)=\frac{exp(w'\beta_j+x_j'\gamma)}{\Sigma \,exp(w'\beta_l+x_l'\gamma)}=\f
 =-\gamma P_jP_l
 }
 $$
+
+
+
+
+
+## Independence of Irrelevant Alternatives
+
+Multinomial / Conditional Logit을 사용하는데에 있어 굉장한 threat이 존재하는데, 이는 Independence of Irrelevant Alternatives의 문제이다.
+
+
+
+### IIA
+
+서로 다른 두 옵션(alternatives)가 선택될 확률의 상대적인 비율을 계산해보자.
+
+
+$$
+\frac{P_j(W,X)}{P_l(W,X)}=\frac{exp(W'\beta_j+X_j'\gamma)}{exp(W'\beta_l+X_l'\gamma)}
+$$
+
+
+위 식의 값을 결정짓는 변수들은 오롯이 j번째 alternative와 l번째 alternative의 특징들로만 구성 되어있는 것을 확인할 수 있다.
+
+예를 들어 j를 예시의 자동차, l을 기차라고 하자.
+
+하지만 만약 다른 alternative인 k: 비행기의 가격(X_k)이 변화한다고 하자.
+
+이 비행기 가격의 변화가 j와 l의 alternative에 절대적으로 영향을 끼치지 않는다고 단언할 수 있을까? 아니다; 이것이 IIA이다.
+
+IIA를 해결하기 위한 발전된 model 들을 알아보자.
+
+
+
+### Nested Logit
+
+이에 대응하는 해결방안 (중 하나)은 alternatives 간에 그룹을 지어주는 것이다. 아래의 그림이 예시가 될 것이다.
+
+![image-20220509183924644](../../assets/images/2022-03-28-econometrics_4/image-20220509183924644.png)
+
+
+
+*J groups each with $K_j$ alternatives* 라고 일반적인 note가 이루어진다.
+
+
+$$
+U_{jk}^*=W'\beta_{jk}'+X_{jk}'\gamma+\epsilon_{jk}
+$$
+
+
+
+
+곧, Nested Logit의 Utility 식은 위와 같이 먼저 j번째 그룹에 대한 아래첨자가 추가되고 그 뒤에 k번째 alternative index가 추가된다고 볼 수 있겠다.
+
+본 모델에서 각 groups 간의 correlation은 없다고 가정한다.
+
+대신, 각 group 내의 alternatives들의 correlation은 dis-similarity parameter, $\tau_j$로 표현된다.
+
+만약, $\tau_j=1$이라면, 이는 곧 그룹 내의 alternatives 간 correlation이 없기 때문에 기존의 conditional logit를 따른다는 것을 의미한다.
+
+모델을 디자인 할 때, 기존의 logit 모델처럼 location의 정규화를 위한 특정 alternative의 location을 0으로 맞춰주는 작업이 필요하다.
+
+
+
+*Alternatives with a high(low) degree of substitutability should be placed in the same(different) group.*
+
+
+$$
+Response\;Probability:\;P_{jk}=P_{k|j}P_j
+$$
+
+
+Response Prob은 위와 같은데, 이는 곧 j개의 그룹 중 하나를 선택하고, 그 그룹 내의 k개의 alternatives 중 하나를 고른다는 것을 의미한다고 볼 수 있다.
+
+
+
+#### ㄴLimitations
+
+*Typically, there is not a unique obvious structure; consequently any proposed grouping is subject to mis-specification*
 
