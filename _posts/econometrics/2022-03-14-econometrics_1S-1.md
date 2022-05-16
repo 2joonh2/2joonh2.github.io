@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Econometrics] 2SA. Practice Fixed Effect Models"
+title: "[Econometrics] 1S-1. Practice Fixed Effect Models"
 categories: Econometrics
 toc: true
 toc_sticky: true

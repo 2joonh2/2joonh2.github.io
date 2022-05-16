@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Econometrics] 3. Binary Choice"
+title: "[Econometrics] 2. Binary Choice"
 categories: Econometrics
 toc: true
 toc_sticky: true

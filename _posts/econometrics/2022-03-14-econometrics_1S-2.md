@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Econometrics] 2SB. Microeconometrics Using Stata"
+title: "[Econometrics] 1S-2. Microeconometrics Using Stata"
 categories: Econometrics
 toc: true
 toc_sticky: true

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Econometrics] 2. Fixed Effect"
+title: "[Econometrics] 1-2. Fixed Effect"
 categories: Econometrics
 toc: true
 toc_sticky: true
