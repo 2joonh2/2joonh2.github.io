@@ -246,7 +246,7 @@ Anatomy, 즉 Regression을 해부하는 narrow down을 시도하는 것이다.
 
 $$
 \displaylines{min\underset{a,b} E{[Y_i-a-bx_i]^2}\newline\newline
-\text{by F.O.C.,\;} \alpha=E[Y_i-\alpha-bx_i]=0\newline
+\text{by F.O.C.,}\; \alpha=E[Y_i-\alpha-bx_i]=0\newline
 \beta=E{[Y_i-\alpha-\beta x_i]x_i}=0\newline\newline
 \text{Thus,}\;\alpha=E[Y_i]-\beta E[X_i]\newline
 \beta=\frac{Cov(x_i,y_i)}{V(x_i)}}
@@ -323,7 +323,7 @@ ability는 직업과 연봉을 결정짓는 가장 중요한 변수중 하나라
 
 
 $$
-\text{Selection Bias : \;}E[Y_{0i}|C_i=1]-E[Y_{0i}|C_i=0]>0
+\text{Selection Bias : }\;E[Y_{0i}|C_i=1]-E[Y_{0i}|C_i=0]>0
 $$
 
 
@@ -339,8 +339,8 @@ $$
 
 
 $$
-\displaylines{\text{Randomized Experiment : \;}\{Y_{0i},Y_{1i}\}\perp\!\!\!\perp C_i\newline
-\text{CIA : \;}\{Y_{0i},Y_{1i}\}\perp\!\!\!\perp C_i|X_i}
+\displaylines{\text{Randomized Experiment : }\;\{Y_{0i},Y_{1i}\}\perp\!\!\!\perp C_i\newline
+\text{CIA : }\;\{Y_{0i},Y_{1i}\}\perp\!\!\!\perp C_i|X_i}
 $$
 
 
