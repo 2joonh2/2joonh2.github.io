@@ -12,7 +12,7 @@ toc_sticky: true
 
 ![image-20220518175545028](../../assets/images/2022-03-21-econometrics_2/image-20220518175545028.png)
 
-석사냐 박사냐. 그것이 binary choice다. ~~자퇴/휴학은 제외~~
+석사냐 박사냐. 그것이 binary choice다.
 
 
 

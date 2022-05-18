@@ -306,6 +306,7 @@ Endogeneity Issues는 다음과 같은 원인으로 발생할 수 있다.
 *The classic example of treatment endogeneity in the labor literature is in measuring the returns to college (C_i=0,1)*
 
 
+
 $$
 \displaylines{
 E[Y_i|C_i=1]-E[Y_i|C_i=0]=E[Y_{1i}|C_i=1]-E[Y_{0i}|C_i=0]\newline
@@ -315,6 +316,7 @@ E[Y_i|C_i=1]-E[Y_i|C_i=0]=E[Y_{1i}|C_i=1]-E[Y_{0i}|C_i=0]\newline
 $$
 
 
+
 대표적으로 발생할 수 있는 연봉과 학력 수준 사이의 regression 사이의 OV는 *ability* 이다.
 
 ability는 직업과 연봉을 결정짓는 가장 중요한 변수중 하나라고 할 수 있지만, 측정의 어려움 등으로 인해 기존의 회귀식에서 빠진채 진행이 되었다.
@@ -322,9 +324,11 @@ ability는 직업과 연봉을 결정짓는 가장 중요한 변수중 하나라
 그리고 단순한 추측으로 예컨데, 이번 regression 식에서의 측정된 Effect 크기인 ATT + Selection Bias에서는 둘 다 양의 값을 가질 것이라 예상해볼 수 있다.
 
 
+
 $$
 \text{Selection Bias : }\;E[Y_{0i}|C_i=1]-E[Y_{0i}|C_i=0]>0
 $$
+
 
 
 본 selection bias 항을 해석해보자면, C라는 조건에 따라, 즉 대학에 간 사람들과 대학에 가지 않은 사람들이, 만약 모두 대학에 가지 않았더라도 연봉의 차이는 존재할 것이라는 유추를 해볼 수 있다. 능력의 차이가 있기 때문이다. 
@@ -335,7 +339,12 @@ $$
 
 
 
-### Conditional Independence Assumption (CIA)
+## Conditional Independence Assumption (CIA)
+
+
+
+### At the Binary setting
+
 
 
 $$
@@ -344,4 +353,120 @@ $$
 $$
 
 
-CIA는 오히려 $X_i$를 통제하는 것이다.
+
+***CIA means that $C_i$ is "as good as randomly assigned,"conditional on $X_i$ , and thus the selection bias vanishes.***
+
+CIA는 오히려 the conditioning variables, $X_i$를 통제함으로써 $C_i$의 randomness를 충족시키고 이를 통해 Selection Bias를 제거한 Treatment Effect를 찾자는 것이다.
+
+일종의 Fixed Effect라고 볼 수도 있다.
+
+
+
+그렇다면 어떤 변수가 conditioning variables, $X_i$가 될 수 있을까?
+
+***Proxies for known omitted variables are obvious candidates.***
+
+보통 유관한 변수들을 추가한다. 예를 들어, 앞선 예시의 ability라는 측정하기 어려운 OV를 대신하여 X로 IQ를 일종의 프록시(간접변수)로 사용할 수 있을 것이다.
+
+
+
+$C_i|X_i$가 Y와 독립이기 때문에 두번째 행에서 세번째로 넘어갈때에 제약이 없고, Selection Bias가 없는 Treatment Effect의 효과를 확인할 수 있다.
+
+
+
+$$
+\displaylines{
+E[Y_i|X_i,C_i=1]-E[Y_i|X_i,C_i=0]\newline
+=E[Y_{1i}|X_i,C_i=1]-E[Y_{0i}|X_i,C_i=0]\newline
+=E[Y_{1i}|X_i,C_i=1]-E[Y_{0i}|X_i,C_i=1]\newline
+=E[Y_{1i}-Y_{0i}|X_i,C_i=1]=E[Y_{1i}-Y_{0i}|X_i]
+}
+$$
+
+
+
+직접 예시를 통해 해석해보자. 앞선 예시의 IQ를 controlling variable을 통제한다고 하자. 
+
+같은 IQ를 가진 참가자들이 대학을 가고 안가고는 취향 차이라는, Selection Bias를 최대한 통제한다고 볼 수 있을것이다. 
+
+따라서, 두번째 행에서 세번째로 넘어갈때, 대학을 가고 안가고는 IQ가 같은 사람들끼리는 큰 상관이 없기 때문에, 제약이 없다고 가정하며, 이를 통해 우리가 원하는 Treatment Effect를 포착할 수 있다는 것이다.
+
+
+$$
+\text{ATT : }E\{E[Y_{1i}-Y_{0i}|X_i]|C_i=1\}=E[Y_{1i}-Y_{0i}|C_i=1]
+$$
+
+
+
+IQ와 같이 각 controlling variable 값 별로 treatment effect가 통제된 개별 값이 있기 때문에, ATT는 곧 이에 대해 controlling variable에 대한 분포를 기반한 weigthened average를 통해 구할 수 있다.
+
+조금 더 예를 ~~막~~ 나아가보면, IQ가 예를 들어 100을 평균으로 하는 일종의 정규분포를 따른다면, IQ 별 Treatment Effect를 나열하지 말고 정규분포를 토대로 전체 population의 Treatment Effect를 유추해볼 수 있다는 뜻이다.
+
+
+
+### Extending CIA to Non-Binary setting
+
+Treatment가 항상 앞선 예시의 대학을 가고 안가고 처럼 0과 1로만 나누어져 있지는 않을 것이다. 예를 들어 변수가 교육 연수에 해당한다면, 0부터 일반적으로 12나 16 (여기서 멈출걸) 혹은 20+도 있을 것이다.
+
+Extension에서 Potential outcomes는 아래와 같을 것이다. Extension들의 유도와 해석은 앞선 그것과 동일하다.
+
+
+$$
+\displaylines{Y_{s,i}=f_i(s)\newline
+\text{Then, CIA: }\; Y_{si}\perp\!\!\!\perp s_i|X_i\quad \forall s}
+$$
+
+$$
+\displaylines{
+E[f_i(12)|X_i,s_i=12]-E[f_i(11)|X_i,s_i=11]\newline
+=E[f_i(12)|X_i,s_i=12]-E[f_i(11)|X_i,s_i=12]\newline
+=E[f_i(12)-f_i(11)|X_i,s_i=12]=E[f_i(12)-f_i(11)|X_i]
+}
+$$
+
+$$
+\text{ATT : }E\{E[f_i(12)-f_i(11)|X_i]|s_i=12\}=E[f_i(12)-f_i(11)|s_i=12]
+$$
+
+
+
+
+### The Regression Context
+
+
+$$
+\displaylines{Y_{s,i}=f_i(s)=\alpha+\rho s+\eta_i \newline
+\text{in the CIA: }\; Y_{si}\perp\!\!\!\perp s_i|X_i\quad \forall s \newline
+}
+$$
+
+
+여기서 위 식의 error term인 $\eta$를 자세히 살펴보자 (decompose).
+
+
+$$
+\eta_i=X_i'\gamma+\nu_i \newline
+\text{Then, } E[\eta_i|X_i]=X_i'\gamma, \text{ and } E[\nu_i|X_i]=0 \text{ by decomposition property}\\\\
+
+\text{CIA implies: } E[Y_{s,i}|X_i, s_i]=E[Y_{s,i}|X_i]\newline
+=\alpha+\rho s+E[\eta_i|X_i]=\alpha+\rho s+X_i'\gamma
+\\\\
+\text{Thus, } Y_i=\alpha+\rho s+X_i'\gamma+\nu_i \newline
+\text{satisfying }E[\nu_i|X_i,s_i]=0 
+$$
+
+
+$\eta$는 OVB로 인해 X와 correlation이 있을수도 있고 없을 수도 있다. 
+
+첫번째 파트에서는 $\eta$를 따라서 decompose 하여 X로 설명가능한 부분(correlation 존재)과 그렇지 않은 부분으로 나누었을때를 보여주고 있는 것이다.
+
+두번째 파트에서는 CIA는 X를 통제하기 때문에, 앞선 Y의 식을 유도하며 $\eta$를 X로 설명 가능한 파트만 남겨놓을 수 있다는 걸 보여주고 있다.
+
+따라서 마지막 파트에서는 결국, X로도 설명할 수 없는 $\nu$를 남겨놓고 (mean independence 만족) Y를 X에 대해 완벽하게 decompose할 수 있다는 것을 보이고 있다.
+
+
+
+결론적으로, CIA를 통해 기존의 s 뿐만 아니라 X 또한 regression에 포함시켜 진행하면, OVB를 최대한 control 해볼 수 있다는 것이다.
+
+
+
