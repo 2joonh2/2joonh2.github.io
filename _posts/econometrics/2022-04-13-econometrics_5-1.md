@@ -204,23 +204,7 @@ Selection Bias로 자칫 잘못하면 우리는 병원이 더 건강을 악화�
 
 Selection Bias를 극복해내기 위해서 Rubin's Causal Model은 두번째 key element로 Assignment Mechanism; i.e., how individual are chosen to receive the treatment (or not)을 내세우고 있다.
 
-세가지 Broad한 옵션들이 있다. 자세한 내용은 아래에서 이어가자.
-
-
-
-1. Randomized Experiments
-   1. random은 곧 Endogeneity, correlation 등의 문제에서 자유로울 것이다.
-   2. 하지만 experiment를 진행하는데에 있어 현실세계 속 제약들이 많다.
-2. Unconfounded Assignments
-   1. *selection on observables*; 즉 우리가 관찰하고 있는 여러 변수들 (X) 상에서 selection이 일어났다는 것이다.
-   2. 따라서, 우리가 관측하는 X를 모두 control 하면 Bias를 최소화할 수 있을것이라는 접근이다.
-   3. ex. Matching, Regression
-   4. controversial; 바로 후술되는 selection on unobservables, selection은 관측되지 않는 범주에서 발생할 수 있다는 주장과 충돌되기 때문에, 최근까지도 본 접근을 통한 인과추론 연구들은 많은 논쟁에 시달리고 있다.
-3. All other assignment mechanisms (selection on unobservables)
-   1. Selection은 우리가 관측할 수 없는 범주에서 일어날 가능성이 높다는 것을 전제로 하는 접근이다.
-   2. 그래서 2의 unconfounded assignments처럼 assignment의 형태를 띄지만, 최대한 실험에 가까운, 준하는 성격에 다가가고자 하는 것이다.
-   3. quasi-experiments, 준실험이 이 옵션에 해당한다고 볼 수 있다.
-   4. ex. IV, DiD, RD, S.C.
+크게 세가지 옵션들이 있다.
 
 
 
@@ -235,13 +219,23 @@ Randomized Experiment에서는 자명히 conditional expectation이 각 조건�
 
 
 
+
+$$
+\{Y_{0i},Y_{1i}\} \perp\!\!\!\perp D_i \newline 
+E[Y_i|D_i=1]-E[Y_i|D_i=0]=E[Y_{1i}|D_i=1]-E[Y_{0i}|D_i=1]\newline
+=E[Y_{1i}-Y_{0i}|D_i=1] \text{\;\;or\;\;} E[Y_{1i}-Y_{0i}]=ATE
+$$
+
+
+
+
 하지만 동시에 자명히, 실제 현실세계에서 randomized experiment를 진행하는 것은 너무나 어렵다는 것을 금방 이해할 수 있다.
 
 예를 들어 어떠한 정책이나 프로모션 등 treatment effect를 확인하고자 하는 그 treatment를 $D_i$처럼 0과 1로 (실험)참가자들을 구분시키는데에 한계가 있다는 것이다.
 
 구분시키는데에 성공하더라도 현대사회에서 manipulated된 두 그룹 사이의 소통을 단절시키는 것 또한 불가능할 것이다. 두 그룹 사이의 interaction이 조금이라도 발생한다면 이것이 randomized experiment의 manipulation이라고 볼 수 있을까?
 
-윤리적, 도의적인 문제도 존재한다. 특히 복지 정책에 대해서 진행을 한다고 하면, 같은 시점 내에서 몇몇 시민들은 정책의 복지 혜택을 받고 어떤 시민들은 배제되는 등, 진행 자체에 윤리적/도의적 측면도 의식해야 할 것 이다. 
+윤리적, 도의적인 문제도 존재한다. 특히 복지 정책에 대해서 진행을 한다고 하면, manipulation으로 인해 같은 시점 내에서 몇몇 시민들은 정책의 복지 혜택을 받고 어떤 시민들은 배제되는 등, 진행 자체에 윤리적/도의적 측면도 의식해야 할 것 이다. (그래서 최근 연구는 개발도상국에서 진행된 RE가 많다고 한다.)
 
 
 
@@ -249,15 +243,23 @@ Randomized Experiment에서는 자명히 conditional expectation이 각 조건�
 
 
 
+
+
+B와 C에 대한 내용은 이후의 챕터에서 자세하게 다룰 것이다.
+
 #### B. Unconfounded Assignments
 
-
+1. *selection on observables*; 즉 우리가 관찰하고 있는 여러 변수들 (X) 상에서 selection이 일어났다는 것이다.
+2. 따라서, 우리가 관측하는 X를 모두 control 하면 Bias를 최소화할 수 있을것이라는 접근이다.
+3. ex. Matching, Regression
+4. controversial; 바로 후술되는 selection on unobservables, selection은 관측되지 않는 범주에서 발생할 수 있다는 주장과 충돌되기 때문에, 최근까지도 본 접근을 통한 인과추론 연구들은 많은 논쟁에 시달리고 있다.
 
 
 
 #### C. All other assignment mechanisms
 
-
-
-
+1. Selection은 우리가 관측할 수 없는 범주에서 일어날 가능성이 높다는 것을 전제로 하는 접근이다.
+2. 그래서 2의 unconfounded assignments처럼 assignment의 형태를 띄지만, 최대한 실험에 가까운, 준하는 성격에 다가가고자 하는 것이다.
+3. quasi-experiments, 준실험이 이 옵션에 해당한다고 볼 수 있다.
+4. ex. IV, DiD, RD, S.C.
 
