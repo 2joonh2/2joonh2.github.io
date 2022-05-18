@@ -210,7 +210,7 @@ Selection Bias를 극복해내기 위해서 Rubin's Causal Model은 두번째 ke
 
 1. Randomized Experiments
    1. random은 곧 Endogeneity, correlation 등의 문제에서 자유로울 것이다.
-   2. 하지만 experiment를 진행하는데에 있어 비용측면에 큰 문제가 있다. 비싸다.
+   2. 하지만 experiment를 진행하는데에 있어 현실세계 속 제약들이 많다.
 2. Unconfounded Assignments
    1. *selection on observables*; 즉 우리가 관찰하고 있는 여러 변수들 (X) 상에서 selection이 일어났다는 것이다.
    2. 따라서, 우리가 관측하는 X를 모두 control 하면 Bias를 최소화할 수 있을것이라는 접근이다.
@@ -231,7 +231,7 @@ Selection Bias를 극복해내기 위해서 Rubin's Causal Model은 두번째 ke
 
 Randomized Experiment에서는 자명히 conditional expectation이 각 조건에 따라 영향을 받지 않기 떄문에 위 Selection Bias가 0이 되는 것을 알 수 있다. 
 
-즉, Randomized Experiment는 모든 경제학자들이 동의하는 Selection Bias가 control되는 최고의 조건이다.
+즉, Randomized Experiment는 모든 경제학자들이 동의하는 Selection Bias가 control 되는 최고의 조건이다.
 
 
 
@@ -241,7 +241,7 @@ Randomized Experiment에서는 자명히 conditional expectation이 각 조건�
 
 구분시키는데에 성공하더라도 현대사회에서 manipulated된 두 그룹 사이의 소통을 단절시키는 것 또한 불가능할 것이다. 두 그룹 사이의 interaction이 조금이라도 발생한다면 이것이 randomized experiment의 manipulation이라고 볼 수 있을까?
 
-윤리적, 도의적인 문제도 존재한다. 특히 정책에 대해서 진행을 한다고 하면, 같은 시점 내에서 몇몇 시민들은 정책의 특혜를 받고 어떤 시민들은 배제되는 등, 진행 자체에 대한 세간의 평가도 의식해야 할 것 이다. 
+윤리적, 도의적인 문제도 존재한다. 특히 복지 정책에 대해서 진행을 한다고 하면, 같은 시점 내에서 몇몇 시민들은 정책의 복지 혜택을 받고 어떤 시민들은 배제되는 등, 진행 자체에 윤리적/도의적 측면도 의식해야 할 것 이다. 
 
 
 

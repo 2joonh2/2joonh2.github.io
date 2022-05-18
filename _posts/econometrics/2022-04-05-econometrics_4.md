@@ -30,9 +30,9 @@ toc_sticky: true
 
 이 데이터를 어떻게 처리할 것인가? 아래의 그림과 함께 몇가지 옵션을 생각해보자.
 
-1) Raw data 상태의 양과 음의 값을 모두 그대로 남겨놓고? (**uncensored; m*(x)**)
-2) 0보다 작은 데이터를 모두 censor하여 0으로 변환시키고? (**censored; m(x)**)
-3) 0에 해당하는 데이터들을 모두 버리고(제거하고/자르고)? (**truncated; m#(x)**)
+1) **Uncensored; m*(x)**: Raw data 상태의 양과 음의 값을 모두 그대로 남겨놓고?
+2) **Censored; m(x)**: 0보다 작은 데이터를 모두 censor하여 0으로 변환시키고?
+3) **Truncated; m#(x)**: 0에 해당하는 데이터들을 모두 버리고(제거하고/자르고)? 
 
 
 
@@ -58,7 +58,9 @@ toc_sticky: true
 
 위의 그래프를 보면서 정리해보자.
 
-앞서 censor라는 것은 본 케이스에선 0 아래의 값들이 0이 되는 것이다. 0 이상의 값들은 censoring 되지 않는, 곧 uncensored value들이다. 
+앞서 censoring이라는 것은 본 케이스에선 0 아래의 값들이 0이 되는 것이다. 
+
+0 이상의 값들은 censoring 되지 않는, 곧 uncensored value들이다. 
 
 Truncated 옵션에서는 0 미만의 값들을 0으로 censoring 하는 것이 아닌 아예 missing value 처리하기 때문에, 곧 unobserved value가 될 것이다.
 
