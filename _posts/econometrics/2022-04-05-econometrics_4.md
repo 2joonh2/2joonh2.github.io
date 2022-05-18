@@ -8,6 +8,10 @@ toc_sticky: true
 
 응용계량경제학 필기노트
 
+![image-20220518175242971](../../assets/images/2022-04-05-econometrics_4/image-20220518175242971.png)
+
+밑바닥 아래의 지하층 ~~네이버 !@#$*&^~~
+
 
 
 # Censoring and Selection
@@ -133,4 +137,6 @@ The extent of sample selection bias depends on the magnitude of $\rho$ which is 
 Furthermore, the omitted selection term $\lambda(X'\gamma)$ only impacts estimated marginal effects if the slope coefficients are non-zero.
 
 
+
+### Heckman's Model
 

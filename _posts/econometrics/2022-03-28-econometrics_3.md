@@ -10,6 +10,14 @@ toc_sticky: true
 
 
 
+![image-20220518174825180](../../assets/images/2022-03-28-econometrics_3/image-20220518174825180.png)
+
+한식 양식 일식 중식. 그것이 multiple choice다. ~~???: 식단~~
+
+
+
+
+
 # Multiple Choice
 
 ## Multinomial Response
