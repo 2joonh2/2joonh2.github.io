@@ -178,7 +178,7 @@ $$
 
 위 식은 Regression 맥락에서 Selection Bias를 설명하는 Derivation이다. 
 
-여기서 지적되는 부분은 곧, Regression의 Endogeneity Issue가 없기 위해선 오차항($\epsilon$), 여기서는 $E[\eta_i\|D_i=1]-E[\eta_i\|D_i=0]$ 항이 다른 변수(especially D)와의 correlation이 없어야한다는 것이다. 즉 $E[\eta_i\\|D_i]=0$이어야 한다. 
+여기서 지적되는 부분은 곧, Regression의 Endogeneity Issue가 없기 위해선 오차항($\epsilon$), 여기서는 $E[\eta_i\|D_i=1]-E[\eta_i\|D_i=0]$ 항이 다른 변수(especially D)와의 correlation이 없어야한다는 것이다. 즉 $E[\eta_i\|D_i]=0$이어야 한다. 
 
 만약 0이 아닐 경우? 이는 Endogeneity Issue가 존재하는 것이고, $E[\eta_i\|D_i=1]-E[\eta_i\|D_i=0]=E[Y_i\|D_i=1]-E[Y_i\|D_i=0]$이 0이 아니라는 것이며, 즉 앞서 유도된 Selection Bias가 존재한다는 것과 동치이다.
 
