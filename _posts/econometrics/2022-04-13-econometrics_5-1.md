@@ -224,7 +224,7 @@ Randomized Experiment에서는 자명히 conditional expectation이 각 조건�
 $$
 \displaylines{\{Y_{0i},Y_{1i}\} \perp\!\!\!\perp D_i \newline 
 E[Y_i|D_i=1]-E[Y_i|D_i=0]=E[Y_{1i}|D_i=1]-E[Y_{0i}|D_i=1]\newline
-=E[Y_{1i}-Y_{0i}|D_i=1] \text{\;\;or\;\;} E[Y_{1i}-Y_{0i}]=ATE}
+=E[Y_{1i}-Y_{0i}|D_i=1] \;\;\text{or}\;\; E[Y_{1i}-Y_{0i}]=ATE}
 $$
 
 
