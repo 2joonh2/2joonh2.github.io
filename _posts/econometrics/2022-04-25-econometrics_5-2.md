@@ -20,7 +20,7 @@ toc_sticky: true
 
 <img src="../../assets/images/2022-04-25-econometrics_5-2/image-20220518210841242.png" alt="image-20220518210841242" style="zoom:50%;" />
 
-*여러분 공부하는거,, 잘 생각해보시길 바랍니다!*
+???: *여러분 공부하는거,, 잘 생각해보시길 바랍니다!*
 
 대표적인 CEF이다. 교육연수(X)에 따라 연봉 값(Y)이 달라지는, 즉 X에 따라 Y의 기댓값 E[Y]가 달라지는 $E[Y\|X]$; CEF라고 볼 수 있다.
 
@@ -103,6 +103,8 @@ $$
 
 3.1.1.의 연장선에서 Y의 분산은 1) X로 설명되는 항과, 2) Residual로 설명되는 항으로 Decompose될 수 있다는 Property이다.
 
+두번째 항이 Residual이라는 것은 쉽게 유추할 수 있다. 분산의 정의를 고려할때, X로 설명되지 않았기 때문에 존재하는 잔차들의 분산이 $V(Y_i\|X_i)$이기 때문.
+
 
 
 
@@ -118,8 +120,8 @@ pf.
 
 $$
 \displaylines{V(Y)=V(E[Y|X]+\epsilon)=V(E[Y|X])+V(\epsilon)\newline
-Note,\;E[Y|X]\;and\;\epsilon\;are\;not\;correlated.\newline\newline
-Then,\;the\; variance\; of\; \epsilon\; is\newline
+Note,\;E[Y|X]\;and\;\epsilon\;\text{are\;not\;correlated.}\newline\newline
+\text{Then,\;the\; variance\; of}\; \epsilon\; \text{is}\newline
 E[\epsilon^2]=E[E[\epsilon^2|X]]=E[V[Y|X]]\newline
 Note,\;E[\epsilon]\newline
 Thus,\;V(Y)=V(E[Y|X])+E[V[Y|X]]}
@@ -151,7 +153,7 @@ pf.
 
 
 $$
-\displaylines{Suppose\; E[Y|X]=X'\beta^*;\newline
+\displaylines{\text{Suppose}\; E[Y|X]=X'\beta^*;\newline
 \text{Since,}\; E[X(Y-E[Y|X])]=0\;\text{by\;CEF-Decomposition\;property\;(3.1.1)}\newline
 \text{Then,\;by\;substitution,}\;E[X(Y-E[Y|X])]=E[X(Y-X'\beta^*)]=E[XY-XX'\beta^*]=0\newline
 \text{Thus,}\;\beta^*=E[XX']^{-1}E[XY],\;\text{which\;refers\;}\beta\;\text{(the\;estimator\;for\;the\;population)}}
