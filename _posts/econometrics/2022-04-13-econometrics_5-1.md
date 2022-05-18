@@ -172,7 +172,8 @@ Y_i=(Y_{1i}-Y_{0i})D_i+Y_{0i}\newline
 \text{Then,}\quad E[Y_i|D_i=1]=\alpha + \rho +E[\eta_i|D_i=1]\newline
 E[Y_i|D_i=0]=\alpha + E[\eta_i|D_i=0]\\\\
 
-\text{Then, the Treatment Effect is}\quad E[Y_i|D_i=1]-E[Y_i|D_i=0]=\rho +E[\eta_i|D_i=1]-E[\eta_i|D_i=0]}
+\text{Thus, the Treatment Effect is}\newline
+E[Y_i|D_i=1]-E[Y_i|D_i=0]=\rho +E[\eta_i|D_i=1]-E[\eta_i|D_i=0]}
 $$
 
 
@@ -221,9 +222,9 @@ Randomized Experiment에서는 자명히 conditional expectation이 각 조건�
 
 
 $$
-\{Y_{0i},Y_{1i}\} \perp\!\!\!\perp D_i \newline 
+\displaylines{\{Y_{0i},Y_{1i}\} \perp\!\!\!\perp D_i \newline 
 E[Y_i|D_i=1]-E[Y_i|D_i=0]=E[Y_{1i}|D_i=1]-E[Y_{0i}|D_i=1]\newline
-=E[Y_{1i}-Y_{0i}|D_i=1] \text{\;\;or\;\;} E[Y_{1i}-Y_{0i}]=ATE
+=E[Y_{1i}-Y_{0i}|D_i=1] \text{\;\;or\;\;} E[Y_{1i}-Y_{0i}]=ATE}
 $$
 
 

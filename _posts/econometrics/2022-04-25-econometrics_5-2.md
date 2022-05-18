@@ -16,7 +16,7 @@ toc_sticky: true
 
 
 
-# Conditional Expectation Function (CEF)
+# CEF
 
 <img src="../../assets/images/2022-04-25-econometrics_5-2/image-20220518210841242.png" alt="image-20220518210841242" style="zoom:50%;" />
 
