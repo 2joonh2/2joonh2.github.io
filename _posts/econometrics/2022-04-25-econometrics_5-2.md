@@ -44,10 +44,10 @@ Regression 상에서 Y는 곧 X로 1) 설명가능한 항과, 2) 그렇지 못�
 
 
 $$
-\displaylines{\text{The\;CEF-Decomposition\;Property}\newline
+\displaylines{\text{The CEF-Decomposition Property}\newline
 Y_i=E[Y_i|X_i]+\epsilon_i \newline
-i)\; \epsilon_i\;\text{is\;mean\;independent\;of\;}X_i\,;\;E[\epsilon|X]=0 \newline
-ii)\; \epsilon_i\; \text{is\;uncorrelated\;with\;any\;function\;of}\;X_i}
+i)  \epsilon_i \text{is mean independent of }X_i\,; E[\epsilon|X]=0 \newline
+ii)  \epsilon_i  \text{is uncorrelated with any function of} X_i}
 $$
 
 
@@ -59,8 +59,8 @@ $$
 \displaylines{i)\quad For\quad Y=E[Y|X]+\epsilon \newline
 Note,\quad E[\epsilon|X]=0 \newline
 Then,\quad E[\epsilon|X]=E[Y-E[Y|X]|X]=E[Y|X]-E[Y|X]=0 \newline \newline
-ii)\quad let\;h(X_i)\;is\;a\;function\;of\;X_i\newline
-E[h(X)\,\epsilon]=E\{h(X)\,E[\epsilon|X]\}=0,\;since\;E[\epsilon|X]=0}
+ii)\quad let h(X_i) \text{is a function of} X_i\newline
+E[h(X)\,\epsilon]=E\{h(X)\,E[\epsilon|X]\}=0, \;\text{since } E[\epsilon|X]=0}
 $$
 
 
@@ -75,7 +75,7 @@ Y를 설명하는 가장 좋은 Predictor로서의 X의 함수는 CEF라는 것�
 
 
 $$
-\displaylines{\text{The\;CEF-Prediction\;Property}\newline
+\displaylines{\text{The CEF-Prediction Property}\newline
 E[Y|X]=arg\,min\,E[(Y-m(X))^2]\newline
 \text{i.e., the CEF is the minimum mean squared error (MMSE) predictor of }Y_i}
 $$
@@ -90,7 +90,7 @@ pf.
 $$
 \displaylines{(Y-m(X))^2=((Y-E[Y|X])+(E[Y|X]-m(X)))^2\newline
 =(Y-E[Y|X])^2+2(Y-E[Y|X])(E[Y|X]-m(X))+(E[Y|X]-m(X))^2\newline\newline
-The\;first\;and\;second\;term\;do\;not\;affect;\;while\;the\;last\;term\;be\;minimzed\;where\;Y\;equals\;m(X)}
+\text{The first and second term do not affect; while the last term be minimzed where}\; Y \;\text{equals}\; m(X)}
 $$
 
 
@@ -109,7 +109,7 @@ $$
 
 
 $$
-\displaylines{\text{The\; ANOVA\; Theorem}\newline
+\displaylines{\text{The  ANOVA  Theorem}\newline
 V(Y_i)=V(E[Y_i|X_i])+E[V(Y_i|X_i)]}
 $$
 
@@ -120,11 +120,11 @@ pf.
 
 $$
 \displaylines{V(Y)=V(E[Y|X]+\epsilon)=V(E[Y|X])+V(\epsilon)\newline
-Note,\;E[Y|X]\;and\;\epsilon\;\text{are\;not\;correlated.}\newline\newline
-\text{Then,\;the\; variance\; of}\; \epsilon\; \text{is}\newline
+\text{Note, } E[Y|X] \text{ and } \epsilon \text{ are not correlated.}\newline\newline
+\text{Then, the  variance  of }  \epsilon  \text{ is}\newline
 E[\epsilon^2]=E[E[\epsilon^2|X]]=E[V[Y|X]]\newline
-Note,\;E[\epsilon]\newline
-Thus,\;V(Y)=V(E[Y|X])+E[V[Y|X]]}
+Note, E[\epsilon]\newline
+Thus, V(Y)=V(E[Y|X])+E[V[Y|X]]}
 $$
 
 
@@ -137,14 +137,14 @@ $$
 
 3.1.2.에서 우리는 Y를 예측(Predict)하는 가장 좋은 함수는 CEF라는 것을 보인 바 있다. 3.1.2. 식의 상에서 m(X)는 X와 관련된 어떠한 임의의 함수도 가능하지만, 우리는 X에 대한 linear function으로, 곧 X'b라는 단순한 모델로 접근해보고자 한다.
 
-3.1.4. The Linear CEF Theorem는 즉 CEF가 선형함수라면, 전체 population에 대한 regression function이 동일한 선형함수라는 것이다.
+3.1.4. The Linear CEF Theorem는 즉 CEF가 선형함수라고 가정하면, 전체 population에 대한 regression function이 동일한 선형함수라는 것이다.
 
 
 
 
 $$
-\displaylines{\text{The\; Linear\; CEF\; Theorem\; (Regression-justification\;I)}\newline
-\text{Suppose\; the\; CEF\; is\; linear;\; then\; the\; population\; regression\; function\; is\; it.}}
+\displaylines{\text{The  Linear  CEF  Theorem  (Regression-justification I)}\newline
+\text{Suppose  the  CEF  is  linear;  then  the  population  regression  function  is  it.}}
 $$
 
 
@@ -153,10 +153,10 @@ pf.
 
 
 $$
-\displaylines{\text{Suppose}\; E[Y|X]=X'\beta^*;\newline
-\text{Since,}\; E[X(Y-E[Y|X])]=0\;\text{by\;CEF-Decomposition\;property\;(3.1.1)}\newline
-\text{Then,\;by\;substitution,}\;E[X(Y-E[Y|X])]=E[X(Y-X'\beta^*)]=E[XY-XX'\beta^*]=0\newline
-\text{Thus,}\;\beta^*=E[XX']^{-1}E[XY],\;\text{which\;refers\;}\beta\;\text{(the\;estimator\;for\;the\;population)}}
+\displaylines{\text{Suppose }  E[Y|X]=X'\beta^*;\newline
+\text{Since, }  E[X(Y-E[Y|X])]=0 \text{ by CEF-Decomposition property (3.1.1)}\newline
+\text{Then, by substitution, } E[X(Y-E[Y|X])]=E[X(Y-X'\beta^*)]=E[XY-XX'\beta^*]=0\newline
+\text{Thus, } \beta^*=E[XX']^{-1}E[XY], \text{ which refers }\beta \text{ (the estimator for the population)}}
 $$
 
 
@@ -173,9 +173,9 @@ $$
 
 
 $$
-\displaylines{\text{The\; Best\;Linear\;Predictor\; Theorem\; (Regression-justification II)}\newline
+\displaylines{\text{The  Best Linear Predictor  Theorem  (Regression-justification II)}\newline
 
-\text{The\; function\;} X'\beta\; \text{is\; the\; best\; linear\; predictor\; of\; }Y\; given\; X\; \text{in\; a\; MMSE\; Sense.}}
+\text{The  function } X'\beta  \text{ is  the  best  linear  predictor  of  }Y \text{ given } X  \text{ in  a  MMSE  Sense.}}
 $$
 
 
@@ -184,9 +184,9 @@ pf.
 
 
 $$
-\displaylines{\beta\;\text{is\;being\; defined \;for\; solving}\;arg\,\underset b min\,E[(Y-X'b)^2]\newline
+\displaylines{\beta \text{ is being  defined  for  solving } arg\,\underset b min\,E[(Y-X'b)^2]\newline
 \beta=E[XX']^{-1}E[XY]\newline
-\text{Derivation\; of\; the\; }\hat\beta\; \text{at\;the\; population\; regression\; would\; not\; be\; necessary.}}
+\text{Derivation  of  the  }\hat\beta  \text{ at the  population  regression  would  not  be  necessary.}}
 $$
 
 
@@ -197,14 +197,14 @@ $$
 
 ### 3.1.6. The Regression-CEF Theorem
 
-Regression의 결과인 $\beta$는 CEF에 대해서도 가장 좋은 predictor이다.
+3.1.4.와 3.1.5.의 결과를 통해 우리는 Regression의 결과인 $\beta$가 CEF에 대해서도 가장 좋은 predictor임을 확인할 수 있다.
 
 
 
 
 $$
-\displaylines{\text{The\; Regression-CEF\; Theorem\; (Regression-justification III)}\newline
-\text{The\; function\;} X'\beta\; \text{provides\;the\;MMSE\;linear\;approximation\;to\;}E[Y|X],\text{\;that\;is,}\newline
+\displaylines{\text{The  Regression-CEF  Theorem  (Regression-justification III)}\newline
+\text{The  function } X'\beta  \text{ provides the MMSE linear approximation to }E[Y|X],\text{ that is,}\newline
 \beta=arg\,\underset b min\,E\{(E[Y|X]-X'b)^2\}}
 $$
 
@@ -219,8 +219,8 @@ $$
 $$
 
 $$
-\displaylines{\text{The \;first\; term\; does\; not\; involve\; b,\; and\; the\; last\; term\; has\; expectation\; zero\; by\; CEF-decomposition\; property \;(3.1.2).}\newline
-\text{Thus,\; only\; second\; term\; has\; left,\; and\; the\; solution\; is\; same\; as\; the\; population\; least\; squares\; problem,\;which\;is,}\newline
+\displaylines{\text{The  first  term  does  not  involve  b,  and  the  last  term  has  expectation  zero  by  CEF-decomposition  property  (3.1.2).}\newline
+\text{Thus,  only  second  term  has  left,  and  the  solution  is  same  as  the  population  least  squares  problem, which is,}\newline
 \beta=E[XX']^{-1}E[XY]\newline
 }
 $$
@@ -229,17 +229,7 @@ $$
 
 
 
-3.1.2. Y를 설명하는 가장 좋은 Predictor로서의 X의 함수는 CEF라는 것이다
-
-3.1.4. The Linear CEF Theorem는 즉 CEF가 선형함수라면, 전체 population에 대한 regression function이 동일한 선형함수라는 것이다.
-
-3.1.5. 즉, 전체 population에 대한 regression은 곧 반대로 CEF에게도 Best Linear Predictor라는 것이다.
-
-3.1.6. Regression의 결과인 $\beta$는 CEF에 대해서도 가장 좋은 predictor이다.
-
-
-
-따라서 이 properties들의 의미는 (특히 3.1.6. The Regression-CEF Theorem을 통해), Y라는 전체 population의 거대한 데이터 대신, E[Y|X]에 weightening으로 adjust만 해주면 정확히 동일한 $\beta$를 구할 수 있다는 것이다.
+3.1.6. The Regression-CEF Theorem을 통해, Y라는 전체 population의 거대한 데이터 대신, $E[Y\|X]$에 weightening으로 adjust만 해주면 정확히 동일한 $\beta$를 구할 수 있다는 것이다.
 
 
 
@@ -299,10 +289,59 @@ AP는 아래와 같이 설명하였다.
 
 Endogeneity Issues는 다음과 같은 원인으로 발생할 수 있다.
 
-- Omitted Variables
-  - 
+- **Omitted Variables (Bias)**
+  - Y에 영향을 주는 관측하지 못한 (unobservable) 변수가 regression이 포함되지 않았을때, 
+  - 그 상황에서 기존의 X와 correlation이 존재하면 곧 error term과 correlation이 발생하여 OVB가 발생한다.
 - Measurement Error
 - Simultaneity
 
 
 
+최악은, 위의 세가지 이유가 배타적이라 아니라 전부 발생할수도 있다는 점이다.
+
+
+
+### OVB Example: The Returns to College
+
+*The classic example of treatment endogeneity in the labor literature is in measuring the returns to college (C_i=0,1)*
+
+
+$$
+\displaylines{
+E[Y_i|C_i=1]-E[Y_i|C_i=0]=E[Y_{1i}|C_i=1]-E[Y_{0i}|C_i=0]\newline
+=E[Y_{1i}-Y_{0i}|C_i=1]+(\,E[Y_{0i}|C_i=1]-E[Y_{0i}|C_i=0]\,)\newline
+\equiv ATT +\text{ Selection Bias}
+}
+$$
+
+
+대표적으로 발생할 수 있는 연봉과 학력 수준 사이의 regression 사이의 OV는 *ability* 이다.
+
+ability는 직업과 연봉을 결정짓는 가장 중요한 변수중 하나라고 할 수 있지만, 측정의 어려움 등으로 인해 기존의 회귀식에서 빠진채 진행이 되었다.
+
+그리고 단순한 추측으로 예컨데, 이번 regression 식에서의 측정된 Effect 크기인 ATT + Selection Bias에서는 둘 다 양의 값을 가질 것이라 예상해볼 수 있다.
+
+
+$$
+\text{Selection Bias : \;}E[Y_{0i}|C_i=1]-E[Y_{0i}|C_i=0]>0
+$$
+
+
+본 selection bias 항을 해석해보자면, C라는 조건에 따라, 즉 대학에 간 사람들과 대학에 가지 않은 사람들이, 만약 모두 대학에 가지 않았더라도 연봉의 차이는 존재할 것이라는 유추를 해볼 수 있다. 능력의 차이가 있기 때문이다. 
+
+조금더 설명을 붙여보자면, 학력이 높은 개인들은 능력 또한 높을 것이란 상관관계를 추측해볼 수 있다. 
+
+즉, 능력, *ability*는 Omitted Variable이다.
+
+
+
+### Conditional Independence Assumption (CIA)
+
+
+$$
+\displaylines{\text{Randomized Experiment : \;}\{Y_{0i},Y_{1i}\}\perp\!\!\!\perp C_i\newline
+\text{CIA : \;}\{Y_{0i},Y_{1i}\}\perp\!\!\!\perp C_i|X_i}
+$$
+
+
+CIA는 오히려 $X_i$를 통제하는 것이다.

@@ -148,3 +148,4 @@ Furthermore, the omitted selection term $\lambda(X'\gamma)$ only impacts estimat
 
 ### Heckman's Model
 
+https://youtu.be/Mbxca6ybf2s
