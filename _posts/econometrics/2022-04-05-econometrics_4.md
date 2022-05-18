@@ -8,6 +8,8 @@ toc_sticky: true
 
 응용계량경제학 필기노트
 
+
+
 ![image-20220518175242971](../../assets/images/2022-04-05-econometrics_4/image-20220518175242971.png)
 
 밑바닥 아래의 지하층 ~~네이버 !@#$*&^~~

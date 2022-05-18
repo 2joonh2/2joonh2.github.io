@@ -16,8 +16,6 @@ toc_sticky: true
 
 
 
-
-
 # Multiple Choice
 
 ## Multinomial Response

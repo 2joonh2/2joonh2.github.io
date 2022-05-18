@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Econometrics] 5. Treatment Effects and Regression"
+title: "[Econometrics] 5-1. Treatment Effects and Regression"
 categories: Econometrics
 toc: true
 toc_sticky: true
@@ -12,9 +12,7 @@ toc_sticky: true
 
 ![image-20220518175905847](../../assets/images/2022-04-13-econometrics_5/image-20220518175905847.png)
 
-내가 아는 대학원생은 다들 아프다. ~~There is no Selection Bias~~
-
-
+내가 아는 대학원생은 다들 아프다. ~~This is not a Selection Bias~~
 
 
 
