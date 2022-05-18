@@ -178,11 +178,9 @@ $$
 
 위 식은 Regression 맥락에서 Selection Bias를 설명하는 Derivation이다. 
 
-여기서 지적되는 부분은 곧, Regression의 Endogeneity Issue가 없기 위해선 오차항($\epsilon$), 여기서는 $E(\eta_i|D_i=1)-E([\eta_i|D_i=0)$ 항이 다른 변수(especially D)와의 correlation이 없어야한다는 것이다. 즉 $E(\eta_i|D_i)=0$이어야 한다. 
+여기서 지적되는 부분은 곧, Regression의 Endogeneity Issue가 없기 위해선 오차항($\epsilon$), 여기서는 $E[\eta_i\|D_i=1]-E[\eta_i\|D_i=0]$ 항이 다른 변수(especially D)와의 correlation이 없어야한다는 것이다. 즉 $E[\eta_i\\|D_i]=0$이어야 한다. 
 
-만약 0이 아닐 경우? 이는 Endogeneity Issue가 존재하는 것이고, $E(\eta_i|D_i=1)-E(\eta_i|D_i=0)=$E([Y_i|D_i=1)-E(Y_i|D_i=0)$이 0이 아니라는 것이며, 즉 앞서 유도된 Selection Bias가 존재한다는 것과 동치이다.
-
-
+만약 0이 아닐 경우? 이는 Endogeneity Issue가 존재하는 것이고, $E[\eta_i\|D_i=1]-E[\eta_i\|D_i=0]=E[Y_i\|D_i=1]-E[Y_i\|D_i=0]$이 0이 아니라는 것이며, 즉 앞서 유도된 Selection Bias가 존재한다는 것과 동치이다.
 
 
 
@@ -229,7 +227,7 @@ Selection Bias를 극복해내기 위해서 Rubin's Causal Model은 두번째 ke
 
 #### A. Randomized Experiments
 
-앞서 우리는 Selection Bias의 개념을 공부하였고, 수식으로 $E(\eta_i|D_i=1)-E(\eta_i|D_i=0)=$E([Y_i|D_i=1)-E(Y_i|D_i=0)$임을 보인 바 있다. 
+앞서 우리는 Selection Bias의 개념을 공부하였고, 수식으로 $E[\eta_i\|D_i=1]-E[\eta_i\|D_i=0]=E[Y_i\|D_i=1]-E[Y_i\|D_i=0]$임을 보인 바 있다. 
 
 Randomized Experiment에서는 자명히 conditional expectation이 각 조건에 따라 영향을 받지 않기 떄문에 위 Selection Bias가 0이 되는 것을 알 수 있다. 
 
