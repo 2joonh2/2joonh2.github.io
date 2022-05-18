@@ -356,7 +356,7 @@ $$
 
 ***CIA means that $C_i$ is "as good as randomly assigned,"conditional on $X_i$ , and thus the selection bias vanishes.***
 
-CIA는 오히려 the conditioning variables, $X_i$를 통제함으로써 $C_i$의 randomness를 충족시키고 이를 통해 Selection Bias를 제거한 Treatment Effect를 찾자는 것이다.
+CIA는 오히려 the conditioning variables, $X_i$를 통제함으로써 (regression에 포함시킴으로써) $C_i$의 randomness를 충족시키고 이를 통해 Selection Bias를 제거한 Treatment Effect를 찾자는 것이다.
 
 일종의 Fixed Effect라고 볼 수도 있다.
 
