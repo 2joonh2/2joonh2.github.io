@@ -441,19 +441,22 @@ $$
 $$
 
 
+
 여기서 위 식의 error term인 $\eta$를 자세히 살펴보자 (decompose).
 
 
+
 $$
-\eta_i=X_i'\gamma+\nu_i \newline
+\displaylines{\eta_i=X_i'\gamma+\nu_i \newline
 \text{Then, } E[\eta_i|X_i]=X_i'\gamma, \text{ and } E[\nu_i|X_i]=0 \text{ by decomposition property}\\\\
 
 \text{CIA implies: } E[Y_{s,i}|X_i, s_i]=E[Y_{s,i}|X_i]\newline
 =\alpha+\rho s+E[\eta_i|X_i]=\alpha+\rho s+X_i'\gamma
 \\\\
 \text{Thus, } Y_i=\alpha+\rho s+X_i'\gamma+\nu_i \newline
-\text{satisfying }E[\nu_i|X_i,s_i]=0 
+\text{satisfying }E[\nu_i|X_i,s_i]=0}
 $$
+
 
 
 $\eta$는 OVB로 인해 X와 correlation이 있을수도 있고 없을 수도 있다. 
