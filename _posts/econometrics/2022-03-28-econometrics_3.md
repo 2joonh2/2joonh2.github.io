@@ -34,7 +34,8 @@ $$
 
 
 
-The utility of alternative j is assumed to equal
+각자 생각하는 유틸리티, *The utility of alternative j*를 생각해볼 수 있을 것이다.
+
 
 
 $$
@@ -42,9 +43,11 @@ U_j^*=X'\beta_j+\epsilon_j
 $$
 
 
+
 여기서 $\epsilon_j$는 individual-specific, and contains unobserved factors 들을 포함하는 에러텀이다.
 
 이렇게 정의된 각 alternative의 utility를 기반으로 사용자의 선택을 예측하는 것은 곧,
+
 
 
 $$
@@ -52,7 +55,8 @@ Y=j,\;if\;U^*_j \geq U^*_l\;(for\;all\;l)
 $$
 
 
-다른 어떤 alternative의 utility보다 j의 utility가 높음을 의미한다.
+
+다른 어떤 alternatives의 utility보다 j의 utility가 높음을 의미한다.
 
 
 
@@ -112,7 +116,7 @@ $$
 
 
 $$
-marginal\; effect\; :\;\frac{\partial}{\partial x}P_j(x)=P_j(x)\,(\beta_j-\Sigma\,\beta_lP_l(x))
+\text{marginal effect}\; :\;\frac{\partial}{\partial x}P_j(x)=P_j(x)\,(\beta_j-\Sigma\,\beta_lP_l(x))
 $$
 
 
@@ -153,7 +157,7 @@ $$
 
 $$
 \displaylines{U_j^*=W'\beta_j'+X_j'\gamma+\epsilon_j \newline
-\epsilon_j \sim Type\; 1\; Extreme\; Value=exp(-exp(-\epsilon))}
+\epsilon_j \sim \text{ Type 1 Extreme Value}=exp(-exp(-\epsilon))}
 $$
 
 
@@ -269,7 +273,7 @@ $$
 
 
 $$
-Response\;Probability:\;P_{jk}=P_{k|j}P_j
+\text{Response Probability}:\;P_{jk}=P_{k|j}P_j
 $$
 
 
@@ -368,5 +372,5 @@ $$
 
 
 $$
-marginal\; effects\;:\frac{\partial}{\partial x}P_j(x)=\beta(g(\alpha_j-X'\beta)-g(\alpha_{j-1}-X'\beta))
+\text{marginal effect}\;:\frac{\partial}{\partial x}P_j(x)=\beta(g(\alpha_j-X'\beta)-g(\alpha_{j-1}-X'\beta))
 $$

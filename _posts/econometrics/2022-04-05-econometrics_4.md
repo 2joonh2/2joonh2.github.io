@@ -30,9 +30,9 @@ toc_sticky: true
 
 이 데이터를 어떻게 처리할 것인가? 아래의 그림과 함께 몇가지 옵션을 생각해보자.
 
-1) Raw data 상태의 양과 음의 값을 모두 그대로 남겨놓고? (**uncensored; $m^*(x)$**)
-2) 0보다 작은 데이터를 모두 censor하여 0으로 변환시키고? (**censored; $m(x)$**)
-3) 0에 해당하는 데이터들을 모두 버리고(제거하고/자르고)? (**truncated; $m^#(x)$**)
+1) Raw data 상태의 양과 음의 값을 모두 그대로 남겨놓고? (**uncensored; m*(x)**)
+2) 0보다 작은 데이터를 모두 censor하여 0으로 변환시키고? (**censored; m(x)**)
+3) 0에 해당하는 데이터들을 모두 버리고(제거하고/자르고)? (**truncated; m#(x)**)
 
 
 
@@ -94,9 +94,9 @@ $$
 
 
 $$
-ln(\beta, \sigma^2)=\Sigma\,log\,f(Y_i|X_i)\newline
+\displaylines{ln(\beta, \sigma^2)=\Sigma\,log\,f(Y_i|X_i)\newline
 =\Sigma(1(Y_i=0)log\Phi(\frac{-X_i'\beta}{\sigma})+1(Y_i>0)log[\sigma^{-1}\phi(\frac{Y_i-X'_i\beta}{\sigma})])\newline
-=\Sigma\,log\Phi(\frac{-X'\beta}{\sigma})-\frac{1}{2}\Sigma(log(2\pi\sigma^2)+\sigma^{-1}(Y_i-X'_i\beta)^2)
+=\Sigma\,log\Phi(\frac{-X'\beta}{\sigma})-\frac{1}{2}\Sigma(log(2\pi\sigma^2)+\sigma^{-1}(Y_i-X'_i\beta)^2)}
 $$
 
 
@@ -124,13 +124,13 @@ $$
 
 
 $$
-S=1(X'\gamma+u>0),\; e=\rho u+\epsilon, u\sim N(0,1)\newline
+\displaylines{S=1(X'\gamma+u>0),\; e=\rho u+\epsilon, u\sim N(0,1)\newline
 
 E(Y|X,\; s=1)=X'\beta+E(e|X,S=1)\newline
 =X'\beta+E(e|u>-X'\gamma)\newline
 =X'\beta+\rho E(u|u>-X'\gamma)
 =X'\beta+\rho \frac{\phi(-X'\gamma)}{1-\Phi(-X'\gamma)}\newline
-=X'\beta+\rho\frac{\phi(X'\gamma)}{\Phi(X'\gamma)}=X'\beta+\rho\; \lambda(X'\gamma);\;Bias
+=X'\beta+\rho\frac{\phi(X'\gamma)}{\Phi(X'\gamma)}=X'\beta+\rho\; \lambda(X'\gamma);\;Bias}
 $$
 
 
