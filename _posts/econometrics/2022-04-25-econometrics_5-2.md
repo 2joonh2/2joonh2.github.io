@@ -370,7 +370,7 @@ CIA는 오히려 the conditioning variables, $X_i$를 통제함으로써 (regres
 
 
 
-$C_i|X_i$가 Y와 독립이기 때문에 두번째 행에서 세번째로 넘어갈때에 제약이 없고, Selection Bias가 없는 Treatment Effect의 효과를 확인할 수 있다.
+$C_i\|X_i$가 Y와 독립이기 때문에 두번째 행에서 세번째로 넘어갈때에 제약이 없고, Selection Bias가 없는 Treatment Effect의 효과를 확인할 수 있다.
 
 
 
