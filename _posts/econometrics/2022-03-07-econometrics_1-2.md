@@ -8,11 +8,11 @@ toc_sticky: true
 
 응용계량경제학 필기노트
 
-![image-20220307170244209](../../assets/images/2022-03-07-econometrics_2/image-20220307170244209.png)
 
-웃으면 복이 와요.  ~~복이 와야 웃는거 아닌가요.~~ 
 
-~~Reverse Causality~~
+![image-20220518175905847](../../assets/images/2022-03-07-econometrics_1-2/image-20220518175905847.png)
+
+편향
 
 
 

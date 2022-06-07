@@ -8,11 +8,9 @@ toc_sticky: true
 
 응용계량경제학 필기노트
 
+![image-20220307170244209](../../assets/images/2022-04-13-econometrics_5-1/image-20220307170244209.png)
 
-
-![image-20220518175905847](../../assets/images/2022-04-13-econometrics_5/image-20220518175905847.png)
-
-내가 아는 대학원생은 다들 아프다. ~~This is not a Selection Bias~~
+웃으면 복이 와요. 
 
 
 
