@@ -57,12 +57,12 @@ P(Y^*>0|X)=1-\Phi(-X'\beta/\sigma)=\Phi(X'\beta/\sigma)}
 $$
 
 $$
-\text{Then,\;}m^\#(x)=E[Y^\#|X]=E[Y|X,Y>0]\newline
+\displaylines{\text{Then,\;}m^\#(x)=E[Y^\#|X]=E[Y|X,Y>0]\newline
 =E[X'\beta+e|X, e>-X'\beta]\newline
 =X'\beta+E[e|e>-X'\beta]\newline
 =X'\beta+\sigma\; \frac{\phi(-X'\beta/\sigma)}{1- \Phi(-X'\beta/\sigma)}\newline
 =X'\beta+\sigma\; \frac{\phi(X'\beta/\sigma)}{\Phi(X'\beta/\sigma)}\newline
-\equiv X'\beta+\sigma\lambda(X'\beta/\sigma)
+\equiv X'\beta+\sigma\lambda(X'\beta/\sigma)}
 $$
 
 
