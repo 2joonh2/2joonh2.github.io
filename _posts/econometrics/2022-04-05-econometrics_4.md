@@ -57,7 +57,7 @@ P(Y^*>0|X)=1-\Phi(-X'\beta/\sigma)=\Phi(X'\beta/\sigma)}
 $$
 
 $$
-\displaylines{\text{Then,\;}m^\#(x)=E[Y^\#|X]=E[Y|X,Y>0]\newline
+\displaylines{\text{Then,}\; m^\#(x)=E[Y^\#|X]=E[Y|X,Y>0]\newline
 =E[X'\beta+e|X, e>-X'\beta]\newline
 =X'\beta+E[e|e>-X'\beta]\newline
 =X'\beta+\sigma\; \frac{\phi(-X'\beta/\sigma)}{1- \Phi(-X'\beta/\sigma)}\newline
@@ -68,8 +68,8 @@ $$
 
 
 $$
-m(x)=E(Y|X)=0 * \Phi(-X'\beta/\sigma)+\Phi(X'\beta/\sigma)\,m^\#(x)\newline
-=\Phi(X'\beta/\sigma)\,m^\#(x) \;\leq m^\#(x)
+\displaylines{m(x)=E(Y|X)=0 * \Phi(-X'\beta/\sigma)+\Phi(X'\beta/\sigma)\,m^\#(x)\newline
+=\Phi(X'\beta/\sigma)\,m^\#(x) \;\leq m^\#(x)}
 $$
 
 
@@ -161,7 +161,7 @@ E(Y|X,\; S=1)=X'\beta+E(e|X,S=1)\newline
 =X'\beta+E(e|u>-X'\gamma)\newline
 =X'\beta+\rho E(u|u>-X'\gamma)
 =X'\beta+\rho \frac{\phi(-X'\gamma)}{1-\Phi(-X'\gamma)}\newline
-=X'\beta+\rho\frac{\phi(X'\gamma)}{\Phi(X'\gamma)}=X'\beta+\rho\; \lambda(X'\gamma);\text{\;Bias}}
+=X'\beta+\rho\frac{\phi(X'\gamma)}{\Phi(X'\gamma)}=X'\beta+\rho\; \lambda(X'\gamma);\;\text{Bias}}
 $$
 
 
