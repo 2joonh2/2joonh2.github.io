@@ -173,4 +173,23 @@ Furthermore, the omitted selection term $\lambda(X'\gamma)$ only impacts estimat
 
 ### Heckman's Model
 
-https://youtu.be/Mbxca6ybf2s
+~~헤크만 아저씨는 어떻게 했는지~~
+
+
+$$
+\displaylines{
+Y^*=X'\beta+e\newline
+S^*=Z'\gamma+u\newline
+S=1\{S^*>0\}\\\\
+
+Y=
+\begin{cases}
+Y^* & \text{if}\ S=1 \\
+missing & \text{if}\ S=0
+\end{cases}\newline
+
+
+}
+$$
+
+
