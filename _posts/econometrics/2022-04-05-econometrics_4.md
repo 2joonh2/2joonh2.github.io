@@ -1,10 +1,10 @@
-
-
+---
 layout: single
 title: "[Econometrics] 4. Censoring and Selection"
 categories: Econometrics
 toc: true
 toc_sticky: true
+---
 
 응용계량경제학 필기노트
 
@@ -191,5 +191,4 @@ missing & \text{if}\ S=0
 
 }
 $$
-
 
