@@ -326,11 +326,3 @@ Two-Way Error Components Model에선 보통 u에 대해선 Within-Transformation
 지금까지의 모델은 **Static Panel Model**에 해당한다. 하지만 우리는 쉽게 dynamic 한것이 우리를 더 잘 반영하는 모델임을 예상할 수 있다. 	
 
 **Dynamic Panel Model**은 즉슨, 현재 시점의 행동 혹은 결정이 이전 과거로부터 의존 및 영향을 받는 것을 반영한 모델이다.
-
-Dynamic Panel Model에 대한 자세한 내용은 기초를 다진 후 ~~먼~~ 미래의 포스트를 통해 기약하자.
-
-
-
-## Example 
-
-이론이 길었다. 실습으로 넘어가보자. 다음 포스팅에서.
