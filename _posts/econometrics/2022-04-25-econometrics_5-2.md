@@ -406,9 +406,12 @@ IQ와 같이 각 controlling variable 값 별로 treatment effect가 통제된 �
 
 ### Extending CIA to Non-Binary setting
 
-Treatment가 항상 앞선 예시의 대학을 가고 안가고 처럼 0과 1로만 나누어져 있지는 않을 것이다. 예를 들어 변수가 교육 연수에 해당한다면, 0부터 일반적으로 12나 16 (여기서 멈출걸) 혹은 20+도 있을 것이다.
+Treatment가 항상 앞선 예시의 대학을 가고 안가고 처럼 0과 1로만 나누어져 있지는 않을 것이다. 
+
+예를 들어 변수가 교육 연수에 해당한다면, 0부터 일반적으로 12나 16 ~~여기서 멈출걸~~  혹은 20+도 있을 것이다.
 
 Extension에서 Potential outcomes는 아래와 같을 것이다. Extension들의 유도와 해석은 앞선 그것과 동일하다.
+
 
 
 $$
@@ -431,7 +434,11 @@ $$
 
 
 
+
 ### The Regression Context
+
+
+
 
 
 $$
@@ -454,7 +461,7 @@ $$
 =\alpha+\rho s+E[\eta_i|X_i]=\alpha+\rho s+X_i'\gamma
 \\\\
 \text{Thus, } Y_i=\alpha+\rho s+X_i'\gamma+\nu_i \newline
-\text{satisfying }E[\nu_i|X_i,s_i]=0}
+\text{satisfying \;}E[\nu_i|X_i,s_i]=0}
 $$
 
 
@@ -470,6 +477,47 @@ $\eta$는 OVB로 인해 X와 correlation이 있을수도 있고 없을 수도 �
 
 
 결론적으로, CIA를 통해 기존의 s 뿐만 아니라 X 또한 regression에 포함시켜 진행하면, OVB를 최대한 control 해볼 수 있다는 것이다.
+
+
+
+## Omitted Variables Bias (OVB)
+
+
+$$
+\displaylines{Y_{i}=\alpha+\rho s_i+A_i'\gamma +\epsilon_i \newline
+\text{by Regression Anatomy, \;}\frac{Cov(Y,s)}{Var(s)}=\rho+\gamma'\delta_{As}\\\\
+
+\frac{Cov(Y,s)}{Var(s)}=\frac{Cov(\alpha+\rho s_i+A_i'\gamma +\epsilon_i, \; s_i)}{Var(s)}\newline
+=\frac{\rho Var(s)}{Var(s)}+\frac{\gamma' Cov(A, s)}{Var(s)}\equiv\rho+\gamma'\delta_{As}
+}
+$$
+
+
+*where $\delta_{As}$ is the vector of coefficients from regressions of the elements of A on s*
+
+
+
+$\rho$만 있어야하는 기본 anatomy에서, $\gamma'\delta_{As}$ 항이 추가 되었다. 이것이 OVB라고 할 수 있다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

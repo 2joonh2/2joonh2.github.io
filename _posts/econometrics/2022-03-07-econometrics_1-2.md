@@ -12,7 +12,7 @@ toc_sticky: true
 
 ![image-20220518175905847](../../assets/images/2022-03-07-econometrics_1-2/image-20220518175905847.png)
 
-편향
+흔한 편향
 
 
 

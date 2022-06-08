@@ -1,10 +1,10 @@
----
+
+
 layout: single
 title: "[Econometrics] 4. Censoring and Selection"
 categories: Econometrics
 toc: true
 toc_sticky: true
----
 
 응용계량경제학 필기노트
 
@@ -44,16 +44,41 @@ toc_sticky: true
 
 
 
+$$
+\displaylines{Y^*=X'\beta+e,\quad e \sim N(0,\sigma^2),\quad \frac{e}{\sigma} \sim N(0,1)\newline
+\phi(a)=\phi(-a), \quad \Phi(a)=1-\Phi(-a)\newline
+E(e|e>\alpha)=\sigma\; \frac{\phi(\alpha/\sigma)}{1- \Phi(\alpha/\sigma)}}
+$$
 
 
-![image-20220509195019366](../../assets/images/2022-04-05-econometrics_5/image-20220509195019366.png)
+$$
+\displaylines{P(Y^*<0|X)=P(e<-X'\beta|X)=\Phi(-X'\beta/\sigma)\newline
+P(Y^*>0|X)=1-\Phi(-X'\beta/\sigma)=\Phi(X'\beta/\sigma)}
+$$
 
-![image-20220509204202785](../../assets/images/2022-04-05-econometrics_5/image-20220509204202785.png)
+$$
+\text{Then,\;}m^\#(x)=E[Y^\#|X]=E[Y|X,Y>0]\newline
+=E[X'\beta+e|X, e>-X'\beta]\newline
+=X'\beta+E[e|e>-X'\beta]\newline
+=X'\beta+\sigma\; \frac{\phi(-X'\beta/\sigma)}{1- \Phi(-X'\beta/\sigma)}\newline
+=X'\beta+\sigma\; \frac{\phi(X'\beta/\sigma)}{\Phi(X'\beta/\sigma)}\newline
+\equiv X'\beta+\sigma\lambda(X'\beta/\sigma)
+$$
 
-![image-20220509204406626](../../assets/images/2022-04-05-econometrics_5/image-20220509204406626.png)
+
+
+$$
+m(x)=E(Y|X)=0 * \Phi(-X'\beta/\sigma)+\Phi(X'\beta/\sigma)\,m^\#(x)\newline
+=\Phi(X'\beta/\sigma)\,m^\#(x) \;\leq m^\#(x)
+$$
 
 
 
+$$
+\displaylines{Y=max\{Y^*,0\}\geq Y^*\newline
+m^*(x)=E(Y^*|X) \leq m(x)=E(Y|X) \leq m^\#(x)
+}
+$$
 
 
 ![image-20220509204508661](../../assets/images/2022-04-05-econometrics_5/image-20220509204508661.png)
