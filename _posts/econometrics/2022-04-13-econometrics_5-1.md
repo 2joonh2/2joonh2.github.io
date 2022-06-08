@@ -8,6 +8,8 @@ toc_sticky: true
 
 응용계량경제학 필기노트
 
+
+
 ![image-20220307170244209](../../assets/images/2022-04-13-econometrics_5-1/image-20220307170244209.png)
 
 웃으면 복이 와요. 

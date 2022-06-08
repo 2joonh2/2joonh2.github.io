@@ -12,7 +12,7 @@ toc_sticky: true
 
 ![image-20220518183324566](../../assets/images/2022-04-25-econometrics_5-2/image-20220518183324566.png)
 
-
+조건부
 
 
 
