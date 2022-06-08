@@ -19,3 +19,17 @@ toc_sticky: true
 
 # Regression Discontinuity
 
+~~???: 결이 다르다~~
+
+
+
+
+
+예시를 살펴보자!
+
+
+
+## Matsudaira. (2007)
+
+Matsudaira. J.D. (2007) "Mandatory Summer School and Student Achievement" Journal of Econometrics 142:829-850.
+
