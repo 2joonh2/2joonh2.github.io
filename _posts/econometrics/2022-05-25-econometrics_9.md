@@ -173,17 +173,15 @@ $$
 
 ## External Validity
 
+ RD는 전체 population ($\forall x$)가 아닌 c와 그 근방의 극히 일부분만에 대해서 treatment effect를 확인하고 있기 때문에, 그 근방을 벗어난 다른 x들에 대해서는 inference를 할 수 없다는 단점이 있다. 즉 external validity는 낮다고 할 수 있다.
+
+하지만 그 자체로 c라는 포인트에 대한 treatment effect를 estimate하는데 가장 객관적이고 논란이 덜 한 estimation으로 인정되고 있다. 즉 internal validity는 높다고 할 수 있다.
 
 
 
+단 RD에서 중요한 것은 c를 비롯한 어떤 포인트 내의 sample (혹은 population)에서도 특별한 bias 없이 characteristic에 큰 차이가 없어야 한다는 것이다.
 
-
-
-
-
-
-
-
+예를 들어 어떤 온라인 쇼핑몰에서 구매 총지출을 기준으로 회원 등급을 실버나 골드 등으로 나눈다고 할때, 사람들은 그 기준, treatment를 받기위한 조건 c를 알기 때문에 등급을 올리고자는 사람들은 지출을 일부러 더하는 등의 bias가 생길 수 있는 가능성이 충분하다 (그것도 c 포인트의 아주 근방에서만 발생할 것이다). 따라서 이럴 때엔 RD Design에 기반이 되는 비편향 조건에 문제가 생길 수 밖에 없을 것이다.
 
 
 
@@ -195,5 +193,15 @@ $$
 
 Matsudaira. J.D. (2007) "Mandatory Summer School and Student Achievement" Journal of Econometrics 142:829-850.
 
-미국에는 직전 봄학기 성적을 기준으로 여름 보충수업을 강제로 듣는 제도가 있는데, 이러한 기준을 전후로 발생하는 discontinuity를 통해 RD 를 활용한 연구를 진행하였다.
+미국에는 직전 봄학기 성적을 기준으로 여름 보충수업을 강제로 듣는 제도가 있는데, 이러한 기준을 전후로 발생하는 discontinuity를 통해 RD 를 활용한 연구를 진행하였다. DV는 곧, 여름 보충수업이 향후 학생 성적에 도움(효과)이 되는가 라는 RQ에 있어 학생의 성적이 DV가 될 것 이다.
+
+
+
+<img src="../../assets/images/2022-05-25-econometrics_9/image-20220609153144767.png" alt="image-20220609153144767" style="zoom:67%;" />
+
+
+
+Matsudaira는 RD를 사용하였는데, 위의 Fig 1처럼 Reading 혹은 Math Score에 따라서 점수가 높은 학생들의 Summer School Attendance와 성적이 낮은 학생들 간의 Attendance 차이가 눈에 띄게 차이가나는 구간이 보일 것이다.
+
+물론 성적이 높은 학생들도 자발적으로 Attending 할 수 있기 때문에 ~~???: 듣지마ㅏ!!~~ 0과 1의 차이라기 보단 (rather than SRD), FRD가 더 적합한 연구 모델로서 사용될 것임을 우리는 알 수 있다.
 
