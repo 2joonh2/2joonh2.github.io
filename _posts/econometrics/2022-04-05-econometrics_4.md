@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-응용계량경제학 필기노트
+\#Censoring #Tobit #Selection #Heckman's_model
 
 
 

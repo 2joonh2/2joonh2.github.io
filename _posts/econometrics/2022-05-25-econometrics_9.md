@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-응용계량경제학 필기노트
+\#Sharp_RD #Fuzzy_RD #Validity_issue
 
 
 
@@ -128,7 +128,7 @@ $$
 \displaylines{\text{Continuity of Conditional Expectation Functions Assumption}\\
 E[Y_{0i}|X_i=x] \text{ and } E[Y_{1i}|X_i=x] \text{ are continuous in x}}
 $$
- 
+
 
 ### Under this Assumption,
 

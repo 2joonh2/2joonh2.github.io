@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-응용계량경제학 필기노트
+\#Multinomial_logit #Conditional_logit #IIA #Nested_logit #Mixed_logit #Probit #Ordered_Response
 
 
 

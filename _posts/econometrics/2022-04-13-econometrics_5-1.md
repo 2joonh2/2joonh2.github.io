@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-응용계량경제학 필기노트
+\#Rubin's_causal_model #Missing_Data_Problem #Selection_bias #Endogeneity #Randomized_experiment #Unconfoundness
 
 
 
