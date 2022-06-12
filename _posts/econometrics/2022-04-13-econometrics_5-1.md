@@ -10,7 +10,7 @@ toc_sticky: true
 
 
 
-![image-20220307170244209](../../assets/images/2022-04-13-econometrics_5-1/image-20220307170244209.png)
+![wanna_smile](../../assets/images/2022-04-13-econometrics_5-1/wanna_smile.png)
 
 웃으면 복이 와요. 
 
@@ -147,7 +147,7 @@ $$
 
 
 
-![image-20220518170638784](../../assets/images/2022-04-13-econometrics_5/image-20220518170638784.png)
+![hospital_example](../../assets/images/2022-04-13-econometrics_5-1/hospital_example.png)
 
 
 

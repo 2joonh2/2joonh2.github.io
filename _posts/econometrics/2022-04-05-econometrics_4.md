@@ -10,7 +10,7 @@ toc_sticky: true
 
 
 
-![image-20220518175242971](../../assets/images/2022-04-05-econometrics_4/image-20220518175242971.png)
+![censoring](../../assets/images/2022-04-05-econometrics_4/censoring.png)
 
 밑바닥 아래의 지하층
 
@@ -22,7 +22,7 @@ toc_sticky: true
 
 ## Censoring
 
-<img src="../../assets/images/2022-04-06-econometrics_5/image-20220509194013382.png" alt="image-20220509194013382" style="zoom: 67%;" />
+![too_many_zeros](../../assets/images/2022-04-05-econometrics_4/too_many_zeros.png)
 
 
 
@@ -40,7 +40,7 @@ toc_sticky: true
 
 
 
-![image-20220509194615702](../../assets/images/2022-04-05-econometrics_5/image-20220509194615702.png)
+![censoring_process](../../assets/images/2022-04-05-econometrics_4/censoring_process.png)
 
 
 
@@ -80,8 +80,7 @@ m^*(x)=E(Y^*|X) \leq m(x)=E(Y|X) \leq m^\#(x)
 }
 $$
 
-
-![image-20220509204508661](../../assets/images/2022-04-05-econometrics_5/image-20220509204508661.png)
+![each_options_plot](../../assets/images/2022-04-05-econometrics_4/each_options_plot.png)
 
 
 

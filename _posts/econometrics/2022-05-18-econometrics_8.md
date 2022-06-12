@@ -10,7 +10,7 @@ toc_sticky: true
 
 
 
-![image-20220608200510665](../../assets/images/2022-05-18-econometrics_8/image-20220608200510665.png)
+![Aaaak_Kkang](../../assets/images/2022-05-18-econometrics_8/Aaaak_Kkang.png)
 
 본문과 별 관련은 없다
 
@@ -91,7 +91,7 @@ $$
 
 
 
-![image-20220608224830622](../../assets/images/2022-05-18-econometrics_8/image-20220608224830622.png)
+![DiD](../../assets/images/2022-05-18-econometrics_8/DiD.png)
 
 
 

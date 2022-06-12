@@ -10,7 +10,7 @@ toc_sticky: true
 
 
 
-![image-20220518175545028](../../assets/images/2022-03-21-econometrics_2/image-20220518175545028.png)
+![master_or_phd](../../assets/images/2022-03-21-econometrics_2/master_or_phd.png)
 
 석사냐 박사냐, 그것이 binary choice다.
 
@@ -95,9 +95,9 @@ $$
 
 
 $$
-marginal\; effect\; =\; \beta
+\text{marginal effect}\; =\; \beta
 $$
-![image-20220509160300467](../../assets/images/2022-03-26-econometrics_3/image-20220509160300467.png)
+![lpm](C:/Users/2joon/Pictures/2022-03-26-econometrics_3/lpm.png)
 
 
 
@@ -143,7 +143,7 @@ Logistic Distribution function을 link function으로 이용하는 Index Model�
 
 
 
-![image-20220326213333520](../../assets/images/2022-03-26-econometrics_3/image-20220326213333520.png)
+![logit_and_probit](../../assets/images/2022-03-21-econometrics_2/logit_and_probit.png)
 
 
 

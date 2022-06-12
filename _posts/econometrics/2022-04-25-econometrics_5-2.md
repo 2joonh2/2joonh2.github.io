@@ -10,7 +10,7 @@ toc_sticky: true
 
 
 
-![image-20220518183324566](../../assets/images/2022-04-25-econometrics_5-2/image-20220518183324566.png)
+![conditional](../../assets/images/2022-04-25-econometrics_5-2/conditional.png)
 
 조건부
 
@@ -18,9 +18,9 @@ toc_sticky: true
 
 # CEF
 
-<img src="../../assets/images/2022-04-25-econometrics_5-2/image-20220518210841242.png" alt="image-20220518210841242" style="zoom:50%;" />
+![stop_at_univ](../../assets/images/2022-04-25-econometrics_5-2/stop_at_univ.png)
 
-???: *여러분 공부하는거,, 잘 생각해보시길 바랍니다!*
+~~???: *여러분 공부하는거,, 잘 생각해보시길 바랍니다!*~~
 
 대표적인 CEF이다. 교육연수(X)에 따라 연봉 값(Y)이 달라지는, 즉 X에 따라 Y의 기댓값 E[Y]가 달라지는 $E[Y\|X]$; CEF라고 볼 수 있다.
 

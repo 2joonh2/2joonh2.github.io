@@ -10,7 +10,7 @@ toc_sticky: true
 
 
 
-![image-20220518175905847](../../assets/images/2022-03-07-econometrics_1-2/image-20220518175905847.png)
+![common_bias](../../assets/images/2022-03-07-econometrics_1-2/common_bias.png)
 
 흔한 편향
 
@@ -36,7 +36,9 @@ X와 u의 Correlation은 Pooled와 Random Effect Estimators 모두 편향성을 
 
 다시 한번 아래 사진을 통해 예시와 함께 설명해보자.
 
-<img src="../../assets/images/2022-03-02-econometrics/image-20220302195304570.png" alt="heterogeneity bias" style="zoom:67%;" />
+
+
+![apple_avocado](../../assets/images/2022-03-07-econometrics_1-2/apple_avocado.png)
 
 Image Reference: [Introduction Describe what panel data is (slidetodoc.com)](https://slidetodoc.com/introduction-describe-what-panel-data-is-and-the/)
 

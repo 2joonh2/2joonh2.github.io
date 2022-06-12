@@ -10,7 +10,7 @@ toc_sticky: true
 
 
 
-![image-20220518174825180](../../assets/images/2022-03-28-econometrics_3/image-20220518174825180.png)
+![choosing_menu](../../assets/images/2022-03-28-econometrics_3/choosing_menu.png)
 
 한식 양식 일식 중식, 그것이 multiple choice다.
 
@@ -243,11 +243,12 @@ IIA를 해결하기 위한 발전된 model 들을 알아보자.
 
 이에 대응하는 해결방안 (중 하나)은 alternatives 간에 그룹을 지어주는 것이다. 아래의 그림이 예시가 될 것이다.
 
-![image-20220509183924644](../../assets/images/2022-03-28-econometrics_4/image-20220509183924644.png)
+![nested_logit](../../assets/images/2022-03-28-econometrics_3/nested_logit.png)
 
 
 
 *J groups each with $K_j$ alternatives* 라고 일반적인 note가 이루어진다.
+
 
 
 $$

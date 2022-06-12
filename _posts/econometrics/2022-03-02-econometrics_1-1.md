@@ -10,7 +10,7 @@ toc_sticky: true
 
 
 
-![image-20220302223536865](../../assets/images/2022-03-02-1_Panel_Data_n_Error_Component_Model/image-20220302223536865.png)
+![sorry](../../assets/images/2022-03-02-econometrics_1-1/sorry.png)
 
 (이것은 차마 교수님의 가르침을 받는 학생이라 할 수 없는 형편없는 지식을 만회하기 위한 하찮은 노력이다)
 
@@ -20,9 +20,7 @@ toc_sticky: true
 
 ## 1. What is Panel Data?
 
-
-
-![Difference Between Time Series and Panel Data](../../assets/images/2022-03-02-econometrics/Difference-Between-Time-Series-and-Panel-Data-Tabular-Form.jpg)
+![Difference-Between-Time-Series-and-Panel-Data-Tabular-Form](../../assets/images/2022-03-02-econometrics_1-1/Difference-Between-Time-Series-and-Panel-Data-Tabular-Form.jpg)
 
 Image Reference: [Difference Between Time Series and Panel Data, Compare the Difference Between Similar Terms](https://www.differencebetween.com/difference-between-time-series-and-panel-data/)
 
@@ -129,7 +127,7 @@ $$
 
 ~~그렇다고 한다. (난 메시도 아닌데)~~
 
-![Fixed Effects versus Pooled Estimator](../../assets/images/2022-03-02-econometrics_1/Fixed-Effects-versus-Pooled-Estimator.png)
+![Fixed Effects versus Pooled Estimator](../../assets/images/2022-03-02-econometrics_1-1/Fixed-Effects-versus-Pooled-Estimator.png)
 
 Image Reference: [Fixed Effects versus Pooled Estimator](https://www.researchgate.net/figure/Fixed-Effects-versus-Pooled-Estimator_fig1_4807439)
 

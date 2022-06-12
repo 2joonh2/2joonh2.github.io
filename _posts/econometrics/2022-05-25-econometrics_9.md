@@ -10,7 +10,7 @@ toc_sticky: true
 
 
 
-![image-20220608200211007](../../assets/images/2022-05-25-econometrics_9/image-20220608200211007.png)
+![discontinuity](../../assets/images/2022-05-25-econometrics_9/discontinuity.png)
 
 술로 인한 불연속성
 
@@ -49,17 +49,17 @@ c라는 기준을 전후로 W가 다른 값을 갖는 것이며, prob이 아래 
 
 (이 도식에서 세로축은 W이다.)
 
-![image-20220609010612121](../../assets/images/2022-05-25-econometrics_9/image-20220609010612121.png)
 
 
+![sharp](../../assets/images/2022-05-25-econometrics_9/sharp.png)
 
 
 
 이때 가로축을 X, 세로축을 Y로 하는 도식화는 아래와 같을 것이다. 위의 점선은 $E[Y_1\|X=x]$이고, 아래의 점선은 $E[Y_0\|X=x]$이라고 볼 수 있다.
 
-![image-20220609010651394](../../assets/images/2022-05-25-econometrics_9/image-20220609010651394.png)
 
 
+![SRD](../../assets/images/2022-05-25-econometrics_9/SRD.png)
 
 
 
@@ -146,7 +146,9 @@ $$
 
 
 
-![image-20220609150513821](../../assets/images/2022-05-25-econometrics_9/image-20220609150513821.png)
+![FRD](../../assets/images/2022-05-25-econometrics_9/FRD.png)
+
+
 
 
 
@@ -197,7 +199,7 @@ Matsudaira. J.D. (2007) "Mandatory Summer School and Student Achievement" Journa
 
 
 
-<img src="../../assets/images/2022-05-25-econometrics_9/image-20220609153144767.png" alt="image-20220609153144767" style="zoom:67%;" />
+![Matsudaira](../../assets/images/2022-05-25-econometrics_9/Matsudaira.png)
 
 
 
