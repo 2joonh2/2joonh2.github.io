@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-#propensity_score 
+#strong_ignorability #regression_adjustment #IPW #pseudo-counterfactual #nnmatch #PSM
 
 
 
@@ -177,17 +177,161 @@ $$
 
 
 
+## Matching
+
+
+
+### Nearest-Neighbor Match (nnmatch)
+
+Treatment Effect를 구하는 데에 있어 가장 큰 문제는 역시나 Missing Data Problem; D가 0일때는 $Y_{1i}$가 없고, 1일때는 $Y_{0i}$가 없다는 것이다. 우리는 따라서 D=0에서의 $Y_{1i}$ 와 D=1에서의 $Y_{0i}$ 을 구해보고자 시도해볼 수 있다.
+
+
+
+nnmatch 방법론은 X가 가장 가까운 다른 포인트들의  D가 0일때는 $Y_{1i}$, 1일때는 $Y_{0i}$ 값들을 빌려와 추정하는 것이다. 
+
+곧 아래와 같은 수식으로 정리할 수 있다.
+
+
+$$
+\displaylines{\hat Y_{0i} \; \begin{cases}
+Y_i & \text{if } D_i=0\\
+\frac{1}{M}\Sigma\, Y_j & \text{if } D_i=1\\
+\end{cases}\\\\
+
+\hat Y_{1i} \; \begin{cases}
+\frac{1}{M}\Sigma\, Y_j  & \text{if } D_i=0\\
+Y_i & \text{if } D_i=1\\
+\end{cases}
+
+\\\\
+\text{Thus, }\; \hat{ATE}_M=\frac{1}{N}\Sigma\, \{\hat Y_{1i} -\hat Y_{0i}\}
+}
+$$
 
 
 
 
+### Propensity Score Matching (PSM)
+
+X가 multi-dimension이라면?! 여러 차원에 대한 X의 값들에 대해 가장 가까운 점을 구하는 것은 어떤 방법일까? 그것이 Propensity score matching이다.
+
+![image-20220613015352773](../../assets/images/2022-05-02-econometrics_6/image-20220613015352773.png)
 
 
 
+![image-20220613015407063](../../assets/images/2022-05-02-econometrics_6/image-20220613015407063.png)
 
 
 
+자, 이제 우리는 PS ($p(X_i)$)를 기준으로 counterfactuals of interest를 추정할 수 있다.
 
+
+
+### PSM Estimators
+
+
+$$
+\hat \tau_{att}^{psm}=\frac{1}{n_1}\Sigma\, [Y_{1i}-\hat Y_{0i}] 
+\\
+\text{with} \quad \hat Y_{0i}=\Sigma\, \hat\omega(i,j) Y_{0j}
+$$
+
+#### $\hat\omega$ 
+
+
+$$
+\text{Nearest-Neighbor Matching}\\
+\hat\omega(i,j)=\begin{cases}
+1 & \text{if } j=argmin|\hat p_i-\hat p_k|\\
+0 & \text{otherwise}\\
+\end{cases}
+$$
+
+
+\+ Nearest **k** neighbors matching도 있는데, 이는 가까운 순서의 점들 여러개를 구하여 오메가 팩터를 구하는 것이고, **bias가 증가하는대신 variance는 감소하는 tradeoff**가 존재한다.
+
+
+$$
+\text{Caliper Matching}\\
+\hat\omega(i,j)=\begin{cases}
+\frac{1}{n_i} & |\hat p_i-\hat p_k|<c\\
+0 & \text{otherwise}\\
+\end{cases}
+$$
+
+
+Caliper Matching은 특정 거리 c를 정해놓고 c의 반경 내에 있는 모든 점들을 matching을 위해 사용하는 것이다.
+
+
+$$
+\text{Stratification Matching (Blocking on the PS)}\\
+\hat\omega(i,j)=\begin{cases}
+\frac{1}{n_i} & \hat p_i \in T_i\\
+0 & \text{otherwise}\\
+\end{cases}\\
+\text{where }T_i \text{ denotes the ps strata for observation i}
+$$
+
+
+Stratification Matching은 Caliper와 유사하나, 특정 거리 범위 내가 아니라 전체 축의 범위를 쪼개어 각 포인트가 속해있는 범위의 모든 점을 matching을 위해 사용하는 것이다. 이는 곧 Caliper 뿐만 아니라 Nearest k neighbors의 성격을 모두 가지고 있다고 할 수 있다.
+
+
+
+이외에도 Heckman, Ichimura, and Todd; 1977, 1988 연구의 Kernel 방법론 ([Matching as an Econometric Evaluation Estimator: Evidence from Evaluating a Job Training Programme on JSTOR](https://www.jstor.org/stable/2971733?seq=1)) 도 있다. 
+
+
+
+#### Replacement?
+
+Matching은 결국 존재하는 solid points들의 점들을 이용하여 hollow points들의 counterfactual 을 대체하는 것이라고 볼 수 있다.
+
+이때 우리는 각 i번째 점들에 대응하는 matching point들을 replacement를 할 지 안할지에 대해서도 결정할 수 있는데 이때의 tradeoff를 살펴보자.
+
+예상외로, replacement는 bias를 감소시킨다. 그 이유는 예를 들어, i번째와 (i+1)번째 점 모두 대응하는 matching point가 j번째 점이라고 할때, replacement는 이를 통해 j에 쏠리는 bias를 감소시킬 수 있기 때문이다. 
+
+우리는 곧 replacement가 별다른게 아닌 matching points들의 중복을 어떻게 대처하는지 라는 것으로 생각할 수 있다.
+
+물론 더 멀리 있는 points들로 중복된 점들을 대체한다면 variance는 높아질 것이라는 tradeoff를 생각할 수 있을 것이다.
+
+
+
+#### Trimming the support region
+
+replacement와 연계하여 우리는 propensity score의 극단성을 조절해주는 케이스도 생각해볼 수 있다.
+
+
+$$
+\alpha < p(X_i) < 1-\alpha
+$$
+
+
+Crump, et al. (2009)에선 $\alpha$를 0.1 정도로 하였을 때 잘 작동한다는 것을 제안하였다.
+
+
+
+#### DD + PSM
+
+DD와 PSM은 각각 좋은 연구방법론으로 인정받고 있다. 따라서, 둘이 합치면 더 좋다.(?) 실제로 그렇다.
+
+물론 DD는 Treatment 전후의 데이터를 모두 요하기 때문에, 데이터 상의 제약조건이 일반적인 연구 방법론의 것보다 엄격하지만, 이 조건이 충족될때 둘의 혼용은 매우 좋은 연구방법론으로 제시되고 있다.
+
+
+
+#### Conditional Matching
+
+단순히 확률적으로 집행되는 PSM에 일종의 feature learning (or condition)을 다는 것이다.
+
+예를 들어, 지역이나, 학교와 같은 categorical variables들에 대해선 같은 category 내에서만 matching을 진행하는, 어쩌면 일종의 fixed effect application이라고 할수도 있겠다.
+
+
+
+### Combining Approaches
+
+~~난 둘다~~
+
+#### IPW + RA (HIR Approach)
+
+Hirano, Imbens and Ridder (2003), Imbens and Wooldridge (2009)
 
 
 
