@@ -299,6 +299,10 @@ $$
 위 부등식의 증명은 숙제란다. 등식 성립 조건은 $Var(u)=0$이다.*
 
 *만약 u의 분산이 0이고, 이로 인해 $\Omega$가 $\epsilon$으로만 이루어져있다면, GLS와 Pooled Estimator의 분산은 동일하다.
+
+
+
+
 $$
 \displaylines{\text{if}\quad \sigma_u^2=0,\,\quad \Omega=\sigma_\epsilon^2I_T\newline
 \text{then, }\quad V_{GLS}=(\Sigma X'\Omega^{-1}X)^{-1}=\sigma^2_\epsilon(\Sigma X'X)^{-1}\newline
