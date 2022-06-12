@@ -12,4 +12,4 @@ toc_sticky: true
 
 Hello World
 
-![pic](../../assets/images/2022-02-09-first-posting/astronaut.gif)
+![astronaut](../../assets/images/2022-02-09-first-posting/astronaut.gif)
