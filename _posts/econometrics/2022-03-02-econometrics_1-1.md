@@ -20,9 +20,13 @@ toc_sticky: true
 
 ## 1. What is Panel Data?
 
-![Difference-Between-Time-Series-and-Panel-Data-Tabular-Form](../../assets/images/2022-03-02-econometrics_1-1/Difference-Between-Time-Series-and-Panel-Data-Tabular-Form.jpg)
+|            | Time Series                                                  | Panel Data                                                   |
+| ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Definition | A dataset consisting of observations of one individual at multiple time intervals | A dataset consisting of observations of multiple individuals obtained at multiple time intervals |
+| Main Focus | Focuses on a single individual at multiple time intervals    | Focuses on multiple individuals at multiple time intervals   |
+| Example    | Profit of an individual over a period of ten years           | Profit of set of individuals over a period of ten years      |
 
-Image Reference: [Difference Between Time Series and Panel Data, Compare the Difference Between Similar Terms](https://www.differencebetween.com/difference-between-time-series-and-panel-data/)
+Reference: [Difference Between Time Series and Panel Data, Compare the Difference Between Similar Terms](https://www.differencebetween.com/difference-between-time-series-and-panel-data/)
 
 
 
