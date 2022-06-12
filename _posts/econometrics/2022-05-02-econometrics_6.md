@@ -57,12 +57,12 @@ Strong Ignorability는 아래와 같은 전개가 가능하게 한다.
 
 
 $$
-\mu_d(x)=E[Y_{di}|X_i=x]\\
+\displaylines{\mu_d(x)=E[Y_{di}|X_i=x]\\
 =E[Y_{di}|D_i=d, X_i=x] \quad \text{by CIA}\\
 =E[Y_{i}|D_i=d, X_i=x] \quad \text{by Overlap; *}\\\\
 
 
-\text{*} \quad Y_i=Y_{1i}D_i+Y_{0i}(1-D_i)
+\text{*} \quad Y_i=Y_{1i}D_i+Y_{0i}(1-D_i)}
 $$
 
 
@@ -97,9 +97,9 @@ Matching에 대해 알아보기 위한 연구사례로 Cattaneo의 2010년 연�
 
 
 $$
-\hat{ATE}=\frac{1}{N}\Sigma\, [\hat\mu_1(X_i)-\hat\mu_0(X_i)]
+\displaylines{\hat{ATE}=\frac{1}{N}\Sigma\, [\hat\mu_1(X_i)-\hat\mu_0(X_i)]
 \\
-\hat{ATT}=\frac{1}{\Sigma D_i}\Sigma\, D_i[\hat\mu_1(X_i)-\hat\mu_0(X_i)]
+\hat{ATT}=\frac{1}{\Sigma D_i}\Sigma\, D_i[\hat\mu_1(X_i)-\hat\mu_0(X_i)]}
 $$
 
 
