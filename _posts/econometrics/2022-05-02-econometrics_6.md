@@ -131,13 +131,13 @@ IPW는 말그대로 확률의 역수를 가중치를 곱해주는 것이다.
 
 
 $$
-ATE=E\{\frac{[D_i-p(X_i)]Y_i}{p(X_i)[1-p(X_i)]}\}\\
+\displaylines{ATE=E\{\frac{[D_i-p(X_i)]Y_i}{p(X_i)[1-p(X_i)]}\}\\
 =E\{\frac{[D_i-D_ip(X_i)+D_ip(X_i)-p(X_i)]Y_i}{p(X_i)[1-p(X_i)]}\}\\
 =E\{\frac{[D_i(1-p(X_i))-p(X_i)(1-D_i)]Y_i}{p(X_i)[1-p(X_i)]}\}\\
 =E\{\frac{D_i}{p(X_i)}Y_i\}-E\{\frac{[1-D_i]Y_i}{1-p(X_i)}Y_i\} \quad \text{*}\\
 =E(Y_{1i})-E(Y_{0i})=E(Y_{1i}-Y_{0i})\equiv ATE
 \\\\
-ATE=E\{\frac{[D_i-p(X_i)]Y_i}{Pr(D_i=1)[1-p(X_i)]}\}
+ATE=E\{\frac{[D_i-p(X_i)]Y_i}{Pr(D_i=1)[1-p(X_i)]}\}}
 $$
 
 
@@ -165,13 +165,13 @@ IPW의 메커니즘을 위의 그래프와 함께 간단하게 알아보자.
 
 
 $$
-\text{*} \quad D_iY_i=D_i(Y_{1i}D_i+Y_{0i}(1-D_i))=Y_{1i}D_i+0
+\displaylines{\text{*} \quad D_iY_i=D_i(Y_{1i}D_i+Y_{0i}(1-D_i))=Y_{1i}D_i+0
 \\\\
 \text{Then, }\quad  E\{\frac{D_i}{p(X_i)}Y_i\}=E\{\frac{D_i}{p(X_i)}Y_{1i}\}\\
 =E\{\frac{D_i}{p(X_i)}Y_i|X_i\} \quad \text{by LIE}\\
 =E\{\frac{E(D_i|X_i)E(Y_{1i}|X_i)}{P(X_i)}\} \quad \text{by CIA}\\
 =E\{E(Y_{1i}|X_i)\} \quad (\because E(D_i|X_i) \equiv P(X_i)) \\
-=E(Y_{1i})\quad \text{by LIE}\\
+=E(Y_{1i})\quad \text{by LIE}\\}
 $$
 
 
@@ -231,20 +231,20 @@ X가 multi-dimension이라면?! 여러 차원에 대한 X의 값들에 대해 �
 
 
 $$
-\hat \tau_{att}^{psm}=\frac{1}{n_1}\Sigma\, [Y_{1i}-\hat Y_{0i}] 
+\displaylines{\hat \tau_{att}^{psm}=\frac{1}{n_1}\Sigma\, [Y_{1i}-\hat Y_{0i}] 
 \\
-\text{with} \quad \hat Y_{0i}=\Sigma\, \hat\omega(i,j) Y_{0j}
+\text{with} \quad \hat Y_{0i}=\Sigma\, \hat\omega(i,j) Y_{0j}}
 $$
 
 #### $\hat\omega$ 
 
 
 $$
-\text{Nearest-Neighbor Matching}\\
+\displaylines{\text{Nearest-Neighbor Matching}\\
 \hat\omega(i,j)=\begin{cases}
 1 & \text{if } j=argmin|\hat p_i-\hat p_k|\\
 0 & \text{otherwise}\\
-\end{cases}
+\end{cases}}
 $$
 
 
@@ -252,11 +252,11 @@ $$
 
 
 $$
-\text{Caliper Matching}\\
+\displaylines{\text{Caliper Matching}\\
 \hat\omega(i,j)=\begin{cases}
 \frac{1}{n_i} & |\hat p_i-\hat p_k|<c\\
 0 & \text{otherwise}\\
-\end{cases}
+\end{cases}}
 $$
 
 
@@ -264,12 +264,12 @@ Caliper Matching은 특정 거리 c를 정해놓고 c의 반경 내에 있는 �
 
 
 $$
-\text{Stratification Matching (Blocking on the PS)}\\
+\displaylines{\text{Stratification Matching (Blocking on the PS)}\\
 \hat\omega(i,j)=\begin{cases}
 \frac{1}{n_i} & \hat p_i \in T_i\\
 0 & \text{otherwise}\\
 \end{cases}\\
-\text{where }T_i \text{ denotes the ps strata for observation i}
+\text{where }T_i \text{ denotes the ps strata for observation i}}
 $$
 
 
