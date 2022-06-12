@@ -12,7 +12,7 @@ toc_sticky: true
 
 ![match!](../../assets/images/2022-05-02-econometrics_6/match!.png)
 
-아름다운 매칭의 순간이다.
+아름다운 매칭의 순간이다(?)
 
 
 
@@ -75,6 +75,8 @@ $$
 
 Matching에 대해 알아보기 위한 연구사례로 Cattaneo의 2010년 연구를 살펴보고자 한다. 
 
+본 연구에서 살펴보고자하는 것은 흡연에 따른 출산하는 아기의 birthweight에 얼만큼의 영향을 주는지 확인해보는 것이다.
+
 그는 위의 그래프처럼 산모의 나이와 출산한 아기의 birthweight을 scatter_plot 하였는데, 산모를 흡연자와 비흡연자로 나누어 확인하였다. 
 
 두 manipulation은 그림에서처럼 각기 다른 색으로 구분되었다.
@@ -89,32 +91,88 @@ Matching에 대해 알아보기 위한 연구사례로 Cattaneo의 2010년 연�
 
 
 
-## Regression Approach
+### Regression Adjustment
 
-![image-20220608210007807](../../assets/images/2022-05-02-econometrics_6/image-20220608210007807.png)
-
-
+가장 간단하게 효과를 추정(estimate)하는 방법은 부족한 부분의 포인트들을 regression based 로 추정하여 그 차이를 구하는 것이다.
 
 
+$$
+\hat{ATE}=\frac{1}{N}\Sigma\, [\hat\mu_1(X_i)-\hat\mu_0(X_i)]
+\\
+\hat{ATT}=\frac{1}{\Sigma D_i}\Sigma\, D_i[\hat\mu_1(X_i)-\hat\mu_0(X_i)]
+$$
 
 
-
-## Inverse Probability Weight (IPW)
-
-
-
-
+![ra](../../assets/images/2022-05-02-econometrics_6/regression_adjustment.png)
 
 
 
+위의 사진으로 확인할때, 우리가 조심해야하는 것은 추정되는 Treatment Effect는 각 점 사이의 차이가 아니라, regression adjustment 를 통해 구해진 regression line간의 차이라는 것이다. 위의 식을 잘 확인해보자.
+
+자명하게도, 두 그룹 간의 겹치는 (overlapped) 부분이 적을수록, 오롯이 추정으로만 이루어지는 $\hat{ATE(T)}$로 변하기 때문에, 이 점을 고려해야한다는 *Extrapolating* concern이 있다. 본 상황을 체크할 수 있는 지표로 IR은 아래의 델타 지표를 제안하고 있다.
+
+
+$$
+\Delta_X=\frac{\bar X_1-\bar X_0}{\sqrt{S_1^2+S_0^2}}<0.25
+$$
+
+
+참고로 $\Delta$는 일반적인 가설검정의 t-test p-value (t-statistics)와 다르다.
 
 
 
 
 
+### Inverse Probability Weight (IPW)
+
+IPW는 말그대로 확률의 역수를 가중치를 곱해주는 것이다.
+
+아래의 수식전개를 보면 ATE가 결과적으로 X에 대한 확률의 역수를 Y에 곱한 값의 expectation을 구하는 것을 알 수 있다.
+
+
+$$
+ATE=E\{\frac{[D_i-p(X_i)]Y_i}{p(X_i)[1-p(X_i)]}\}\\
+=E\{\frac{[D_i-D_ip(X_i)+D_ip(X_i)-p(X_i)]Y_i}{p(X_i)[1-p(X_i)]}\}\\
+=E\{\frac{[D_i(1-p(X_i))-p(X_i)(1-D_i)]Y_i}{p(X_i)[1-p(X_i)]}\}\\
+=E\{\frac{D_i}{p(X_i)}Y_i\}-E\{\frac{[1-D_i]Y_i}{1-p(X_i)}Y_i\} \quad \text{*}\\
+=E(Y_{1i})-E(Y_{0i})=E(Y_{1i}-Y_{0i})\equiv ATE
+\\\\
+ATE=E\{\frac{[D_i-p(X_i)]Y_i}{Pr(D_i=1)[1-p(X_i)]}\}
+$$
+
+
+![ipw_mechanism](../../assets/images/2022-05-02-econometrics_6/ipw_mechanism.png)
 
 
 
+IPW의 메커니즘을 위의 그래프와 함께 간단하게 알아보자.
+
+1. 우리의 현재 목표는 unobserved outcomes, 즉 그래프 상 hollow points들에 대한 보정을 해주는 것이다; 이를 통해 최종적으로 각 x값 별 treatment effect를 정교하게 구할 수 있을 것이다.
+2. 문제는 현재 그래프 상에선 앞서 언급했듯, 흡연자와 비흡연자 간 x축 상 밀도가 상이하다는 점이다. 흡연자(smokers)들을 중심으로 살펴보았을 때, 좌측의 붉은색 동그라미 영역에는 hollow points가 많고, 우측의 파란색 원 영역은 solid points가 많은 것을 알 수 있다.
+3. 따라서 우리가 1의 보정을 하고자 할때, 중점적으로 비중을 두어야하는 것은 hollow points 쪽이다.
+4. 따라서 비중을 인위적으로 높이기 위한 IPW 의 방법은, P(X)의 역수를 취해주는 것이다; 붉은색 영역에서의 P(X)는 작기 때문에, 그리고 푸른색 영역에서의 P(X)는 크기 때문에 역수는 곧 반대의 상대적인 크고작은 값이 될 것이다.
+
+
+
+곧 regression adjustment 대신, hollow area에 가장 가까운 점들을 대신하여 높은 weight을 부여한다고 할 수 있다.
+
+곧 아래의 그림으로 표현할 수 있다.
+
+![IPW_describe](../../assets/images/2022-05-02-econometrics_6/IPW_describe.png)
+
+
+
+
+
+$$
+\text{*} \quad D_iY_i=D_i(Y_{1i}D_i+Y_{0i}(1-D_i))=Y_{1i}D_i+0
+\\\\
+\text{Then, }\quad  E\{\frac{D_i}{p(X_i)}Y_i\}=E\{\frac{D_i}{p(X_i)}Y_{1i}\}\\
+=E\{\frac{D_i}{p(X_i)}Y_i|X_i\} \quad \text{by LIE}\\
+=E\{\frac{E(D_i|X_i)E(Y_{1i}|X_i)}{P(X_i)}\} \quad \text{by CIA}\\
+=E\{E(Y_{1i}|X_i)\} \quad (\because E(D_i|X_i) \equiv P(X_i)) \\
+=E(Y_{1i})\quad \text{by LIE}\\
+$$
 
 
 
