@@ -53,8 +53,8 @@ Pooled Regression에서도 **Strict Mean Independence**를 가정한다; 이는 
 
 
 $$
-\displaylines{Strict\, Mean\, Independence)\quad E(e_{it}|X_{it})=0\newline
-Pairwise\, Mean \,Independence) \quad E[X_{it}e_{it}]=0
+\displaylines{\text{Strict Mean Independence) }\quad E(e_{it}|X_{it})=0\newline
+\text{Pairwise Mean Independence) } \quad E[X_{it}e_{it}]=0
 }
 $$
 
@@ -87,7 +87,7 @@ Estimator는 Strict Mean Independence를 통해 unbiased 하며 증명은 아래
 
 $$
 \displaylines{\hat\beta_{pool}=( \Sigma X'X)^{-1} (\Sigma X'X)\beta + ( \Sigma X'X)^{-1} (\Sigma X'e)\newline
-E(\hat\beta_{pool}|X) =\beta + (\Sigma X'X)^{-1} (\Sigma X' E(e_i|X_i)) = \beta\;  ;\;unbiased}
+E(\hat\beta_{pool}|X) =\beta + (\Sigma X'X)^{-1} (\Sigma X' E(e_i|X_i)) = \beta\;  ;\;\text{unbiased}}
 $$
 
 
@@ -102,9 +102,9 @@ Estimator의 Variance는 위와 같이 구할 수 있는데, 아래와 같이 Va
 $$
 \displaylines{Var(\hat\beta_{pool} | X)=Var(\Sigma (X'X)^{-1}(\Sigma X'e)|X) = (\Sigma X'X)^{-1}[\Sigma X'Var(e|X)X](\Sigma X'X)^{-1}\newline
 (since\quad Var(Ae)=A*Var(e)*A')\newline\newline
-if\quad Var(e|X)=\sigma^2_e*I_T\;;\quad homoskedastic\newline
+if\quad Var(e|X)=\sigma^2_e*I_T\;;\quad \text{homoskedastic}\newline
 Var(\hat\beta_{pool}|X)=(\Sigma X'X)^{-1}(\Sigma X' I_T X)\sigma^2(\Sigma X'X)^{-1}\newline
-=\sigma^2(\Sigma X'X)^{-1}\; ;classical \; (default\,at\,Stata)}
+=\sigma^2(\Sigma X'X)^{-1}\; ;\text{classical (default at Stata)}}
 $$
 
 
@@ -118,7 +118,8 @@ $$
 
 
 $$
-Cluster-robust\, Covariance\, Matrix\, estimator)\quad\hat V_{pool}=(\Sigma X'X)^{-1}(\Sigma X'ee'X)(\Sigma X'X)^{-1}
+\displaylines{\text {Cluster-robust Covariance Matrix estimator}\\
+\hat V_{pool}=(\Sigma X'X)^{-1}(\Sigma X'ee'X)(\Sigma X'X)^{-1}}
 $$
 
 
@@ -209,8 +210,8 @@ Random Effect는 앞선 u와 $\epsilon$이 conditionally mean zero, uncorrelated
 
 $$
 \displaylines{
-Random\; Effects\; Specification
-\newline\newline
+\text{Random Effects Specification}
+\\\\
 E[\epsilon|X]=0\newline
 E[\epsilon^2|X]=\sigma_\epsilon^2\newline
 E[\epsilon_{it}\epsilon_{ij}|X]=0\newline
@@ -257,7 +258,7 @@ Random Effect를 만족하는 상황에서는, $ \hat\beta_{GLS}$는 unbiased를
 $$
 \displaylines{E(\hat\beta_{GLS}|X)=\beta+E((\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}e)|X)\newline
 =\beta+(\Sigma X'\Omega^{-1}X)^{-1}(\Sigma X'\Omega^{-1}E(e|X))\newline
-=\beta\; ; unbiased}
+=\beta\; ; \text{unbiased}}
 $$
 
 
@@ -298,10 +299,9 @@ $$
 위 부등식의 증명은 숙제란다. 등식 성립 조건은 $Var(u)=0$이다.*
 
 *만약 u의 분산이 0이고, 이로 인해 $\Omega$가 $\epsilon$으로만 이루어져있다면, GLS와 Pooled Estimator의 분산은 동일하다.
-
 $$
-\displaylines{if\quad \sigma_u^2=0,\,\quad \Omega=\sigma_\epsilon^2I_T\newline
-then,\quad V_{GLS}=(\Sigma X'\Omega^{-1}X)^{-1}=\sigma^2_\epsilon(\Sigma X'X)^{-1}\newline
+\displaylines{\text{if}\quad \sigma_u^2=0,\,\quad \Omega=\sigma_\epsilon^2I_T\newline
+\text{then, }\quad V_{GLS}=(\Sigma X'\Omega^{-1}X)^{-1}=\sigma^2_\epsilon(\Sigma X'X)^{-1}\newline
 V_{pool}=(\Sigma X'X)^{-1}(\Sigma X'\Omega X)(\Sigma X'X)^{-1}=(\Sigma X'X)^{-1}\sigma^2}
 $$
 
