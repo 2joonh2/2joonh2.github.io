@@ -44,7 +44,7 @@ $$
 
 
 $$
-\frac{\partial}{\partial x}p(x)=\frac{\partial}{\partial x}P[Y=1\,|\,X]=\frac{\partial}{\partial x}E[Y\,|\,X=x]\;:\;Marginal\;Effect
+\frac{\partial}{\partial x}p(x)=\frac{\partial}{\partial x}P[Y=1\,|\,X]=\frac{\partial}{\partial x}E[Y\,|\,X=x]\;\text{: Marginal Effect}
 $$
 
 
