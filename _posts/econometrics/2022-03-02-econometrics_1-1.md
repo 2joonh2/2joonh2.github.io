@@ -67,7 +67,7 @@ $$
 
 $$
 \displaylines{Y_i=X_i*\beta+e_i\newline
-E(e_{it}|X_i)=0 \; (strict \, independence)}
+E(e_{it}|X_i)=0 \; \text{(strict independence)}}
 $$
 
 
@@ -177,8 +177,7 @@ $$
 
 
 $$
-\displaylines{Vector\, Notation;\quad
-e_i=1_Tu_i+\epsilon_i}
+\displaylines{\text{Vector Notation;}\quad e_i=1_Tu_i+\epsilon_i}
 $$
 
 
@@ -210,14 +209,15 @@ Random Effect는 앞선 u와 $\epsilon$이 conditionally mean zero, uncorrelated
 
 $$
 \displaylines{
-\text{Random Effects Specification}
-\\\\
+\text{Random Effects Specification} \quad
+\begin{cases}
 E[\epsilon|X]=0\newline
 E[\epsilon^2|X]=\sigma_\epsilon^2\newline
 E[\epsilon_{it}\epsilon_{ij}|X]=0\newline
 E[u|X]=0\newline
 E[u^2|X]=\sigma_u^2\newline
 E[u\epsilon|X]=0\newline
+\end{cases}
 }
 $$
 
