@@ -35,7 +35,7 @@ toc_sticky: true
 
 
 $$
-p(x)=P[Y=1\,|\,X]=E[Y\,|\,X=x] \;:\; Response\; Probability
+p(x)=P[Y=1\,|\,X]=E[Y\,|\,X=x] \;\text{: Response Probability}
 $$
 
 
@@ -97,7 +97,9 @@ $$
 $$
 \text{marginal effect}\; =\; \beta
 $$
-![lpm](C:/Users/2joon/Pictures/2022-03-26-econometrics_3/lpm.png)
+
+
+![lpm](../../assets/images/2022-03-21-econometrics_2/lpm.png)
 
 
 
@@ -114,10 +116,11 @@ Linear 모델의 단점을 보완한 모델이다.
 transformation을 통해 linear model의 한계였던 함수의 치역이 0과 1 사이라는 조건에 부합시키는 것이 가능하다.
 
 
+
 $$
 \displaylines{P(x)=G(x'\beta)\newline
 0\leq G(u)\leq 1\newline
-then,\; marginal\; effect\; :\;\frac{\partial}{\partial x}P(x)=\beta g(x'\beta)}
+\text{then, marginal effect :}\;\frac{\partial}{\partial x}P(x)=\beta g(x'\beta)}
 $$
 
 
@@ -159,7 +162,7 @@ $Y^*$, **latent**라는 보이지 않는 변수를 아래와 같이 정의한다
 $$
 Y^*=X'\beta+e \newline
 e\; \sim G(e) \newline
-Y=1\{Y^*>0\}=1\; (if\; Y^*>0,\;0\;otherwise)
+Y=1\{Y^*>0\}=1\; (\text{if }\; Y^*>0,\;0\;\text{otherwise})
 $$
 
 
@@ -171,7 +174,7 @@ $$
 
 
 $$
-P(x)=P[e>-x'\beta]=1-G(-x'\beta)=G(x'\beta),\;since\; symmetry
+P(x)=P[e>-x'\beta]=1-G(-x'\beta)=G(x'\beta)\quad \because\text{since symmetry}
 $$
 
 
@@ -229,7 +232,7 @@ $$
 
 
 $$
-marginal\; effect\; :\;\frac{\partial}{\partial x}P(x)=\beta g(x'\beta)
+\text{marginal effect :}\;\frac{\partial}{\partial x}P(x)=\beta g(x'\beta)
 $$
 
 
@@ -237,7 +240,7 @@ $$
 
 
 $$
-AME\;(average\; marginal\; effect)=E[\delta(x)]=\beta\, E[g(X'\beta)]
+\text{AME (average marginal effect)}=E[\delta(x)]=\beta\, E[g(X'\beta)]
 $$
 
 
