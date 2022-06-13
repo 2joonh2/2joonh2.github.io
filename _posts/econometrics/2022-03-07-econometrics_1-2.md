@@ -134,7 +134,7 @@ Within-Transformation을 통해 영점조절이 끝나면, 우리는 아래와 �
 $$
 \displaylines{\dot Y_i=\dot X_i\beta+\dot\epsilon_i\newline
 after\;OLS,\quad \hat\beta_{fe}=(\Sigma \dot X'\dot X)^{-1}(\Sigma \dot X'\dot y)=(\Sigma X'M_T'M_TX)^{-1}(\Sigma X'M_T'M_Ty)\newline
-= (\Sigma X'M_TX)^{-1}(\Sigma X'M_Ty)\quad (M\; is\; idempotent \, and \, symmetric)\newline
+= (\Sigma X'M_TX)^{-1}(\Sigma X'M_Ty)\quad (M\; \text{is idempotent and symmetric})\newline
 =\beta+0+ (\Sigma X'M_TX)^{-1}(\Sigma X'M_T\epsilon)}
 $$
 
@@ -145,7 +145,7 @@ $$
 
 $$
 \displaylines{E(\hat\beta_{fe}|X)=\beta+(\Sigma X'M_TX)^{-1}(\Sigma X'M_TE(\epsilon|X))=0\quad\newline
-with\;assumption\;of\;strict\;mean\;indep.}
+\text{with assumption of strict mean independence}}
 $$
 
 
@@ -160,7 +160,7 @@ $$
 $$
 \displaylines{Var(\hat\beta_{fe}|X)=(\Sigma X'M_TX)^{-1}(\Sigma X'M_T\Sigma M_TX)(\Sigma X'M_TX)^{-1}\newline
 =(\Sigma \dot X'\dot X)^{-1}(\Sigma \dot X'\Sigma \dot X)(\Sigma \dot X'\dot X)^{-1}\newline\newline
-if\quad \Sigma=\sigma_\epsilon^2I_T\;(homoskedastic),\quad V_{fe}^0=\sigma_\epsilon^2(\Sigma \dot X'\dot X)^{-1}\newline
+if\quad \Sigma=\sigma_\epsilon^2I_T\;(\text{homoskedastic}),\quad V_{fe}^0=\sigma_\epsilon^2(\Sigma \dot X'\dot X)^{-1}\newline
 V_{fe}^0>= V_{pool}}
 $$
 
@@ -182,10 +182,10 @@ Differenced Estimator는 시간축을 기준으로 t-1과 t의 차이 $\Delta$�
 
 
 $$
-\displaylines{\Delta Y_{it}=Y_{it}-Y_{it-1} \quad for\;t=2,...,T\newline
-then,\quad \Delta Y=\Delta X'\beta+\Delta\epsilon\newline
-then,\quad \hat\beta_\Delta=(\Sigma \Delta X'\Delta X)^{-1}(\Sigma \Delta X'\Delta y)\newline\newline
-we\;can\;find\;out\;for\;T=2,\quad \hat\beta_{fe}=\hat\beta_\Delta}
+\displaylines{\Delta Y_{it}=Y_{it}-Y_{it-1} \text{ for }\;t=2,...,T\newline
+\text{then,}\quad \Delta Y=\Delta X'\beta+\Delta\epsilon\newline
+\text{then,}\quad \hat\beta_\Delta=(\Sigma \Delta X'\Delta X)^{-1}(\Sigma \Delta X'\Delta y)\newline\newline
+\text{we can find out for }\;T=2,\quad \hat\beta_{fe}=\hat\beta_\Delta}
 $$
 
 
@@ -205,17 +205,17 @@ Within-Transformation Estimator보다도 Efficiency가 낮다고 알려져있다
 
 $$
 \displaylines{Y_{it}=X_{it}'\beta+u_1D_1+u_2D_2+...+u_ND_N+\epsilon_{it}\newline
-D_i \;is\; dummy\; variable\;(0\,or\,1)\newline}
+D_i \;\text{is dummy variable}\;(0\,\text{or}\,1)\newline}
 $$
 
 $$
-\displaylines{in\; FWL\; theorem,\; 1)\; reg\; Y\; on\; X_1\; ->\; resdiual\; Y\newline
-2)\; reg\; X_2\; on\; X_1\; ->\; residual\; X_2\newline
-3)\; reg\; residual\; y\; on\; residual\; X_2\; ->\; \tilde \beta}
+\displaylines{ \text{1) reg }\; Y\; on\; X_1\; ->\; resdiual\; Y\newline
+2)\;\text{reg}\; X_2\; on\; X_1\; ->\; residual\; X_2\newline
+3)\;\text{reg}\; residual\; y\; on\; residual\; X_2\; ->\; \tilde \beta}
 $$
 
 $$
-\displaylines{then\; by\; FWL\; theorem,\; 1)\; reg\; Y\; on\; D\; ->\; resdiual\; \dot Y\newline
+\displaylines{ \text{then by FWL theorem,}\; 1)\; reg\; Y\; on\; D\; ->\; resdiual\; \dot Y\newline
 2)\; reg\; X\; on\; D\; ->\; residual\; \dot X\newline
 3)\; reg\; residual\; \dot Y\; on\; residual\; \dot X\; ->\; \tilde \beta}
 $$
