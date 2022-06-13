@@ -159,11 +159,13 @@ logit과 probit 등의 index model을 이해하는 것.
 $Y^*$, **latent**라는 보이지 않는 변수를 아래와 같이 정의한다. 
 
 
+
 $$
-Y^*=X'\beta+e \newline
+\displaylines{Y^*=X'\beta+e \newline
 e\; \sim G(e) \newline
-Y=1\{Y^*>0\}=1\; (\text{if }\; Y^*>0,\;0\;\text{otherwise})
+Y=1\{Y^*>0\}=1\; (\text{if }\; Y^*>0,\;0\;\text{otherwise})}
 $$
+
 
 
 해석이 진행되는 경로를 천천히 살펴보자.
