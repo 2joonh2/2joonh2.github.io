@@ -22,7 +22,7 @@ toc_sticky: true
 
 ## Censoring
 
-![too_many_zeros](../../assets/images/2022-04-05-econometrics_4/too_many_zeros.png)
+<img src="../../assets/images/2022-04-05-econometrics_4/too_many_zeros.png" alt="too_many_zeros" style="zoom:67%;" />
 
 
 
@@ -35,12 +35,6 @@ toc_sticky: true
 1. **Uncensored; m*(x)**: Raw data 상태의 양과 음의 값을 모두 그대로 남겨놓고? 
 2. **Censored; m(x)**: 0보다 작은 데이터를 모두 censor하여 0으로 변환시키고? 
 3. **Truncated; m#(x)**: 0에 해당하는 데이터들을 모두 버리고(제거하고/자르고)?  
-
-
-
-
-
-![censoring_process](../../assets/images/2022-04-05-econometrics_4/censoring_process.png)
 
 
 
@@ -103,6 +97,10 @@ Truncated 옵션에서는 0 미만의 값들을 0으로 censoring 하는 것이 
 ## Tobit Regression
 
 Tobin(1958)은 censored regression을 maximum likelihood를 통해 새로운 방식을 제안하였다.
+
+
+
+![censoring_process](../../assets/images/2022-04-05-econometrics_4/censoring_process.png)
 
 
 
