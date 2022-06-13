@@ -46,8 +46,8 @@ Regression 상에서 Y는 곧 X로 1) 설명가능한 항과, 2) 그렇지 못�
 $$
 \displaylines{\text{The CEF-Decomposition Property}\newline
 Y_i=E[Y_i|X_i]+\epsilon_i \newline
-i)  \epsilon_i \text{is mean independent of }X_i\,; E[\epsilon|X]=0 \newline
-ii)  \epsilon_i  \text{is uncorrelated with any function of} X_i}
+\text{i) } \epsilon_i \text{ is mean independent of }X_i\,; E[\epsilon|X]=0 \newline
+\text{ii)  }\epsilon_i  \text{ is uncorrelated with any function of} X_i}
 $$
 
 
@@ -56,10 +56,10 @@ pf.
 
 
 $$
-\displaylines{i)\quad For\quad Y=E[Y|X]+\epsilon \newline
-Note,\quad E[\epsilon|X]=0 \newline
-Then,\quad E[\epsilon|X]=E[Y-E[Y|X]|X]=E[Y|X]-E[Y|X]=0 \newline \newline
-ii)\quad let h(X_i) \text{is a function of} X_i\newline
+\displaylines{\text{i) }\quad \text{For}\quad Y=E[Y|X]+\epsilon \newline
+\text{Note, }\quad E[\epsilon|X]=0 \newline
+\text{Then, }\quad E[\epsilon|X]=E[Y-E[Y|X]|X]=E[Y|X]-E[Y|X]=0 \newline \newline
+\text{ii) }\quad \text{let }h(X_i) \text{ is a function of } X_i\newline
 E[h(X)\,\epsilon]=E\{h(X)\,E[\epsilon|X]\}=0, \;\text{since } E[\epsilon|X]=0}
 $$
 
@@ -120,11 +120,12 @@ pf.
 
 $$
 \displaylines{V(Y)=V(E[Y|X]+\epsilon)=V(E[Y|X])+V(\epsilon)\newline
-\text{Note, } E[Y|X] \text{ and } \epsilon \text{ are not correlated.}\newline\newline
+\text{Note, } E[Y|X] \text{ and } \epsilon \text{ are not correlated.}
+\\\\
 \text{Then, the  variance  of }  \epsilon  \text{ is}\newline
-E[\epsilon^2]=E[E[\epsilon^2|X]]=E[V[Y|X]]\newline
-Note, E[\epsilon]\newline
-Thus, V(Y)=V(E[Y|X])+E[V[Y|X]]}
+V(\epsilon)=E[\epsilon^2]=E[E[\epsilon^2|X]]=E[V[Y|X]] \quad \because E[\epsilon] = 0
+\\\\
+\text{Thus, }V(Y)=V(E[Y|X])+E[V[Y|X]]}
 $$
 
 
