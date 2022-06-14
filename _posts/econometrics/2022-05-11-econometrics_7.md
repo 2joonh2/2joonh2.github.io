@@ -206,39 +206,40 @@ z가 dummy variable일 땐 2sls estimator가 wald estimator로서 매우 심플�
 
 
 $$
-E[\hat\beta_{2SLS}-\beta]\newline
+\displaylines{E[\hat\beta_{2SLS}-\beta]\newline
 =E[(X'P_Z X)^{-1} \pi' Z' \eta]+E[(X'P_X X)^{-1}\zeta P_Z \eta]\newline
-=E[X'P_Z X]^{-1} E[\zeta P_Z \eta]
+=E[X'P_Z X]^{-1} E[\zeta P_Z \eta]}
 $$
 
 
 $$
-\text{for} \quad E[X'P_Z X]^{-1}\\\\
+\displaylines{\text{for} \quad E[X'P_Z X]^{-1}\\\\
 E[X'P_Z X]^{-1}=(E[(\pi'Z'+\eta')P_Z(Z\pi+\eta)])^{-1}\newline
 =(E[(\pi'Z'+\eta'P_Z)(Z\pi+\eta)])^{-1}\newline
 =(E[\pi'Z'Z\pi]+E[\pi'Z'\eta]+E[\eta'P_Z Z\pi]+E[\eta'P_Z\eta])^{-1}\newline
-=(E[\pi'Z'Z\pi]+E[\eta'P_Z\eta])^{-1}
+=(E[\pi'Z'Z\pi]+E[\eta'P_Z\eta])^{-1}}
 $$
 
 $$
-\text{for} \quad E[\eta'P_Z\eta] \\\\
-E[\eta'P_Z\eta]=\sigma_\zeta^2 tr(P_Z)  \equiv  \sigma_\zeta^2 Q
+\displaylines{\text{for} \quad E[\eta'P_Z\eta] 
+\\\\
+E[\eta'P_Z\eta]=\sigma_\zeta^2 tr(P_Z)  \equiv  \sigma_\zeta^2 Q}
 $$
 
 $$
-\text{for} \quad E[\zeta P_Z \eta] \\\\
-E[\zeta P_Z \eta]=\sigma_{\eta\zeta}^2 tr(P_Z)  \equiv  \sigma_{\eta\zeta}^2 Q
+\displaylines{\text{for} \quad E[\zeta P_Z \eta] \\\\
+E[\zeta P_Z \eta]=\sigma_{\eta\zeta}^2 tr(P_Z)  \equiv  \sigma_{\eta\zeta}^2 Q}
 $$
 
 
 
 $$
-\text{Thus, for} \quad E[\hat\beta_{2SLS}-\beta]\\\\
+\displaylines{\text{Thus, for} \quad E[\hat\beta_{2SLS}-\beta]\\\\
 E[\hat\beta_{2SLS}-\beta]=E[X'P_Z X]^{-1} E[\zeta P_Z \eta]\newline
 =(E[\pi'Z'Z\pi]+E[\eta'P_Z\eta])^{-1} E[\zeta P_Z \eta]\newline
 =(E[\pi'Z'Z\pi]+\sigma_\zeta^2 Q)^{-1} * \sigma_{\eta\zeta}^2 Q\newline
 =(\frac{E[\pi'Z'Z\pi]}{\sigma_\zeta^2 Q}+1)^{-1} * \frac{\sigma_{\eta\zeta}^2 Q\newline}{\sigma_\zeta^2 Q}\newline
-=\frac{\sigma_{\eta\zeta}^2}{\sigma_\zeta^2}(\frac{E[\pi'Z'Z\pi]/Q}{\sigma_\zeta^2}+1)^{-1}
+=\frac{\sigma_{\eta\zeta}^2}{\sigma_\zeta^2}(\frac{E[\pi'Z'Z\pi]/Q}{\sigma_\zeta^2}+1)^{-1}}
 $$
 
 
