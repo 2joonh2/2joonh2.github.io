@@ -12,7 +12,8 @@ toc_sticky: true
 
 ![conditional](../../assets/images/2022-04-25-econometrics_5-2/conditional.png)
 
-조건부
+> 조건부
+>
 
 
 

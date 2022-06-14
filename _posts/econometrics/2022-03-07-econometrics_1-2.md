@@ -12,7 +12,8 @@ toc_sticky: true
 
 ![common_bias](../../assets/images/2022-03-07-econometrics_1-2/common_bias.png)
 
-흔한 편향
+> 흔한 편향
+>
 
 
 

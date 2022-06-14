@@ -12,7 +12,8 @@ toc_sticky: true
 
 ![master_or_phd](../../assets/images/2022-03-21-econometrics_2/master_or_phd.png)
 
-석사냐 박사냐, 그것이 binary choice다.
+> 석사냐 박사냐, 그것이 binary choice다.
+>
 
 
 

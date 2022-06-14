@@ -12,7 +12,8 @@ toc_sticky: true
 
 ![Aaaak_Kkang](../../assets/images/2022-05-18-econometrics_8/Aaaak_Kkang.png)
 
-본문과 별 관련은 없다
+> 본문과 별 관련은 없다
+>
 
 
 

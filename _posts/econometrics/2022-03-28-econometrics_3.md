@@ -12,7 +12,8 @@ toc_sticky: true
 
 ![choosing_menu](../../assets/images/2022-03-28-econometrics_3/choosing_menu.png)
 
-한식 양식 일식 중식, 그것이 multiple choice다.
+> 한식 양식 일식 중식, 그것이 multiple choice다.
+>
 
 
 

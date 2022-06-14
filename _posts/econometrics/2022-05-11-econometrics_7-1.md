@@ -10,7 +10,8 @@ toc_sticky: true
 
 ![z](../../assets/images/2022-05-11-econometrics_7/z.png)
 
-
+> 피곤하다
+>
 
 
 

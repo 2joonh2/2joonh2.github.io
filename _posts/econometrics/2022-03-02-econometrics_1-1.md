@@ -12,7 +12,7 @@ toc_sticky: true
 
 ![sorry](../../assets/images/2022-03-02-econometrics_1-1/sorry.png)
 
-(이것은 차마 교수님의 가르침을 받는 학생이라 할 수 없는 형편없는 지식을 만회하기 위한 하찮은 노력이다)
+> 시작이 반이다
 
 
 

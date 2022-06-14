@@ -12,7 +12,8 @@ toc_sticky: true
 
 ![censoring](../../assets/images/2022-04-05-econometrics_4/censoring.png)
 
-밑바닥 아래의 지하층
+> 밑바닥 아래의 지하층
+>
 
 
 

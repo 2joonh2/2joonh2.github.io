@@ -12,7 +12,8 @@ toc_sticky: true
 
 ![wanna_smile](../../assets/images/2022-04-13-econometrics_5-1/wanna_smile.png)
 
-웃으면 복이 와요. 
+> 웃으면 복이 와요. 
+>
 
 
 

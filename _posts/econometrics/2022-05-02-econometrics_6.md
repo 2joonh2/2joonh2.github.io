@@ -12,7 +12,8 @@ toc_sticky: true
 
 ![match!](../../assets/images/2022-05-02-econometrics_6/match!.png)
 
-아름다운 매칭의 순간이다(?)
+> 아름다운 매칭의 순간이다
+>
 
 
 
@@ -213,7 +214,13 @@ $$
 
 ### Propensity Score Matching (PSM)
 
-X가 multi-dimension이라면?! 여러 차원에 대한 X의 값들에 대해 가장 가까운 점을 구하는 것은 어떤 방법일까? 그것이 Propensity score matching이다.
+X가 multi-dimension이라면?!
+
+여러 차원에 대한 X의 값들에 대해 가장 가까운 점을 구하는 것은 어떤 방법일까? 
+
+그것이 Propensity score matching이다.
+
+
 
 ![image-20220613015352773](../../assets/images/2022-05-02-econometrics_6/image-20220613015352773.png)
 

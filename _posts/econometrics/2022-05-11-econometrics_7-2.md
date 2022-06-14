@@ -12,7 +12,8 @@ toc_sticky: true
 
 ![LATE](../../assets/images/2022-05-11-econometrics_7-2/image-20220615013154584.png)
 
-
+> 늦었다 (*작성당일 기말고사)
+>
 
 
 

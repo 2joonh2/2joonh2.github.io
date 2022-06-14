@@ -12,7 +12,8 @@ toc_sticky: true
 
 ![discontinuity](../../assets/images/2022-05-25-econometrics_9/discontinuity.png)
 
-술로 인한 불연속성
+> 술로 인한 불연속성
+>
 
 
 
