@@ -218,9 +218,12 @@ $$
 
 
 
+Wald estimator는 매우 자주 사용되는 IV 활용 framework 중 하나라고 할 수 있다.
+
 
 
 ## Weak Instrument
+
 
 
 $$
@@ -242,6 +245,7 @@ X=Z\pi+\zeta
 E[\hat\beta_{2SLS}-\beta]=(X'P_Z X)^{-1}\zeta'\eta \quad (\because E(Z'\eta)=0)
 }
 $$
+
 
 
 1st stage의 error term, $\zeta$와 $\eta$가 correlation이 있고, Z의 설명력이 부족해 $Z\pi$ 항의 크기가 줄고 상대적으로 $\zeta$의 항 크기가 커지면, bias가 증가할 것이다.
