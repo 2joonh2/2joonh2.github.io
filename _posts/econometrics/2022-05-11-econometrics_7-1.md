@@ -25,6 +25,7 @@ f_i(s)=\alpha+\rho s+\eta_i
 $$
 
 
+
 본 Constant Effect 섹션에서는 treatment effect가 개인별에 차등없이 동일하게 적용되는 constant treatment effect 상황을 가정하고 진행하겠다.
 
 흔히 IV를 공부할때 언급되는 케이스 중 하나인 학력과 연봉의 인과추론을 해보고자 한다.
@@ -36,13 +37,16 @@ $$
 만약 s라는 schooling, 학력의 변수 말고도 능력이 연봉(unobserved, hence included at the $\eta$; OVB)에 유의한 상관관계가 존재한다면, OVB가 발생하며, s와 $\eta$ 사이의 correlation이 존재할 것이다. 그렇다면 $\eta$를 decompose 해보자.
 
 
+
 $$
 \displaylines{\eta_i=A_i'\gamma+v_i\\
 Cov(v_i, A_i)=0}
 $$
 
 
+
 A는 능력에 관한 control variable이고, 남은 항 v는 곧 idiosyncratic error term이 될 것이다.
+
 
 
 $$
@@ -51,7 +55,8 @@ $$
 $$
 
 
-우리는 앞선 장에서 배운 CIA를 통해 A를 통제해주면, v는 $\rho$와는 uncorrelate 되어있기 때문에 다시금 $\rho$를 제대로 구할 수 있다.
+
+우리는 앞선 장에서 배운 CIA를 통해 A를 통제해주면, v는 $\rho$와는 uncorrelated 되어있기 때문에 다시금 $\rho$를 제대로 구할 수 있다.
 
 하지만 A를 통제하는 것은 매우 어렵다. 사람의 능력이라는 변수를 정량화 내지 측정이 가능한것일까?
 
