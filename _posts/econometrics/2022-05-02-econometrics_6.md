@@ -236,7 +236,7 @@ $$
 \text{with} \quad \hat Y_{0i}=\Sigma\, \hat\omega(i,j) Y_{0j}}
 $$
 
-#### $\hat\omega$ 
+#### Methodology for getting $\hat\omega$ 
 
 
 $$
