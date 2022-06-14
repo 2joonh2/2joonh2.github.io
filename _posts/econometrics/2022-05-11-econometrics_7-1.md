@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-#IV
+#IV #2SLS #ILS #Wald_estimator #weak_instrument
 
 ![z](../../assets/images/2022-05-11-econometrics_7/z.png)
 
@@ -281,4 +281,16 @@ E[\hat\beta_{2SLS}-\beta]=E[X'P_Z X]^{-1} E[\zeta P_Z \eta]\newline
 \equiv \frac{\sigma_{\eta\zeta}}{\sigma_\zeta^2}\frac{1}{(F+1)}
 }
 $$
+
+
+
+우리는 F를 위의 식에 참고하여 Q에 반비례하는 항으로 정의된것을 확인할 수 있는데, 곧 의미없는 도구변수의 추가가 Q의 증가로 인한 F 값의 감소로 $\pi$가 감소하고 곧, 2SLS의 bias가 OLS의 그것과 다를게 없다는 것을 보여주고 있다.
+
+결국 문제는 $x$가 아닌 $\hat x$를 사용했기 때문에 나타난 문제이고, Just-identified 2SLS는 unbiased 하다고 할 수 있다.
+
+물론 어떤 경우에도, Reduced Form은 기본적인 가정 y와 z의 uncorrelation에 따라 bias가 없다고 한다.
+
+
+
+
 
