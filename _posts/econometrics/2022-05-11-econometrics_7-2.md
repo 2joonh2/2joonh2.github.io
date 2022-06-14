@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-#external_validity #LATE #Exclusion_restriction #Monotonicity #compliers #defiers
+#external_validity #LATE #Exclusion_restriction #Monotonicity #complier #defier
 
 
 
