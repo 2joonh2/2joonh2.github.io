@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-#external_validity #LATE
+#external_validity #LATE #Exclusion_restriction #Monotonicity #compliers #defiers
 
 
 
@@ -116,10 +116,10 @@ $$
 
 
 $$
-D_i=D_{0i}+(D_{1i}-D_{0i})Z_i
+\displaylines{D_i=D_{0i}+(D_{1i}-D_{0i})Z_i
 \\\\
 \text{Then,}\quad \{D_i=1\}=\{D_{1i}=D_{0i}=1\} \cup \{\{D_{1i}-D_{0i}=1\}\cap\{Z_i=1\}\}\\
-\text{which is,}\quad \{\text{treated}\}=\{\text{always-taker}\} \cup \{\text{compliers assigned }Z_i=1\}\\
+\text{which is,}\quad \{\text{treated}\}=\{\text{always-taker}\} \cup \{\text{compliers assigned }Z_i=1\}\\}
 $$
 
 
@@ -139,7 +139,7 @@ TOT는 위의 treated 그룹에 대한 weighted average of effects라고 할 수
 
 
 $$
-P[D_{1i}>D_{0i}|D_i=1]=\frac{P[(D_{1i}>D_{0i})\cap(D_i=1)]}{P[D_{1i}=1]}\\
+\displaylines{P[D_{1i}>D_{0i}|D_i=1]=\frac{P[(D_{1i}>D_{0i})\cap(D_i=1)]}{P[D_{1i}=1]}\\
 =\frac{P[(D_i=1)|(D_{1i}>D_{0i})]P[(D_{1i}>D_{0i})]}{P[D_{1i}=1]}\\
-=\frac{P(Z_i=1)(E(D_i|Z_i=1)-E(D_i|Z_i=0))}{P[D_{1i}=1]}
+=\frac{P(Z_i=1)(E(D_i|Z_i=1)-E(D_i|Z_i=0))}{P[D_{1i}=1]}}
 $$
