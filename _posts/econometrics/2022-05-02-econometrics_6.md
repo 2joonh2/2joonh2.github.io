@@ -347,14 +347,3 @@ Hirano, Imbens and Ridder (2003), Imbens and Wooldridge (2009)
 ## Imbens & Wooldridge (2009)
 
 Imbens, G.W., & Wooldridge, J.M. (2009). "Recent Developments in the Econometrics of Program Evaluation." Journal of Economic Literature, 47(1), 5-86
-
-
-
-
-
-
-
-
-
-
-
