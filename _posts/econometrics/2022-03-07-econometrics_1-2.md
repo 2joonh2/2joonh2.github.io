@@ -93,10 +93,12 @@ $$
 \displaylines{\dot Y_i=Y_i-1_T\bar Y_i\newline
 =Y_i-1_T(1'_T1_T)^{-1}1'_TY_i\newline
 =M_TY_i\newline\newline
-M_T\;is\, an\, idempotent\, matrix}
+M_T\;\text{ is an idempotent matrix}}
 $$
 
 
+
+Reference: [선형대수 note 15: Projections onto subspaces | JUDIS.me](http://judis.me/wordpress/2015/10/04/선형대수-note-15-projections-onto-subspaces/)
 
 동일하게 X에 대해서도 유도할 수 있다.
 
@@ -113,9 +115,9 @@ $$
 
 
 $$
-\displaylines{from \quad Y_i=X_i\beta+1_Tu_i+\epsilon_i\newline
+\displaylines{\text{from} \quad Y_i=X_i\beta+1_Tu_i+\epsilon_i\newline
 \dot Y=\dot X\beta+\dot\epsilon\newline
-Since \quad M_T1_T=0}
+\text{Since} \quad M_T1_T=0}
 $$
 
 
@@ -210,15 +212,15 @@ D_i \;\text{is dummy variable}\;(0\,\text{or}\,1)\newline}
 $$
 
 $$
-\displaylines{ \text{1) reg }\; Y\; on\; X_1\; ->\; resdiual\; Y\newline
-2)\;\text{reg}\; X_2\; on\; X_1\; ->\; residual\; X_2\newline
-3)\;\text{reg}\; residual\; y\; on\; residual\; X_2\; ->\; \tilde \beta}
+\displaylines{ \text{1) reg }\; Y\; \text{on}\; X_1\; ->\; \text{resdiual}\; Y\newline
+2)\;\text{reg}\; X_2\; \text{on}\; X_1\; ->\; \text{residual}\; X_2\newline
+3)\;\text{reg residual } y\; \text{ on residual } X_2\; ->\; \tilde \beta}
 $$
 
 $$
-\displaylines{ \text{then by FWL theorem,}\; 1)\; reg\; Y\; on\; D\; ->\; resdiual\; \dot Y\newline
-2)\; reg\; X\; on\; D\; ->\; residual\; \dot X\newline
-3)\; reg\; residual\; \dot Y\; on\; residual\; \dot X\; ->\; \tilde \beta}
+\displaylines{ \text{then by FWL theorem,}\; \text{1) reg}\; Y\;\text{on}\; D\; ->\; \text{resdiual}\; \dot Y\newline
+\text{2) reg}\; X\; \text{on}\; D\; ->\; \text{residual}\; \dot X\newline
+\text{3) reg residual}\; \dot Y\; \text{on residual}\; \dot X\; ->\; \tilde \beta}
 $$
 
 
@@ -251,9 +253,7 @@ Within-Transformation은 각 객체별 Individual Specific Mean을 구하여 빼
 $$
 \displaylines{\bar Y=\bar X'\beta+u+\epsilon\newline
 \hat\beta_{be}=(\Sigma\bar X \bar X')^{-1}(\Sigma \bar X \bar Y)\newline
-V_{be}=Var(\hat\beta_{be}|X)=(\Sigma\bar X \bar X')^{-1}(\sigma^2_u+\sigma^2_\epsilon/T)
-\newline\newline
-for \;simple\;understand}
+V_{be}=Var(\hat\beta_{be}|X)=(\Sigma\bar X \bar X')^{-1}(\sigma^2_u+\sigma^2_\epsilon/T)}
 $$
 
 
