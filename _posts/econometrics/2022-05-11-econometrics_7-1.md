@@ -6,7 +6,9 @@ toc: true
 toc_sticky: true
 ---
 
-#IV #2SLS #ILS #Wald_estimator #weak_instrument
+> #IV #2SLS #ILS #Wald_estimator #weak_instrument
+
+
 
 ![z](../../assets/images/2022-05-11-econometrics_7/z.png)
 

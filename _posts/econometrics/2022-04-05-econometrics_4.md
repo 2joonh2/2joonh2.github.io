@@ -6,7 +6,8 @@ toc: true
 toc_sticky: true
 ---
 
-\#Censoring #Tobit #Selection #Heckman's_model
+> \#Censoring #Tobit #Selection #Heckman's_model
+>
 
 
 

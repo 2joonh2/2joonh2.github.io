@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
- #Probit #Logit
+>  #Probit #Logit
 
 
 

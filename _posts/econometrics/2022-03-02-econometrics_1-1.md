@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-#Pooled_Regression #Error_Component_Model
+> #Pooled_Regression #Error_Component_Model
 
 
 
@@ -72,7 +72,7 @@ $$
 
 
 
-$\hat\beta_{pool}$은 일반 OLS estimator의 공식을 사용하여 유도한다.
+$\hat\beta_{pool}$은 일반 [OLS estimator](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=dhkdwnddml&logNo=221471762693)의 공식을 사용하여 유도한다.
 
 
 $$
@@ -94,17 +94,17 @@ $$
 
 
 
-Estimator의 Variance는 위와 같이 구할 수 있는데, 아래와 같이 Variance의 Homoskedasticity를 가정한다면, $\sigma^2(\Sigma X'X)^{-1}\$라는 간단한 공식을 유도할 수 있다.
+Estimator의 Variance는 위와 같이 구할 수 있는데, 아래와 같이 Variance의 [Homoskedasticity](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=dhkdwnddml&logNo=220194158503)를 가정한다면, $\sigma^2(\Sigma X'X)^{-1}\$라는 간단한 공식을 유도할 수 있다.
 
 
 
 
 $$
 \displaylines{Var(\hat\beta_{pool} | X)=Var(\Sigma (X'X)^{-1}(\Sigma X'e)|X) = (\Sigma X'X)^{-1}[\Sigma X'Var(e|X)X](\Sigma X'X)^{-1}\newline
-(since\quad Var(Ae)=A*Var(e)*A')\newline\newline
-if\quad Var(e|X)=\sigma^2_e*I_T\;;\quad \text{homoskedastic}\newline
+(\text{since}\; Var(Ae)=A*Var(e)*A')\newline\newline
+\text{if}\quad Var(e|X)=\sigma^2_e*I_T\;;\quad \text{homoskedastic}\newline
 Var(\hat\beta_{pool}|X)=(\Sigma X'X)^{-1}(\Sigma X' I_T X)\sigma^2(\Sigma X'X)^{-1}\newline
-=\sigma^2(\Sigma X'X)^{-1}\; ;\text{classical (default at Stata)}}
+=\sigma^2(\Sigma X'X)^{-1};\;\text{classical (default at Stata)}}
 $$
 
 

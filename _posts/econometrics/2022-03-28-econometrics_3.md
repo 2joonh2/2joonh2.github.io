@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-\#Multinomial_logit #Conditional_logit #IIA #Nested_logit #Mixed_logit #Probit #Ordered_Response
+> \#Multinomial_logit #Conditional_logit #IIA #Nested_logit #Mixed_logit #Probit #Ordered_Response
 
 
 

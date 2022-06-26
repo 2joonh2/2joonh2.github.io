@@ -6,7 +6,8 @@ toc: true
 toc_sticky: true
 ---
 
-#strong_ignorability #regression_adjustment #IPW #pseudo-counterfactual #nnmatch #PSM
+> #strong_ignorability #regression_adjustment #IPW #pseudo-counterfactual #nnmatch #PSM
+>
 
 
 

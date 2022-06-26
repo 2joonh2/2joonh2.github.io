@@ -6,7 +6,8 @@ toc: true
 toc_sticky: true
 ---
 
-\#Common_trend_assumption #Compound_effect #Ashenfelter's_dip #DDD
+> \#Common_trend_assumption #Compound_effect #Ashenfelter's_dip #DDD
+>
 
 
 
