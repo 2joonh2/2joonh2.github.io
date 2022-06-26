@@ -464,7 +464,7 @@ $$
 =\alpha+\rho s+E[\eta_i|X_i]=\alpha+\rho s+X_i'\gamma
 \\\\
 \text{Thus, } Y_i=\alpha+\rho s+X_i'\gamma+\nu_i \newline
-\text{satisfying \;}E[\nu_i|X_i,s_i]=0}
+\text{satisfying }\; E[\nu_i|X_i,s_i]=0}
 $$
 
 
@@ -488,7 +488,7 @@ $\eta$는 OVB로 인해 X와 correlation이 있을수도 있고 없을 수도 �
 
 $$
 \displaylines{Y_{i}=\alpha+\rho s_i+A_i'\gamma +\epsilon_i \newline
-\text{by Regression Anatomy, \;}\frac{Cov(Y,s)}{Var(s)}=\rho+\gamma'\delta_{As}\\\\
+\text{by Regression Anatomy, }\;\frac{Cov(Y,s)}{Var(s)}=\rho+\gamma'\delta_{As}\\\\
 
 \frac{Cov(Y,s)}{Var(s)}=\frac{Cov(\alpha+\rho s_i+A_i'\gamma +\epsilon_i, \; s_i)}{Var(s)}\newline
 =\frac{\rho Var(s)}{Var(s)}+\frac{\gamma' Cov(A, s)}{Var(s)}\equiv\rho+\gamma'\delta_{As}
