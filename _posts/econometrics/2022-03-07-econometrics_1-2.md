@@ -98,7 +98,7 @@ $$
 
 
 
-Reference: [선형대수 note 15: Projections onto subspaces | JUDIS.me](http://judis.me/wordpress/2015/10/04/선형대수-note-15-projections-onto-subspaces/)
+Reference: [선형대수 note 15: Projections onto subspaces](http://judis.me/wordpress/2015/10/04/선형대수-note-15-projections-onto-subspaces/)
 
 동일하게 X에 대해서도 유도할 수 있다.
 
