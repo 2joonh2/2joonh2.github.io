@@ -103,6 +103,10 @@ $$
 
 
 
+![image-20220628164644190](../../assets/images/2022-05-18-econometrics_8/image-20220628164644190.png)
+
+
+
 ### Regression Implementation of DiD
 
 또 Regression!? 하지만 앞선 DiD 계산방식보다 회귀식을 이용하면 계산을 (2)-(1)과 같은 이중이 아닌 단일 식으로 $\rho$를 구할 수 있고, std. error를 구하기도 용이할 것이다.
