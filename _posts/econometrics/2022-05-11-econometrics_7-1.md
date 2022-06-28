@@ -70,7 +70,7 @@ $$
 
 
 1. Instrument variable, z should be correlated with the causal variable of interest, s
-2. z should be uncorrelate iwth potential outcomes
+2. z should be uncorrelated with potential outcomes
    1. $Cov(\eta, z)=0$
 
 
@@ -126,7 +126,7 @@ $$
 
 
 
-우리는 위의 $\rho$를 구하는 과정을 **Indirect Least Squares (ILS)** 이라고 부른다. 두 개의 estimate를 통해 간접적으로 $\rho$를 구하기 때문이다.
+우리는 위의 $\rho$를 두 식의 $\pi$에 대한 비율을 통해 구하는 과정을 **Indirect Least Squares (ILS)** 이라고 부른다. 두 개의 estimate를 통해 간접적으로 $\rho$를 구하기 때문이다.
 
 ILS를 통해 estimator들을 통한 수식을 전개하면 아래와 같다.
 
@@ -242,7 +242,7 @@ X=Z\pi+\zeta
 \\\\
 \text{The fitted value: }\; \hat X=Z\hat\pi=Z(Z'Z)^{-1}Z'X=P_Z X=Z\pi+P_Z \zeta
 \\
-\hat\beta_{2SLS}=(\hat X'\hat X)\hat X'Y\\
+\hat\beta_{2SLS}=(\hat X'\hat X)^{-1}\hat X'Y\\
 =(X'P_Z'P_Z X)^{-1}X'P_Z'Y\\
 =(X'P_Z'P_Z X)^{-1}X'P_Z'X\beta+(X'P_Z'P_Z X)^{-1}X'P_Z'P_Z\eta\\
 \\\\

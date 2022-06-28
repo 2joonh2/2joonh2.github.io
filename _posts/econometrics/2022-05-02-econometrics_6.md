@@ -46,7 +46,7 @@ $$
 \text{Then, }\quad \tau_{ate}(x)=E(Y_{1i}-Y_{0i}|X_i=x)\\
 =\mu_1(x)-\mu_0(x)\\\\
 \text{Then, }\quad ATE= \tau_{p}=E[\tau_{ate}(X_i)]\\
-\text{and, }\quad ATT= \tau_{p}=E[\tau_{ate}(X_i)|D_i=1]
+\text{and, }\quad ATT=E[\tau_{ate}(X_i)|D_i=1]
 }
 $$
 
