@@ -65,7 +65,7 @@ $$
 
 
 
-### IV
+### Instrumental Variable
 
 
 
@@ -178,7 +178,7 @@ Y와 Z의 관계를 확인하는 두번째 figure이다.
 
 IV 변수의 개수가 1개일 경우에는 2SLS와 ILS가 동일한 결과를 갖는다.
 
-![image-20220613205405695](../../assets/images/2022-05-11-econometrics_7/image-20220613205405695.png)	
+![image-20220613205405695](../../assets/images/2022-05-11-econometrics_7/image-20220613205405695.pngx)	
 
 
 
@@ -206,7 +206,11 @@ $$
 =(1-p)p\{E(y|z=1)-E(y|z=0)\}\\
 =Var(z)\{E(y|z=1)-E(y|z=0)\} \quad (\because Var(z)=p(1-p))\\
 \\
-\text{Thus, } \quad E(y|z=1)-E(y|z=0)=\frac{Cov(y,z)}{Var(z)}}
+\begin{cases}
+E(y|z=1)-E(y|z=0)=\frac{Cov(y,z)}{Var(z)}\\
+E(D|z=1)-E(D|z=0)=\frac{Cov(D,z)}{Var(z)}
+\end{cases}\\\\
+\text{Thus, } \quad \frac{E(y|z=1)-E(y|z=0)}{E(D|z=1)-E(D|z=0)}=\frac{Cov(y,z)}{Cov(D,z)}}
 $$
 
 
