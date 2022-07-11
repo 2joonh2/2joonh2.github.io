@@ -34,7 +34,7 @@ Time Series(시계열 데이터)란 단일 객체(one individual)에 대한 일�
 
 **Panel Data**는 복수개의 객체에 대한 일정 기간 동안의 관찰 데이터로서, 같은 기간에 대한 Time Series들의 집합이라고 할 수 있을 것이다.
 
-
+gkdl
 
 ### Difference between Cross-Sectional Data
 
@@ -316,3 +316,5 @@ $$
 하지만 Pooled Regression에서 언급한 바와 마찬가지로 실제 상황에선 u와 $\epsilon$에 대해 주어진 정보가 제한적일 가능성이 높기 때문에, **feasible GLS estimator**가 replacing the unknown variance of u and $\epsilon$. 
 
 이에 대해선 너무 복잡해 다루지 않는다. ~~다행이다~~
+
+하이
