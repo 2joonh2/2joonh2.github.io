@@ -19,7 +19,7 @@ def sendmail(error=False):
     s.starttls()
     account_mail_address="2joonh2@gmail.com"
 
-    f = open("C:\\Users\\2joon\\OneDrive\\문서\\Gmail-app_pw.txt", 'r')
+    f = open("C:/Users/2joon/OneDrive/문서/Gmail-app_pw.txt", 'r')
     pw = f.read()
     f.close()
 
